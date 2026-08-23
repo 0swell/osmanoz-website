@@ -1,26 +1,469 @@
 @import "tailwindcss";
 
+/* ==========================================================================
+   Tasarım sistemi — osmanoz.website
+
+   Yön: "beyaz kâğıt + mürekkep". Zemin beyaz ve ferah; derinlik renkle değil
+   katmanlı gölge, cam yüzey ve kömür tonlu dokunuşlarla kuruluyor.
+   Tek canlı renk turuncu — yalnızca CTA, rakam ve vurguda görünür.
+
+   Renk kuralı 60-30-10 (CLAUDE.md §5.5):
+     %60 beyaz zemin  ·  %30 gri katman + kart  ·  %10 kömür + turuncu
+   ========================================================================== */
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* --- Zemin ve yüzeyler --- */
+  --bg: #ffffff;
+  --surface: #ffffff;
+  --surface-2: #f7f8fa;   /* alternatif bölüm zemini */
+  --surface-3: #eef0f4;   /* girinti, tablo başlığı */
+  --border: #e6e8ee;
+  --border-strong: #d2d6e0;
+  /* Form alanı kenarlığı — WCAG 1.4.11 arayüz bileşeni sınırı için 3:1 ister.
+     `border-strong` beyaz zeminde 1.45'te kalıyordu, alanlar görünmüyordu. */
+  --field-border: #848c9e;   /* beyaz zeminde 3.37:1 */
+
+  /* --- Metin: kömür ailesi --- */
+  --ink: #12141a;
+  --ink-soft: #4d535e;
+  --ink-muted: #6b7280;   /* beyaz zeminde 4.83:1 — AA */
+
+  /* --- Koyu dokunuş: mürekkep (koyu bölümler, birincil buton) --- */
+  --brand: #16181f;
+  --brand-deep: #05070c;
+  --brand-soft: #f2f3f6;
+  --on-brand: #ffffff;
+
+  /* --- Vurgu: turuncu (CTA, link, rakam) --- */
+  --accent: #c23e08;      /* beyaz zeminde 5.27:1 — AA, beyaz metinle de aynı */
+  --accent-warm: #d8480b;
+  --accent-soft: #fff1e8;
+  --on-accent: #ffffff;
+
+  /* --- Durum --- */
+  --danger: #c0341a;
+  --success: #12805b;
+
+  /* WhatsApp yeşili — hover ve sabit buton için.
+     Markanın kendi tonu (#25D366) beyaz metinle 1.98:1 kalıyor, okunmuyor;
+     aynı aileden AA geçen en açık ton seçildi (4.63:1). */
+  --wa: #12864a;
+  --wa-hover: #0e7a42;
+
+  /* --- Cam yüzey --- */
+  --glass-bg: rgb(255 255 255 / 0.72);
+  --glass-border: rgb(255 255 255 / 0.9);
+
+  /* --- Katmanlı gölge ölçeği: nötr, iki katmanlı (yakın keskin + uzak yumuşak) --- */
+  --sh-xs: 0 1px 2px rgb(18 20 26 / 0.05);
+  --sh-sm:
+    0 1px 3px rgb(18 20 26 / 0.06),
+    0 1px 2px -1px rgb(18 20 26 / 0.05);
+  --sh-md:
+    0 4px 12px -2px rgb(18 20 26 / 0.08),
+    0 2px 6px -2px rgb(18 20 26 / 0.05);
+  --sh-lg:
+    0 12px 32px -8px rgb(18 20 26 / 0.13),
+    0 4px 12px -4px rgb(18 20 26 / 0.07);
+  --sh-xl:
+    0 24px 56px -12px rgb(18 20 26 / 0.17),
+    0 8px 24px -8px rgb(18 20 26 / 0.09);
+  /* Turuncu butonun altındaki renkli ışıma */
+  --sh-accent: 0 8px 24px -8px rgb(194 62 8 / 0.42);
+
+  --radius: 0.75rem;
+  --radius-lg: 1rem;
+}
+
+:root[data-theme="dark"],
+html.dark {
+  --bg: #0b0d11;
+  --surface: #14171d;
+  --surface-2: #12151a;
+  --surface-3: #1c2028;
+  --border: #232833;
+  --border-strong: #333a48;
+  --field-border: #5d6880;   /* koyu alan zemininde 3.21:1 */
+
+  --ink: #f0f2f6;
+  --ink-soft: #b3bac6;
+  --ink-muted: #848d9c;
+
+  --brand: #f0f2f6;
+  --brand-deep: #ffffff;
+  --brand-soft: #1a1e26;
+  --on-brand: #0b0d11;
+
+  --accent: #ff7a3d;
+  --accent-warm: #ff9761;
+  --accent-soft: #2a1810;
+  --on-accent: #160902;
+
+  --danger: #f0715a;
+  --success: #34c193;
+  --wa: #16a05a;
+  --wa-hover: #12864a;
+
+  --glass-bg: rgb(20 23 29 / 0.68);
+  --glass-border: rgb(255 255 255 / 0.09);
+
+  --sh-xs: 0 1px 2px rgb(0 0 0 / 0.4);
+  --sh-sm: 0 1px 3px rgb(0 0 0 / 0.5), 0 1px 2px -1px rgb(0 0 0 / 0.4);
+  --sh-md: 0 4px 12px -2px rgb(0 0 0 / 0.55), 0 2px 6px -2px rgb(0 0 0 / 0.4);
+  --sh-lg: 0 12px 32px -8px rgb(0 0 0 / 0.6), 0 4px 12px -4px rgb(0 0 0 / 0.45);
+  --sh-xl: 0 24px 56px -12px rgb(0 0 0 / 0.7), 0 8px 24px -8px rgb(0 0 0 / 0.5);
+  --sh-accent: 0 8px 24px -8px rgb(255 122 61 / 0.4);
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-surface-3: var(--surface-3);
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+  --color-field-border: var(--field-border);
+
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-ink-muted: var(--ink-muted);
+
+  --color-brand: var(--brand);
+  --color-brand-deep: var(--brand-deep);
+  --color-brand-soft: var(--brand-soft);
+  --color-on-brand: var(--on-brand);
+
+  --color-accent: var(--accent);
+  --color-accent-warm: var(--accent-warm);
+  --color-accent-soft: var(--accent-soft);
+  --color-on-accent: var(--on-accent);
+
+  --color-danger: var(--danger);
+  --color-success: var(--success);
+  --color-wa: var(--wa);
+  --color-wa-hover: var(--wa-hover);
+
+  --font-display: var(--font-bricolage), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-lexend), ui-sans-serif, system-ui, sans-serif;
+
+  /* Tailwind utility adı  <-  kök değişken.
+     İki taraf aynı isim olursa döngüsel referans oluşur ve gölge boş basılır. */
+  --shadow-xs: var(--sh-xs);
+  --shadow-soft: var(--sh-sm);
+  --shadow-card: var(--sh-md);
+  --shadow-lift: var(--sh-lg);
+  --shadow-deep: var(--sh-xl);
+  --shadow-accent: var(--sh-accent);
+
+  --radius-card: var(--radius);
+  --radius-panel: var(--radius-lg);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* ==========================================================================
+   Temel
+   ========================================================================== */
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5.5rem;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-lexend), ui-sans-serif, system-ui, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-bricolage), ui-sans-serif, system-ui, sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.024em;
+  line-height: 1.14;
+  text-wrap: balance;
+}
+
+p { text-wrap: pretty; }
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--on-accent);
+}
+
+/* ==========================================================================
+   Yüzeyler
+   ========================================================================== */
+
+/* Cam yüzey — arkasında renk/doku olan yerlerde kullanılır. Düz beyaz
+   üzerinde etkisi görünmez, o yüzden yalnızca ışıma/gradient üstünde. */
+.glass {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  /* Sabit değer kullanılıyor: blur() içinde CSS değişkeni verildiğinde
+     derleyici bu satırı düşürüyordu. */
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  backdrop-filter: blur(16px) saturate(180%);
+}
+
+/* Zemine gömülü ışıma lekesi — glass yüzeylerin arkasına derinlik verir */
+.glow {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(72px);
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Standart kart: beyaz yüzey + ince kenar + yumuşak gölge */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--sh-sm);
+  transition:
+    transform 0.28s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.28s cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 0.22s ease;
+}
+
+/**
+ * Cam kart — yalnızca renkli/gri zeminli bölümlerde kullanılır.
+ * Düz beyaz üzerinde cam etkisi görünmez; arkada bir ton farkı gerekir.
+ */
+.card-glass {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius);
+  box-shadow: var(--sh-md);
+  -webkit-backdrop-filter: blur(14px) saturate(170%);
+  backdrop-filter: blur(14px) saturate(170%);
+  transition:
+    transform 0.28s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.28s cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 0.22s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--sh-lg);
+  border-color: var(--border-strong);
+}
+
+/* Kart üzerine gelince içindeki ikon kutusu da canlanır */
+.card-hover:hover .icon-box {
+  background: var(--accent);
+  color: var(--on-accent);
+  transform: scale(1.06) rotate(-3deg);
+}
+
+/**
+ * İkon kutusu — yumuşak kare, ince çizgili ikon.
+ * Kalın konturlu büyük ikonlar hantal duruyordu; boyut küçültülüp
+ * kontur inceltildi (lucide varsayılanı 2 → 1.6).
+ */
+.icon-box {
+  display: grid;
+  place-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.7rem;
+  background: var(--accent-soft);
+  color: var(--accent);
+  transition:
+    background-color 0.28s cubic-bezier(0.22, 1, 0.36, 1),
+    color 0.28s ease,
+    transform 0.28s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.icon-box svg {
+  width: 1.15rem;
+  height: 1.15rem;
+  stroke-width: 1.6;
+}
+
+/**
+ * Henüz sunulmayan kart: kesikli kenar.
+ * Tailwind'in `border-dashed` utility'si .card/.card-glass kuralını ezemiyor
+ * (ikisi de katman dışında), bu yüzden ayrı sınıf olarak tanımlandı.
+ */
+.card-yakinda {
+  border-style: dashed;
+  border-color: var(--border-strong);
+  /* Sönük yüzey — hem açık hem koyu temada diğer kartlardan geride durur */
+  background: var(--surface-2);
+  box-shadow: none;
+}
+
+/* Yakında kartı hover'da da canlanmaz: ikon gri kalır, kart yükselmez.
+   `.card-hover:hover .icon-box` kuralını burada geri alıyoruz. */
+.card-yakinda .icon-box,
+.card-yakinda:hover .icon-box {
+  background: var(--surface-3);
+  color: var(--ink-muted);
+  transform: none;
+}
+
+.card-yakinda:hover {
+  transform: none;
+  box-shadow: var(--sh-xs);
+  border-color: var(--border-strong);
+}
+
+/* Bölüm zeminine gömülü yumuşak renk — cam kartların arkasını besler */
+.section-glow {
+  position: relative;
+  isolation: isolate;
+}
+.section-glow::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -10%;
+  left: 8%;
+  width: 45%;
+  height: 80%;
+  border-radius: 9999px;
+  background: var(--accent);
+  opacity: 0.07;
+  filter: blur(90px);
+  pointer-events: none;
+}
+.section-glow::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  right: 4%;
+  bottom: -8%;
+  width: 40%;
+  height: 70%;
+  border-radius: 9999px;
+  background: var(--brand);
+  opacity: 0.06;
+  filter: blur(90px);
+  pointer-events: none;
+}
+
+/* İnce üst ışık çizgisi — kartın üst kenarında cam parlaması etkisi */
+.card-sheen {
+  position: relative;
+  overflow: hidden;
+}
+.card-sheen::before {
+  content: "";
+  position: absolute;
+  inset-inline: 12%;
+  top: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgb(255 255 255 / 0.9),
+    transparent
+  );
+}
+:root[data-theme="dark"] .card-sheen::before,
+html.dark .card-sheen::before {
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgb(255 255 255 / 0.14),
+    transparent
+  );
+}
+
+/* ==========================================================================
+   Tipografi yardımcıları
+   ========================================================================== */
+
+.eyebrow {
+  font-family: var(--font-lexend), sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+/* Vurgulu kelime — altında turuncu şerit */
+.underline-sketch {
+  background-image: linear-gradient(transparent 64%, var(--accent-soft) 64%);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding-inline: 0.08em;
+  animation: cizgi-ac 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.35s both;
+}
+
+/* ==========================================================================
+   Hareket
+   ========================================================================== */
+
+@keyframes rise {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: none; }
+}
+
+/* Sayfa açılışında kademeli beliriş (hero) */
+.rise {
+  animation: rise 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* Kaydırınca beliren bölümler.
+   Scroll-driven animation destekleyen tarayıcıda JS'siz çalışır;
+   desteklemeyende içerik doğrudan görünür kalır (içerik asla gizli kalmaz). */
+@supports (animation-timeline: view()) {
+  .reveal {
+    animation: rise 0.55s cubic-bezier(0.22, 1, 0.36, 1) both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 24%;
+  }
+
+  /* Izgara içindeki kartlar sırayla belirir — hepsi aynı anda değil.
+     Kaydırma sürücülü olduğu için JS gerekmez. */
+  .stagger > *:nth-child(1) { animation-range: entry 0% cover 20%; }
+  .stagger > *:nth-child(2) { animation-range: entry 4% cover 26%; }
+  .stagger > *:nth-child(3) { animation-range: entry 8% cover 32%; }
+  .stagger > *:nth-child(4) { animation-range: entry 12% cover 38%; }
+}
+
+/* Hero çizimindeki katmanların hafif yüzmesi — dikkat dağıtmayacak ölçüde */
+@keyframes yuz {
+  0%, 100% { transform: translateY(0) var(--yuz-rot, rotate(0deg)); }
+  50%      { transform: translateY(-7px) var(--yuz-rot, rotate(0deg)); }
+}
+
+/* Vurgu şeridinin altı çizilirken soldan sağa dolar */
+@keyframes cizgi-ac {
+  from { background-size: 0% 100%; }
+  to   { background-size: 100% 100%; }
+}
+
+/* Basma geri bildirimi — buton ve tıklanabilir kartlarda */
+.press {
+  transition:
+    transform 0.14s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.2s ease,
+    background-color 0.2s ease,
+    border-color 0.2s ease;
+}
+.press:active {
+  transform: translateY(1px) scale(0.985);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .reveal { animation: none !important; opacity: 1 !important; transform: none !important; }
 }

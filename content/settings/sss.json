@@ -1,0 +1,82 @@
+[
+  {
+    "soru": {
+      "tr": "Burdur'da web sitesi ne kadar sürede hazır olur?",
+      "en": "How long does it take to build a website?"
+    },
+    "cevap": {
+      "tr": "Tanıtım siteleri **ortalama 1 haftada** yayına girer. İlk taslağı birkaç gün içinde görürsünüz; beğenmediğiniz yerleri söylersiniz, birlikte oturtana kadar değiştiririz. Süreyi belirleyen asıl şey sizden gelen yazı ve fotoğrafların hazır olmasıdır. Acele bir iş gerekiyorsa, programı ona uygun düzenler, teslim tarihini baştan konuşuruz.",
+      "en": "A brochure site typically goes live **in about one week**. You see the first draft within a few days, tell me what to change, and we refine it together. The real pace-setter is how quickly your texts and photos are ready. If you need it sooner, we agree on the delivery date up front and plan around it."
+    }
+  },
+  {
+    "soru": {
+      "tr": "Web sitemi sonradan kendim güncelleyebilir miyim?",
+      "en": "Can I update the website myself afterwards?"
+    },
+    "cevap": {
+      "tr": "**Evet, kendi panelinizden** değiştirebilirsiniz. Yazıları, fiyatları ve fotoğrafları güncellemek için her seferinde bana sormanız gerekmez. Teslim ederken paneli nasıl kullanacağınızı birlikte adım adım gösteriyorum. Takıldığınız bir yer olursa yine de arayabilirsiniz; bunun için ayrıca ücret istemiyorum. Panel Türkçedir ve bilgisayar bilgisi gerektirmez.",
+      "en": "**Yes, from your own admin panel.** You do not need to ask me every time you want to change a text, a price or a photo. At handover I walk you through the panel step by step. If you get stuck you can still call me — there is no extra charge for that. The panel needs no technical knowledge."
+    }
+  },
+  {
+    "soru": {
+      "tr": "Alan adı kimin üstüne kayıtlı olur?",
+      "en": "Who owns the domain name?"
+    },
+    "cevap": {
+      "tr": "**Alan adı sizin adınıza kaydedilir**, sahibi sizsiniz. İleride başka biriyle çalışmak isterseniz siteniz de alan adınız da sizinle kalır, kimseden izin almanız gerekmez. Bu konuda mağdur olan çok esnaf var; siteyi yapan kişi alan adını kendi üstüne alıyor ve ayrılırken site rehin kalıyor.",
+      "en": "**The domain is registered in your name** — you are the owner. If you decide to work with someone else later, both the site and the domain stay with you and you need nobody's permission. Many business owners get caught out here: the developer registers the domain to themselves and the site is effectively held hostage."
+    }
+  },
+  {
+    "soru": {
+      "tr": "Sitem telefonda da düzgün görünecek mi?",
+      "en": "Will the site look right on a phone?"
+    },
+    "cevap": {
+      "tr": "Evet. Tasarıma **önce telefondan** başlıyorum, sonra bilgisayara genişletiyorum. Müşterilerinizin büyük çoğunluğu sitenize telefondan girecek, bu yüzden küçük ekran öncelikli. Yazılar zoom yapmadan okunur, butonlar parmakla rahat basılacak büyüklükte olur. Teslimden önce farklı telefon boyutlarında tek tek kontrol ediyorum. Ayrıca sayfanın hızlı açılması için görselleri küçültüyorum; yavaş açılan siteler hem müşteriyi hem Google'ı kaçırıyor.",
+      "en": "Yes. I design **for the phone first** and then widen it out to desktop. Most of your visitors will arrive on a small screen, so that is the priority. Text is readable without zooming and buttons are large enough to tap comfortably. Before handover I check the site at several phone sizes, and images are compressed so pages open fast — slow sites lose both customers and rankings."
+    }
+  },
+  {
+    "soru": {
+      "tr": "Google'da üst sıralara çıkmam ne kadar sürer?",
+      "en": "How long until I rank at the top of Google?"
+    },
+    "cevap": {
+      "tr": "Yeni bir sitede sonuçlar genelde **1-3 ay içinde** oturmaya başlar. Ama site tek başına yetmez: ücretsiz olan Google İşletme Profilinizi de açmamız gerekir. Aramalarda en üstte çıkan harita kutusu oradan besleniyor ve müşterinin çoğu o kutudan geliyor. İkisi birlikte çalışınca sonuç alınır.",
+      "en": "For a new site results usually start to settle **within one to three months**. The site alone is not enough, though: we also need to open your free Google Business Profile. The map box that appears above the search results is fed from there, and most local customers come through that box. The two work together."
+    }
+  },
+  {
+    "soru": {
+      "tr": "Sonradan ek ücret çıkar mı?",
+      "en": "Will there be extra costs later?"
+    },
+    "cevap": {
+      "tr": "**İlk yıl alan adı ve barındırma ücrete dahildir**, ayrıca bir şey ödemezsiniz. İkinci yıldan itibaren güncelleme ve bakım ücreti başlar; tutarı görüşmede net olarak söylenir ve baştan bellidir. Konuşmadığımız bir kalem sonradan fiyata dahil edilmez. Sonraki aylarda isteyeceğiniz yeni sayfalar veya özellikler, güncelleme ve bakıma dahildir.",
+      "en": "**Domain and hosting are included for the first year** — you pay nothing on top. From the second year there is an update and maintenance fee; the exact amount is stated clearly during our call and is known from the outset. Nothing we did not discuss is added to the price later. New pages or features you ask for in the following months are covered by that maintenance."
+    }
+  },
+  {
+    "soru": {
+      "tr": "Isparta veya Antalya'daysam çalışabilir miyiz?",
+      "en": "Can we work together if I am not in Burdur?"
+    },
+    "cevap": {
+      "tr": "Evet, **Burdur, Isparta, Antalya** ve çevre illere hizmet veriyorum. Şehirler birbirine yakın; gerektiğinde yerinde görüşmeye gelirim. İşin büyük kısmı zaten telefon ve WhatsApp üzerinden veya istediğiniz bir toplantı programı üzerinden yürütülüyor, dosyalar da internetten paylaşılabiliyor veya görüntülenebiliyor. İlk görüşmeyi telefonla yapıp, gerekirse sonra yüz yüze buluşuyoruz.",
+      "en": "Yes — I work with clients in **Burdur, Isparta, Antalya** and the neighbouring provinces. The cities are close to each other and I can come in person when it helps. Most of the work runs over phone, WhatsApp or whichever meeting tool you prefer, and files are shared online. We start with a call and meet face to face afterwards if needed."
+    }
+  },
+  {
+    "soru": {
+      "tr": "İşletmemin mobil uygulamaya ihtiyacı var mı?",
+      "en": "Does my business actually need a mobile app?"
+    },
+    "cevap": {
+      "tr": "**Çoğu küçük işletmenin yok.** Uygulama ancak sadakat sistemi, sürekli sipariş veren müşteri kitlesi veya saha ekibi varsa işe yarar. Mahalle kuaförü için kimse mağazadan uygulama indirmez, gereksiz bir yatırım olur. Durumunuza uygun paketleri öneririm. Zaten Eylül 2026 itibarıyla mobil uygulama hizmeti aktif değil, ileride eklenecektir.",
+      "en": "**Most small businesses do not.** An app pays off when there is a loyalty scheme, customers who order repeatedly, or a field team. Nobody downloads an app for a neighbourhood hairdresser, so it becomes a wasted investment. I recommend the package that fits your situation. As of September 2026 the mobile app service is not active yet; it will be added later."
+    }
+  }
+]

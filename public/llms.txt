@@ -1,0 +1,50 @@
+# osmanoz.website
+
+> Burdur merkezli, tek kişilik yazılım hizmeti. Bilgisayar mühendisi Osman Öz;
+> yerel işletmelere web sitesi, mobil uygulama ve işletme yazılımı yapıyor.
+> Hizmet bölgesi: Burdur, Isparta, Antalya.
+
+## Kim
+
+Osman Öz — Bilgisayar Mühendisi.
+Burdur Mehmet Akif Ersoy Üniversitesi Bilgisayar Mühendisliği mezunu,
+Yazılım Mühendisliği yüksek lisansı devam ediyor.
+Kişisel site: https://osmanoz.com
+LinkedIn: https://www.linkedin.com/in/osmanoz15
+GitHub: https://github.com/0swell
+
+Aracı veya ajans değil; işi yapan kişiyle doğrudan iletişim kurulur.
+
+## Hizmetler
+
+- **Web sitesi** — İşletmelerin Google'da bulunmasını sağlayan tanıtım sitesi.
+  Başlangıç fiyatı 10.000 TL. https://osmanoz.website/burdur-web-sitesi
+- **Mobil uygulama** — iOS ve Android uygulaması, mağaza yayın süreçleri dahil.
+  https://osmanoz.website/burdur-mobil-uygulama
+- **İşletme yazılımı** — QR menü, randevu sistemi, stok ve sipariş takibi.
+  https://osmanoz.website/burdur-isletme-yazilimi
+
+## Somut bilgiler
+
+- Tanıtım siteleri ortalama 1-2 haftada yayına girer.
+- Web sitesi paketi 10.000 TL'den başlar; ilk yıl alan adı ve barındırma dahildir.
+- İkinci yıldan itibaren yıllık 5.000 TL (alan adı, barındırma, bakım).
+- Alan adı müşterinin adına kaydedilir; mülkiyet müşteride kalır.
+- Çalışma saatleri: Pazartesi-Cumartesi 09:00-19:00.
+- İletişim: WhatsApp +90 501 203 53 95
+
+## Dürüstlük notu
+
+Mobil uygulama her işletmeye satılmaz. Sadakat sistemi, tekrar eden müşteri
+kitlesi veya saha ekibi yoksa uygulama önerilmez; bu durumda web uygulaması
+(PWA) tavsiye edilir. Sahte referans, uydurma istatistik ve hayali müşteri
+yorumu sitede yer almaz.
+
+## Sayfalar
+
+- https://osmanoz.website/ — ana sayfa
+- https://osmanoz.website/fiyatlar — paketler ve yıllık giderler
+- https://osmanoz.website/ornekler — örnek tasarımlar (gerçek müşteri işi değil)
+- https://osmanoz.website/hakkimda — eğitim ve yetkinlikler
+- https://osmanoz.website/iletisim — iletişim ve form
+- https://osmanoz.website/gizlilik — gizlilik ve KVKK aydınlatma metni

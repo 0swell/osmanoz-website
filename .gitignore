@@ -39,3 +39,24 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+# Ic kullanim - kar marji ve maliyet iceren notlar yayinlanmaz
+AAA-BENIM-DOSYALARIM/docs/ic-*
+
+# Ham gorsel kaynagi (public/ icin kucultulmus surumu uretilir)
+AAA-BENIM-DOSYALARIM/ProfilPhoto.png
+
+# Ortam degiskenleri
+.env
+.env.local
+
+# Bagimliliklar / build
+node_modules/
+.next/
+out/
+
+# Kisisel notlar, ic dokumanlar ve denetim raporlari - repoda yer almaz
+AAA-BENIM-DOSYALARIM/
+SEO-GEO-AEO-Checklists/
+
+# Panelden yuklenen gorseller build ciktisidir, kaynakta tutulmaz
+public/uploads/

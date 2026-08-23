@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# osmanoz.website
 
-## Getting Started
+Burdur, Isparta ve Antalya'daki işletmeler için web sitesi, mobil uygulama ve
+işletme yazılımı hizmetlerini anlatan tanıtım ve dönüşüm sitesi.
+[osmanoz.com](https://osmanoz.com) adresindeki kişisel portfolyonun ticari uzantısıdır.
 
-First, run the development server:
+**Amaç:** yerel aramalarda ("burdur web sitesi", "burdur mobil uygulama") üst
+sıralarda çıkmak ve ziyaretçiyi WhatsApp üzerinden teklif talebine dönüştürmek.
+
+## Teknolojiler
+
+| Katman | Seçim |
+|--------|-------|
+| Framework | Next.js 16 (App Router) + TypeScript |
+| Render | %100 statik (SSG) — tüm sayfalar build-time'da üretilir |
+| Stil | Tailwind CSS v4, CSS değişkeni tabanlı tasarım sistemi |
+| İçerik | `content/settings/*.json` — çift dilli, ileride Sveltia CMS ile düzenlenecek |
+| Çok dillilik | Türkçe kökte (`/`), İngilizce `/en/` altında; slug'lar dile göre farklı |
+| Form | Server Action → Resend (honeypot + basit hız sınırı) |
+| Tema | `next-themes` ile açık/koyu |
+| Deploy | Vercel |
+
+## Kurulum
 
 ```bash
+npm install
+cp .env.example .env.local   # RESEND_API_KEY doldurulur
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+`RESEND_API_KEY` tanımlı değilse iletişim formu sessizce başarılı olmaz —
+ziyaretçiye "form şu an gönderilemiyor, WhatsApp'tan yazın" uyarısı gösterilir.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Komutlar
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run dev     # geliştirme sunucusu
+npm run build   # üretim derlemesi
+npm run lint    # ESLint
+npx tsc --noEmit
+```
 
-## Learn More
+## Klasör yapısı
 
-To learn more about Next.js, take a look at the following resources:
+```text
+src/
+├── app/
+│   ├── (tr)/           Türkçe kök layout + sayfalar   → /
+│   ├── (en)/en/        İngilizce kök layout + sayfalar → /en
+│   ├── sitemap.ts  robots.ts  opengraph-image.tsx
+│   └── globals.css     tasarım sistemi (renk, gölge, animasyon tokenleri)
+├── components/
+│   ├── atoms/ molecules/ organisms/   atomic design
+│   └── sayfalar/       iki dilin paylaştığı sayfa gövdeleri
+├── config/site.ts      NAP, sosyal profiller, hizmet verisi (tek doğruluk kaynağı)
+├── i18n/               dil tanımı, rota eşleşmeleri, metin sözlükleri
+├── lib/schema.ts       JSON-LD üreticileri (Person → ProfessionalService → WebSite)
+├── actions/contact.ts  Server Action → Resend
+└── utils/
+content/settings/       SSS, paketler, süreç, hizmet sayfası metinleri (tr + en)
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Notlar
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Geliştirme kuralları, SEO/GEO/AEO şartnamesi ve mimari kararlar `CLAUDE.md`
+  dosyasındadır. Değişiklik yapmadan önce oradaki ilgili bölüm okunmalıdır.
+- Hassas veri repoda tutulmaz; hepsi `.env.local` içindedir.
+- Sitedeki tüm rakamlar gerçektir — uydurma istatistik, sahte referans veya
+  hayali müşteri yorumu eklenmez (`CLAUDE.md` §4.6).
 
-## Deploy on Vercel
+## Lisans
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Tüm hakları saklıdır. Kod ve içerik izinsiz kullanılamaz.

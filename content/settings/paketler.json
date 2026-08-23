@@ -1,0 +1,127 @@
+[
+  {
+    "ad": {
+      "tr": "Web Sitesi",
+      "en": "Website"
+    },
+    "ozet": {
+      "tr": "İşletmenizi Google'da görünür yapan tanıtım sitesi",
+      "en": "A brochure site that makes your business visible on Google"
+    },
+    "fiyat": 10000,
+    "fiyatNot": {
+      "tr": "başlayan fiyat",
+      "en": "starting price"
+    },
+    "one_cikan": true,
+    "kapsam": [
+      {
+        "tr": "Telefona uygun tasarım",
+        "en": "Mobile-first design"
+      },
+      {
+        "tr": "Google'a kayıt ve tanıtım",
+        "en": "Google indexing and setup"
+      },
+      {
+        "tr": "WhatsApp butonu",
+        "en": "WhatsApp button"
+      },
+      {
+        "tr": "İletişim formu",
+        "en": "Contact form"
+      },
+      {
+        "tr": "İlk yıl alan adı ve barındırma dahil",
+        "en": "Domain and hosting included for the first year"
+      },
+      {
+        "tr": "Kendi güncelleme paneliniz",
+        "en": "Your own admin panel"
+      }
+    ],
+    "yakinda": false
+  },
+  {
+    "ad": {
+      "tr": "Web Sitesi + İşletme Sistemleri",
+      "en": "Website + Business Systems"
+    },
+    "ozet": {
+      "tr": "Yönetim ekranları, randevu veya stok takibi, QR menü",
+      "en": "Admin dashboards, booking or stock tracking, QR menu"
+    },
+    "fiyat": 20000,
+    "fiyatNot": {
+      "tr": "başlayan fiyat",
+      "en": "starting price"
+    },
+    "one_cikan": false,
+    "rozet": {
+      "tr": "Birleşik Paketler",
+      "en": "Combined packages"
+    },
+    "kapsam": [
+      {
+        "tr": "Web sitesi paketinin tamamı",
+        "en": "Everything in the website package"
+      },
+      {
+        "tr": "QR menü veya randevu sistemi",
+        "en": "QR menu or booking system"
+      },
+      {
+        "tr": "Stok ve sipariş takibi",
+        "en": "Stock and order tracking"
+      },
+      {
+        "tr": "Yönetim ekranı",
+        "en": "Admin dashboard"
+      },
+      {
+        "tr": "İşletmenize göre özel geliştirme",
+        "en": "Custom development for your business"
+      }
+    ],
+    "yakinda": false
+  },
+  {
+    "ad": {
+      "tr": "Web Sitesi + Mobil Uygulama",
+      "en": "Website + Mobile App"
+    },
+    "ozet": {
+      "tr": "iOS ve Android uygulaması dahil",
+      "en": "Includes an iOS and Android app"
+    },
+    "fiyat": 35000,
+    "fiyatNot": {
+      "tr": "başlayan fiyat",
+      "en": "starting price"
+    },
+    "one_cikan": false,
+    "kapsam": [
+      {
+        "tr": "Web sitesi paketinin tamamı",
+        "en": "Everything in the website package"
+      },
+      {
+        "tr": "iOS ve Android uygulaması",
+        "en": "iOS and Android app"
+      },
+      {
+        "tr": "Mağazalara yükleme",
+        "en": "Store submission"
+      },
+      {
+        "tr": "Bildirim gönderme",
+        "en": "Push notifications"
+      },
+      {
+        "tr": "Uygulama güncellemeleri",
+        "en": "App updates"
+      }
+    ],
+    "yakinda": true
+  }
+]

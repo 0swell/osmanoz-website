@@ -1,0 +1,229 @@
+{
+  "burdur-web-sitesi": {
+    "h1": {
+      "tr": "Burdur'da Web Sitesi Yaptırın",
+      "en": "Website Design in Burdur"
+    },
+    "title": {
+      "tr": "Burdur Web Sitesi ve Web Tasarım | Osman Öz",
+      "en": "Website Design in Burdur | Osman Öz"
+    },
+    "description": {
+      "tr": "Burdur'da web sitesi ve işletmenize özel yazılım çözümleri. Bilgisayar mühendisi Osman Öz ile doğrudan çalışın. Burdur, Isparta ve Antalya'da hizmet.",
+      "en": "Fast, search-friendly websites for businesses in Burdur, Isparta and Antalya. Work directly with computer engineer Osman Öz."
+    },
+    "giris": {
+      "tr": "Burdur'da web sitesi arayan bir işletme sahibiyseniz, muhtemelen tek bir şey istiyorsunuz: müşteriniz sizi Google'da bulsun. Tanıtım sitenizi bu amaçla kuruyorum — telefonda hızlı açılan, aramalarda görünen, size müşteri getiren bir site.",
+      "en": "If you are looking for a website in Burdur, you probably want one thing: customers finding you on Google. That is what I build for — a site that loads fast on a phone, shows up in search results and brings you enquiries."
+    },
+    "bolumler": [
+      {
+        "baslik": {
+          "tr": "Burdur'da web tasarım nasıl olmalı?",
+          "en": "What should a good business website do?"
+        },
+        "metin": {
+          "tr": "Süslü olması değil, işe yaraması önemli. Müşteriniz siteye girdiğinde **üç şeyi saniyeler içinde** bulmalı: ne iş yaptığınızı, nerede olduğunuzu ve size nasıl ulaşacağını. Bunlar ekranın ilk yarısında yoksa, ziyaretçi geri tuşuna basıyor.",
+          "en": "It has to work, not just look decorative. A visitor should find **three things within seconds**: what you do, where you are and how to reach you. If those are missing from the first half of the screen, people hit the back button."
+        }
+      },
+      {
+        "baslik": {
+          "tr": "Sitem telefonda nasıl görünecek?",
+          "en": "How will it look on a phone?"
+        },
+        "metin": {
+          "tr": "Müşterilerinizin büyük çoğunluğu sitenize telefondan girecek. Bu yüzden tasarıma **önce küçük ekrandan** başlıyorum, sonra bilgisayara genişletiyorum. Yazılar zoom yapmadan okunur, butonlar parmakla rahat basılacak büyüklükte olur.",
+          "en": "Most of your visitors arrive on a phone, so I start the design **on the small screen** and widen it out to desktop afterwards. Text is readable without zooming and buttons are large enough to tap comfortably."
+        }
+      },
+      {
+        "baslik": {
+          "tr": "Google'da çıkmak için ne yapılıyor?",
+          "en": "What is done to rank on Google?"
+        },
+        "metin": {
+          "tr": "Site kurulurken hangi şehirde, hangi işi yaptığınız Google'ın anlayacağı biçimde işleniyor. Sayfa hızı, başlıklar, açıklamalar ve adres bilgisi buna dahil. Ayrıca **ücretsiz olan Google İşletme Profilinizi** açmanız gerekir — haritada çıkan o kutu, arama sonuçlarının üstünde durur.",
+          "en": "While the site is built, your city and your line of work are written in a form Google understands: page speed, titles, descriptions and location data. You also need to open your **free Google Business Profile** — the map box it feeds sits above the organic results."
+        }
+      },
+      {
+        "baslik": {
+          "tr": "Neler dahil?",
+          "en": "What is included?"
+        },
+        "metin": {
+          "tr": "Telefona uygun tasarım, WhatsApp butonu, iletişim formu, Google'a kayıt, **ilk yıl alan adı ve barındırma ücreti**. Ayrıca kendi panelinizden yazıları ve fotoğrafları değiştirebilirsiniz.",
+          "en": "Mobile-first design, a WhatsApp button, a contact form, Google setup and **domain plus hosting for the first year**. You can also change texts and photos yourself from your admin panel."
+        }
+      }
+    ],
+    "sssIndeks": [
+      0,
+      1,
+      2,
+      3,
+      5
+    ]
+  },
+  "burdur-mobil-uygulama": {
+    "h1": {
+      "tr": "Burdur'da Mobil Uygulama Yaptırın",
+      "en": "Mobile App Development in Burdur"
+    },
+    "title": {
+      "tr": "Burdur Mobil Uygulama | iOS ve Android | Osman Öz",
+      "en": "Mobile App Development in Burdur | iOS & Android | Osman Öz"
+    },
+    "description": {
+      "tr": "Burdur'da işletmeniz için iOS ve Android mobil uygulama. İhtiyacınız var mı, önce onu konuşalım. Bilgisayar mühendisi Osman Öz.",
+      "en": "iOS and Android apps for businesses in Burdur. First we work out whether you actually need one. Computer engineer Osman Öz."
+    },
+    "giris": {
+      "tr": "Mobil uygulama her işletmeye gerekmez. Gerekip gerekmediğini konuşmadan iş almıyorum — çünkü indirilmeyen bir uygulama, harcanmış paradan başka bir şey değil. Aşağıda kimin için işe yaradığını açıkça yazdım.",
+      "en": "Not every business needs a mobile app. I will not take the job before we work out whether you need one — an app nobody downloads is simply money spent. Below is who it actually pays off for."
+    },
+    "bolumler": [
+      {
+        "baslik": {
+          "tr": "İşletmemin mobil uygulamaya ihtiyacı var mı?",
+          "en": "Does my business need a mobile app?"
+        },
+        "metin": {
+          "tr": "Cevap **çoğu küçük işletme için hayır.** Uygulama; sadakat ve puan sistemi olan, aynı müşterinin tekrar tekrar geldiği, kurye veya saha ekibi bulunan işletmelerde işe yarar. Mahalle kuaförü için ise kimse App Store'a girip uygulama indirmez.",
+          "en": "For **most small businesses the answer is no.** Apps pay off where there is a loyalty or points scheme, customers who return again and again, or a courier or field team. Nobody opens the App Store to download an app for a neighbourhood hairdresser."
+        }
+      },
+      {
+        "baslik": {
+          "tr": "Uygulama yerine ne yapılabilir?",
+          "en": "What can replace an app?"
+        },
+        "metin": {
+          "tr": "**Telefonun ana ekranına eklenen web uygulaması** çoğu durumda daha iyi sonuç verir. Mağaza ücreti yok, onay süreci yok, güncelleme anında geçer. Müşteri siteye girer, ana ekrana ekler, uygulama gibi kullanır.",
+          "en": "**A web app added to the phone's home screen** is often the better answer. No store fees, no review process, updates go live instantly. The customer opens the site, adds it to the home screen and uses it like an app."
+        }
+      },
+      {
+        "baslik": {
+          "tr": "Uygulama mağazalara nasıl yükleniyor?",
+          "en": "How does store submission work?"
+        },
+        "metin": {
+          "tr": "Uygulamayı Apple App Store ve Google Play'e ben yüklüyorum. Apple'ın yıllık geliştirici üyeliği ve Google'ın tek seferlik kayıt ücreti bu işin sabit kalemleri. Google tarafında yayına alma süreci test aşaması nedeniyle **iki ile dört hafta** sürebiliyor; baştan söylüyorum ki plan buna göre yapılsın.",
+          "en": "I handle publishing to the Apple App Store and Google Play. Apple's yearly developer membership and Google's one-off registration fee are fixed costs. On Google's side the review and testing stage can take **two to four weeks**; I say so up front so the plan accounts for it."
+        }
+      },
+      {
+        "baslik": {
+          "tr": "Uygulama sonradan güncellenmeli mi?",
+          "en": "Does an app need ongoing updates?"
+        },
+        "metin": {
+          "tr": "**Evet, ve bu isteğe bağlı değil.** iOS ve Android her yıl yeni kurallar getiriyor; güncellenmeyen uygulama bir süre sonra mağazadan kaldırılıyor. Bu yüzden mobil işlerde yıllık bakım anlaşması zorunlu tutuluyor.",
+          "en": "**Yes, and it is not optional.** iOS and Android introduce new requirements every year, and an app that is not updated eventually gets removed from the store. That is why a yearly maintenance agreement is mandatory for app projects."
+        }
+      }
+    ],
+    "sssIndeks": [
+      7,
+      5,
+      6
+    ]
+  },
+  "burdur-isletme-yazilimi": {
+    "h1": {
+      "tr": "Burdur'da İşletme Yazılımı ve Otomasyon Çözümleri",
+      "en": "Business Software and Automation in Burdur"
+    },
+    "title": {
+      "tr": "Burdur İşletme Yazılımı ve Randevu Sistemi | Osman Öz",
+      "en": "Business Software and Booking Systems in Burdur | Osman Öz"
+    },
+    "description": {
+      "tr": "Burdur'da randevu takibi, stok ve sipariş yönetimi, gelir gider raporlama ve QR menü. İşletmenize göre hazırlanan yazılım çözümleri.",
+      "en": "Booking, stock and order management, revenue reporting and QR menus — software built around how your business actually works."
+    },
+    "giris": {
+      "tr": "Defterle, WhatsApp mesajlarıyla ve akılda tutarak yürüyen işler bir yere kadar gider. Randevu takibi, stok kontrolü, sipariş yönetimi ve gelir gider raporlaması — hepsini işletmenizin çalışma şekline göre tek bir sisteme taşıyorum.",
+      "en": "Running a business on notebooks, WhatsApp messages and memory only goes so far. Bookings, stock control, orders and revenue reporting — I bring all of it into one system shaped around how you already work."
+    },
+    "bolumler": [
+      {
+        "baslik": {
+          "tr": "Hangi işleri otomatiğe bağlayabilirim?",
+          "en": "What can be automated?"
+        },
+        "metin": {
+          "tr": "Elle takip ettiğiniz ne varsa: randevular, stok, siparişler, personel çizelgesi, gelir gider kaydı. **Tekrar eden her iş** yazılıma devredilebilir. Hangisinin size gerçekten zaman kazandıracağını önce birlikte konuşuyoruz.",
+          "en": "Anything you track by hand: bookings, stock, orders, staff rotas, income and expenses. **Any repeating task** can be handed over to software. We first work out which of them would actually save you time."
+        }
+      },
+      {
+        "baslik": {
+          "tr": "Randevu ve rezervasyon takibi nasıl çalışıyor?",
+          "en": "How does booking management work?"
+        },
+        "metin": {
+          "tr": "Müşteri uygun saatleri görür, kendi seçer, **telefonunuz boşuna çalmaz**. Randevu yaklaşınca hatırlatma gider, gelmeyen müşteri sayısı düşer. Siz de günün programını tek ekrandan görürsünüz.",
+          "en": "Customers see the free slots and book themselves, so **your phone stops ringing for nothing**. Reminders go out before the appointment, which cuts no-shows, and you see the whole day on one screen."
+        }
+      },
+      {
+        "baslik": {
+          "tr": "Stok ve sipariş yönetimi",
+          "en": "Stock and order management"
+        },
+        "metin": {
+          "tr": "Hangi ürün ne kadar kaldı, ne zaman bitiyor, hangisi çok satıyor. **Deftere yazılan bilgiyi ekrana taşıyoruz.** Kritik seviyeye düşen ürün için uyarı verir, sipariş vermeyi unutmazsınız.",
+          "en": "How much of each product is left, when it runs out, what sells best. **The notebook moves onto the screen.** Items dropping to a critical level raise a warning, so you never forget to reorder."
+        }
+      },
+      {
+        "baslik": {
+          "tr": "Gelir gider takibi ve raporlama",
+          "en": "Revenue tracking and reporting"
+        },
+        "metin": {
+          "tr": "Ay sonunda ne kazandınız, para nereye gitti, hangi hizmet size daha çok getiriyor. Kayıtlar tek yerde toplanır; **rakamı tahmin etmek yerine görürsünüz.** İstediğiniz dönem için rapor alırsınız.",
+          "en": "What you earned at the end of the month, where the money went, which service brings in the most. Records sit in one place, so **you see the numbers instead of guessing them**, and can pull a report for any period."
+        }
+      },
+      {
+        "baslik": {
+          "tr": "Kayıtlarım güvende olur mu?",
+          "en": "Will my records be safe?"
+        },
+        "metin": {
+          "tr": "Müşteri ve satış kayıtlarınız düzenli olarak yedeklenir; bilgisayarınız bozulsa da veri kaybolmaz. Çalışanlarınız yalnızca kendi işine ait ekranı görür, **yetki kimde ne kadar, siz belirlersiniz.**",
+          "en": "Customer and sales records are backed up regularly, so nothing is lost if a computer fails. Staff only see the screens their job requires — **you decide who has access to what.**"
+        }
+      },
+      {
+        "baslik": {
+          "tr": "QR menü de yapıyor musunuz?",
+          "en": "Do you build QR menus?"
+        },
+        "metin": {
+          "tr": "Evet. Masadaki kareyi okutan müşteri menünüzü telefonunda görür. **Fiyat değiştiğinde matbaaya gitmezsiniz**, panelden yazarsınız, o an değişir. Tükenen ürünü tek tuşla gizlersiniz.",
+          "en": "Yes. Customers scan the code on the table and see your menu on their phone. **A price change no longer means a trip to the printer** — you type it in the panel and it updates instantly. Sold-out items are hidden with one tap."
+        }
+      },
+      {
+        "baslik": {
+          "tr": "Hazır programlardan farkı ne?",
+          "en": "How is this different from off-the-shelf software?"
+        },
+        "metin": {
+          "tr": "Hazır programlar herkese aynı şekilde gelir; kullanmadığınız yüzlerce özelliğin arasında ihtiyacınız olanı ararsınız. Ben işletmenizi dinleyip **yalnızca kullanacağınız kısmı yapıyorum**. Öğrenmesi kolay olur, çalışanınız da hızlı alışır.",
+          "en": "Off-the-shelf tools arrive the same for everyone, and you hunt for what you need among hundreds of features you never use. I listen to how your business runs and **build only the part you will actually use**, which makes it quick for staff to learn."
+        }
+      }
+    ],
+    "sssIndeks": [
+      1,
+      5,
+      6
+    ]
+  }
+}

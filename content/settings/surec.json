@@ -1,0 +1,46 @@
+[
+  {
+    "adim": "1",
+    "baslik": {
+      "tr": "Görüşme",
+      "en": "Talk"
+    },
+    "aciklama": {
+      "tr": "İşletmenizi ve ihtiyacınızı konuşuruz. Ne gerektiğini, ne gerekmediğini açıkça söylerim.",
+      "en": "We talk about your business and what you actually need — including what you don't."
+    }
+  },
+  {
+    "adim": "2",
+    "baslik": {
+      "tr": "Tasarım",
+      "en": "Design"
+    },
+    "aciklama": {
+      "tr": "İlk taslağı hazırlarım. Beğenmediğiniz yeri söylersiniz, birlikte oturtana kadar değiştiririz.",
+      "en": "I prepare the first draft. You tell me what to change, and we refine it together until it fits."
+    }
+  },
+  {
+    "adim": "3",
+    "baslik": {
+      "tr": "Geliştirme",
+      "en": "Build"
+    },
+    "aciklama": {
+      "tr": "Siteyi kurar, Google'a tanıtır, telefonda hızlı açılacak hale getiririm.",
+      "en": "I build the site, introduce it to Google and make sure it loads fast on phones."
+    }
+  },
+  {
+    "adim": "4",
+    "baslik": {
+      "tr": "Teslim ve eğitim",
+      "en": "Launch and handover"
+    },
+    "aciklama": {
+      "tr": "Yayına alırım, paneli nasıl kullanacağınızı gösteririm. Sonrasında da ulaşabilirsiniz.",
+      "en": "I put it live and show you how to use the admin panel. You can reach me afterwards too."
+    }
+  }
+]
