@@ -70,4 +70,8 @@ content/settings/       SSS, paketler, süreç, hizmet sayfası metinleri (tr + 
 
 ## Lisans
 
-Tüm hakları saklıdır. Kod ve içerik izinsiz kullanılamaz.
+**Açık kaynak değildir.** Depo, çalışmanın incelenebilmesi için herkese açık
+tutulur; kod, metin, tasarım ve görsellerin kopyalanması, dağıtılması veya
+başka bir projede kullanılması yazılı izne bağlıdır.
+
+Ayrıntı için [LICENSE](LICENSE) dosyasına bakın.

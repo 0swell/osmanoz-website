@@ -1,0 +1,63 @@
+Telif Hakkı (c) 2026 Osman Öz. Tüm hakları saklıdır.
+Copyright (c) 2026 Osman Öz. All rights reserved.
+
+--------------------------------------------------------------------------
+TÜRKÇE
+--------------------------------------------------------------------------
+
+Bu depo, osmanoz.website adresinde yayınlanan ticari bir web sitesinin
+kaynak kodunu ve içeriğini barındırır. Depo, çalışmanın incelenebilmesi ve
+şeffaflık için herkese açık tutulmuştur; açık kaynak DEĞİLDİR.
+
+İZİN VERİLENLER
+  - Kodu okumak, incelemek ve öğrenme amacıyla üzerinde çalışmak
+  - Hata veya güvenlik açığı bildirmek
+
+İZİN VERİLMEYENLER (yazılı izin olmadan)
+  - Kodun tamamını veya bir kısmını kopyalamak, dağıtmak, yeniden yayımlamak
+  - Türev çalışma üretmek veya başka bir projede kullanmak
+  - Ticari amaçla kullanmak
+  - Metinleri, tasarımı, görselleri ve marka unsurlarını (isim, logo,
+    fotoğraf) kullanmak
+
+İçerik metinleri, tasarım ve görseller ayrıca telif korumasındadır ve kod
+izinlerinden bağımsız olarak hiçbir şekilde kullanılamaz.
+
+Üçüncü taraf bağımlılıklar (package.json içinde listelenen paketler) kendi
+lisanslarına tabidir; bu lisans onları kapsamaz.
+
+İzin talebi: z0nams0@gmail.com
+
+--------------------------------------------------------------------------
+ENGLISH
+--------------------------------------------------------------------------
+
+This repository contains the source code and content of a commercial website
+published at osmanoz.website. It is public so the work can be inspected; it
+is NOT open source.
+
+PERMITTED
+  - Reading, inspecting and studying the code for learning purposes
+  - Reporting bugs or security issues
+
+NOT PERMITTED (without written permission)
+  - Copying, distributing or republishing the code, in whole or in part
+  - Creating derivative works or using it in another project
+  - Any commercial use
+  - Using the copy, design, images or brand elements (name, logo, photo)
+
+The written content, design and images are separately protected by copyright
+and may not be used under any circumstances, independently of the code terms.
+
+Third-party dependencies (packages listed in package.json) remain subject to
+their own licenses; this license does not cover them.
+
+Permission requests: z0nams0@gmail.com
+
+--------------------------------------------------------------------------
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY ARISING FROM THE
+USE OF THIS SOFTWARE.
