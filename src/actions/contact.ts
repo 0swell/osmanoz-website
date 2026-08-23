@@ -1,5 +1,6 @@
 "use server";
 
+import { headers } from "next/headers";
 import { Resend } from "resend";
 
 import { siteConfig } from "@/config/site";
@@ -27,7 +28,8 @@ const M = {
     cokHizli: "Mesajınız az önce gönderildi. Birazdan dönüş yapacağım.",
     kapali:
       "Form şu an gönderilemiyor. WhatsApp'tan yazarsanız hemen dönerim.",
-    basarili: "Mesajınız ulaştı. En kısa sürede dönüş yapacağım.",
+    basarili:
+      "Mesajınız ulaştı. En kısa sürede dönüş yapacağım. (Yeni mesaj için 1 dakika beklemeniz gerekiyor.)",
     hata: "Mesaj gönderilemedi. WhatsApp'tan yazarsanız hemen dönüş yaparım.",
     konu: "Yeni teklif talebi",
     belirtilmedi: "(belirtilmedi)",
@@ -41,16 +43,34 @@ const M = {
     cokHizli: "Your message was just sent. I will get back to you shortly.",
     kapali:
       "The form cannot be sent right now. Message me on WhatsApp and I will reply immediately.",
-    basarili: "Your message arrived. I will get back to you as soon as I can.",
+    basarili:
+      "Your message arrived. I will get back to you as soon as I can. (Please wait one minute before sending another.)",
     hata: "The message could not be sent. Message me on WhatsApp and I will reply immediately.",
     konu: "New enquiry",
     belirtilmedi: "(not provided)",
   },
 } as const;
 
-/** Basit hız sınırı: aynı süreçte IP başına kısa aralıklı gönderimi engeller. */
+/**
+ * Basit hız sınırı — 1 dakikada bir gönderim.
+ *
+ * Anahtar hem IP hem telefon: numarayı değiştiren kişi IP'ye, VPN değiştiren
+ * kişi numaraya takılır. İkisi de değişirse geçer — kararlı bir saldırgan
+ * için Vercel Firewall veya görünmez captcha gerekir, bu katman sıradan
+ * spam'i durdurmak içindir.
+ *
+ * SINIR: Map süreç belleğinde. Vercel sunucusuz çalıştığı için soğuk
+ * başlangıçta sıfırlanabiliyor; kalıcı sayaç Vercel KV / Upstash ister.
+ */
 const sonGonderim = new Map<string, number>();
 const BEKLEME_MS = 60_000;
+
+/** Map sınırsız büyümesin: süresi geçmiş kayıtlar atılır. */
+function temizle(simdi: number) {
+  for (const [k, t] of sonGonderim) {
+    if (simdi - t > BEKLEME_MS) sonGonderim.delete(k);
+  }
+}
 
 export async function sendContact(
   _prev: ContactState,
@@ -87,8 +107,15 @@ export async function sendContact(
     };
   }
 
-  const anahtar = telefon.replace(/\D/g, "");
+  // Vercel gerçek istemci IP'sini bu başlıklarda gönderiyor.
+  const basliklar = await headers();
+  const ip =
+    basliklar.get("x-forwarded-for")?.split(",")[0].trim() ||
+    basliklar.get("x-real-ip") ||
+    "bilinmeyen";
+  const anahtar = `${ip}|${telefon.replace(/\D/g, "")}`;
   const simdi = Date.now();
+  temizle(simdi);
   const oncekiZaman = sonGonderim.get(anahtar);
   if (oncekiZaman && simdi - oncekiZaman < BEKLEME_MS) {
     return {
