@@ -43,6 +43,13 @@ export function KokGovde({
       suppressHydrationWarning
       className={`${bricolage.variable} ${lexend.variable} h-full`}
     >
+      <head>
+        {/* GA sunucusuyla bağlantı önceden kurulsun; betik geç yüklendiği
+            için el sıkışma maliyeti kritik yoldan çıkıyor (PageSpeed
+            "önceden bağlanma adayları" bulgusu). */}
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+      </head>
       <body className="flex min-h-full flex-col">
         {/* Kimlik graph'ı — her sayfada basılır (CLAUDE.md §4.3) */}
         <JsonLd data={rootGraph()} />
