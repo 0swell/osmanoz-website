@@ -14,6 +14,9 @@ import { s } from "@/i18n/sozluk";
  * Bayrak KULLANILMAZ: bayrak dili değil ülkeyi temsil eder; Almanya'daki
  * Türkçe konuşan ziyaretçi için yanıltıcı olur.
  *
+ * Renk `ink-soft`: navbar sayfa başındayken saydam, altındaki turuncu
+ * ışımanın üzerinde `ink-muted` yeterli kontrast vermiyordu.
+ *
  * Seçim `localStorage`'a yazılır. Otomatik yönlendirme YAPILMAZ — arama
  * motoru botunu yanlış dile atmak indekslemeyi bozar; kayıt yalnızca ileride
  * bir tercih hatırlatması gerekirse diye tutuluyor.
@@ -41,7 +44,7 @@ export function DilDegistirici({
       href={hedefYol}
       hrefLang={hedefDil}
       aria-label={s(dil).genel.dilDegistir}
-      className="press flex min-h-11 items-center gap-1 rounded-(--radius) px-2 text-[0.9rem] font-medium text-ink-muted hover:bg-surface-2"
+      className="press flex min-h-11 items-center gap-1 rounded-(--radius) px-2 text-[0.9rem] font-medium text-ink-soft hover:bg-surface-2"
     >
       <span className={dil === "tr" ? "text-ink" : undefined}>TR</span>
       <span aria-hidden className="text-border-strong">

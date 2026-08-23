@@ -70,7 +70,10 @@ export function Hero({ dil }: { dil: Dil }) {
               <p className="mt-6 font-display text-xl font-semibold text-ink">
                 {personName}
               </p>
-              <p className="text-[0.95rem] text-ink-muted">{s(dil).nav.unvan}</p>
+              {/* ink-soft: cam kartın altındaki turuncu ışıma yüzünden gerçek
+                  arka plan açılıyor, ink-muted orada 4.5:1'in altına
+                  düşüyordu (PageSpeed kontrast bulgusu). */}
+              <p className="text-[0.95rem] text-ink-soft">{s(dil).nav.unvan}</p>
 
               <div className="mt-5 flex items-center gap-1 border-t border-border pt-3.5">
                 <a
