@@ -114,7 +114,10 @@ export async function sendContact(
   try {
     const resend = new Resend(apiKey);
     await resend.emails.send({
-      from: "Site Formu <onboarding@resend.dev>",
+      // Doğrulanmış alan adından gönderiliyor (Resend > Domains).
+      // Ortak resend.dev adresi spam'e düşüyordu ve yalnız hesap sahibinin
+      // e-postasına gönderebiliyordu.
+      from: "osmanoz.website <iletisim@osmanoz.website>",
       to: [alici],
       replyTo: eposta || undefined,
       subject: `${m.konu} — ${ad}`,
