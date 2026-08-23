@@ -10,6 +10,7 @@ import { yol } from "@/i18n/diller";
 import { sayfa } from "@/i18n/sayfalar";
 import { s } from "@/i18n/sozluk";
 import { breadcrumbNode, pageGraph, webPageNode } from "@/lib/schema";
+import { vurgula } from "@/utils/vurgu";
 
 /**
  * KVKK aydınlatma metni — iletişim formu kişisel veri (ad, telefon, e-posta)
@@ -87,7 +88,7 @@ export function GizlilikGovde({ dil }: { dil: Dil }) {
               {t.bolumler.map((b) => (
                 <article key={b.baslik}>
                   <h2 className="text-xl">{b.baslik}</h2>
-                  <p className="mt-2.5 text-ink-soft">{b.icerik}</p>
+                  <p className="mt-2.5 text-ink-soft">{vurgula(b.icerik)}</p>
                 </article>
               ))}
             </div>

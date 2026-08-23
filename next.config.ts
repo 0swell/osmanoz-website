@@ -16,12 +16,14 @@ const csp = [
   "default-src 'self'",
   // next/script ve next-themes satır içi betik üretiyor; hash'lemek her
   // derlemede değişeceği için 'unsafe-inline' bilinçli kabul edildi.
-  "script-src 'self' 'unsafe-inline'",
+  // googletagmanager: GA4 betiği (bkz. components/atoms/Analytics.tsx)
+  "script-src 'self' 'unsafe-inline' https://www.googletagmanager.com",
   "style-src 'self' 'unsafe-inline'",
-  "img-src 'self' data: blob:",
+  // GA4 bazı ölçümleri 1x1 piksel görseliyle gönderiyor.
+  "img-src 'self' data: blob: https://*.google-analytics.com https://*.googletagmanager.com",
   "font-src 'self' data:",
-  // Form Server Action ile kendi sunucusuna gider; dış uç yok.
-  "connect-src 'self'",
+  // Form Server Action kendi sunucusuna gider; dış uç yalnız GA4 ölçümü.
+  "connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com",
   "form-action 'self'",
   "frame-ancestors 'none'",
   "base-uri 'self'",

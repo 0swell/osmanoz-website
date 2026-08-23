@@ -84,6 +84,12 @@ export const siteConfig = {
     ongoing: "Yazılım Mühendisliği Yüksek Lisans (devam ediyor)",
   },
 
+  /**
+   * Google Analytics 4 ölçüm kimliği. Gizli veri değil, HTML'de görünür.
+   * Boş bırakılırsa ölçüm hiç yüklenmez.
+   */
+  gaMeasurementId: "G-S2ZF8C61RQ",
+
   /** GBP yayına girince buraya işletme profilinin paylaşım linki yazılacak. */
   googleBusinessProfile: "", // TODO
 

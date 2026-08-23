@@ -2,6 +2,7 @@ import { Bricolage_Grotesque, Lexend } from "next/font/google";
 import { ThemeProvider } from "next-themes";
 import { Toaster } from "sonner";
 
+import { Analytics } from "@/components/atoms/Analytics";
 import { JsonLd } from "@/components/atoms/JsonLd";
 import type { Dil } from "@/i18n/diller";
 import { htmlLang } from "@/i18n/diller";
@@ -67,6 +68,8 @@ export function KokGovde({
             toastOptions={{ className: "font-sans" }}
           />
         </ThemeProvider>
+
+        <Analytics />
       </body>
     </html>
   );

@@ -256,7 +256,7 @@ const tr = {
       {
         baslik: "Bilgilerim kimseyle paylaşılıyor mu?",
         icerik:
-          "Hayır, satılmaz ve üçüncü kişilerle paylaşılmaz. Form mesajının bana ulaşması için e-posta gönderim servisi Resend kullanılır; mesaj bu servis üzerinden iletilir. Bunun dışında bilgileriniz kimseye aktarılmaz.",
+          "Hayır, satılmaz ve üçüncü kişilerle paylaşılmaz. İki servis kullanılıyor: form mesajının bana ulaşması için **Resend**, ziyaretçi sayısını görmek için **Google Analytics**. Analytics'e formda yazdıklarınız gitmez — yalnızca hangi sayfanın kaç kez açıldığı gibi isimsiz veriler işlenir.",
       },
       {
         baslik: "Ne kadar süre saklanıyor?",
@@ -266,7 +266,7 @@ const tr = {
       {
         baslik: "Sitede çerez kullanılıyor mu?",
         icerik:
-          "Takip ve reklam çerezi kullanılmıyor. Yalnızca seçtiğiniz tema (açık/koyu) tarayıcınızda saklanır; bu bilgi bana gönderilmez, cihazınızda kalır.",
+          "İki şey için: seçtiğiniz tema (açık/koyu) tarayıcınızda saklanır, bu bilgi bana gönderilmez. Bir de **Google Analytics** kullanılıyor; kaç kişinin hangi sayfayı ziyaret ettiğini görmek için. Reklam çerezi yoktur, size reklam gösterilmez ve kim olduğunuzu belirleyen bir bilgi toplanmaz.",
       },
       {
         baslik: "Haklarım neler?",
@@ -533,7 +533,7 @@ const en: SayfaSozlugu = {
       {
         baslik: "Is my information shared with anyone?",
         icerik:
-          "No. It is never sold or shared with third parties. The email delivery service Resend is used so that the form message reaches me; the message travels through that service. Beyond that, your details go nowhere.",
+          "No. It is never sold or shared with third parties. Two services are involved: **Resend**, so the form message reaches me, and **Google Analytics**, to see visitor numbers. Nothing you type into the form goes to Analytics — only anonymous data such as how often a page was opened.",
       },
       {
         baslik: "How long is it kept?",
@@ -543,7 +543,7 @@ const en: SayfaSozlugu = {
       {
         baslik: "Does the site use cookies?",
         icerik:
-          "No tracking or advertising cookies are used. Only your theme choice (light or dark) is stored in your browser; that stays on your device and is never sent to me.",
+          "For two things: your theme choice (light or dark) is stored in your browser and never sent to me, and **Google Analytics** is used to see how many people visit which page. There are no advertising cookies, you are not shown ads, and nothing that identifies you personally is collected.",
       },
       {
         baslik: "What are my rights?",
