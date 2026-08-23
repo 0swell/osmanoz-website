@@ -5,6 +5,7 @@ import { ButtonExternal } from "@/components/atoms/Button";
 import { Container } from "@/components/atoms/Container";
 import { JsonLd } from "@/components/atoms/JsonLd";
 import { Section } from "@/components/atoms/Section";
+import { Breadcrumb } from "@/components/molecules/Breadcrumb";
 import { ScrollToTop } from "@/components/molecules/ScrollToTop";
 import { WhatsAppFab } from "@/components/molecules/WhatsAppFab";
 import { ContactForm } from "@/components/organisms/ContactForm";
@@ -32,6 +33,7 @@ export function IletisimGovde({ dil }: { dil: Dil }) {
             path,
             name: t.schemaAd,
             description: t.schemaAciklama,
+            dil,
           }),
           breadcrumbNode(path, [
             { name: genel.hizmetSayfa.anaSayfa, path: yol("anasayfa", dil) },
@@ -45,7 +47,8 @@ export function IletisimGovde({ dil }: { dil: Dil }) {
       <main id="icerik">
         <section className="border-b border-border pt-10 pb-12 sm:pt-14">
           <Container>
-            <h1 className="text-[1.9rem] sm:text-[2.5rem]">{t.h1}</h1>
+            <Breadcrumb dil={dil} simdiki={genel.nav.iletisim} />
+            <h1 className="mt-4 text-[1.9rem] sm:text-[2.5rem]">{t.h1}</h1>
             <p className="mt-3 max-w-2xl text-base text-ink-soft sm:text-lg">
               {t.giris}
             </p>

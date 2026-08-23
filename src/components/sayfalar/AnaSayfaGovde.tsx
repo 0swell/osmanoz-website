@@ -22,6 +22,14 @@ import { duzMetin } from "@/utils/vurgu";
  * Rota dosyaları (`(tr)/page.tsx`, `(en)/en/page.tsx`) yalnızca metadata
  * tanımlar ve buraya dili geçer.
  */
+/**
+ * Ana sayfada SSS'nin tamamı değil ilk beşi gösterilir: sekiz maddenin tamamı
+ * hem burada hem /fiyatlar'da olunca iki URL büyük ölçüde aynı metni taşıyordu
+ * (denetim 1.D.7). Tam liste /fiyatlar'da; schema da burada aynı beş soruyu
+ * basar, görünmeyen soru schema'ya girmez.
+ */
+const ANA_SAYFA_SSS = 5;
+
 export function AnaSayfaGovde({ dil }: { dil: Dil }) {
   const t = sayfa(dil).anasayfa;
 
@@ -33,14 +41,17 @@ export function AnaSayfaGovde({ dil }: { dil: Dil }) {
             path: yol("anasayfa", dil),
             name: t.schemaAd,
             description: t.schemaAciklama,
+            dil,
           }),
           // Schema'daki sorular sayfada görünür halde — gizli schema yok.
           faqNode(
             yol("anasayfa", dil),
-            getSss(dil).map((q) => ({
+            getSss(dil)
+              .slice(0, ANA_SAYFA_SSS)
+              .map((q) => ({
               question: q.soru,
-              answer: duzMetin(q.cevap),
-            })),
+                answer: duzMetin(q.cevap),
+              })),
           ),
         ])}
       />
@@ -54,7 +65,14 @@ export function AnaSayfaGovde({ dil }: { dil: Dil }) {
         <ProcessSection dil={dil} />
         <PricingSection dil={dil} />
         <AreaSection dil={dil} />
-        <FaqSection dil={dil} />
+        <FaqSection
+          dil={dil}
+          limit={ANA_SAYFA_SSS}
+          tumSorularLinki={{
+            href: yol("fiyatlar", dil),
+            metin: t.tumSorular,
+          }}
+        />
       </main>
 
       <Footer dil={dil} />

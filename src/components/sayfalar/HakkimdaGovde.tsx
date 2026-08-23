@@ -1,4 +1,5 @@
 import { GraduationCap, MapPin } from "lucide-react";
+import Link from "next/link";
 import Image from "next/image";
 import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa6";
 
@@ -6,6 +7,7 @@ import { ButtonExternal, ButtonLink } from "@/components/atoms/Button";
 import { Container } from "@/components/atoms/Container";
 import { JsonLd } from "@/components/atoms/JsonLd";
 import { Section } from "@/components/atoms/Section";
+import { Breadcrumb } from "@/components/molecules/Breadcrumb";
 import { ScrollToTop } from "@/components/molecules/ScrollToTop";
 import { WhatsAppFab } from "@/components/molecules/WhatsAppFab";
 import { Footer } from "@/components/organisms/Footer";
@@ -13,7 +15,7 @@ import { Navbar } from "@/components/organisms/Navbar";
 import { whatsappMesaj, whatsappUrl } from "@/config/nav";
 import { getEducation, siteConfig } from "@/config/site";
 import type { Dil } from "@/i18n/diller";
-import { yol } from "@/i18n/diller";
+import { hizmetRotaAnahtari, yol } from "@/i18n/diller";
 import { sayfa } from "@/i18n/sayfalar";
 import { s } from "@/i18n/sozluk";
 import { breadcrumbNode, pageGraph, webPageNode } from "@/lib/schema";
@@ -23,8 +25,20 @@ import { breadcrumbNode, pageGraph, webPageNode } from "@/lib/schema";
  * Diğer sayfalarda teknik terim kullanılmaz; burada yetkinlik kanıtı olarak
  * yer alır — E-E-A-T'nin "uzmanlık" ayağını bu sayfa taşır.
  */
+
+/**
+ * Yetkinlik başlıkları ilgili hizmet sayfasına bağlanır (denetim 1.B.9).
+ * Dördüncüsü (SEO) kendi sayfası olmadığı için web sitesi sayfasına düşer.
+ */
+const yetkinlikSluglari = [
+  "burdur-web-sitesi",
+  "burdur-mobil-uygulama",
+  "burdur-isletme-yazilimi",
+  "burdur-web-sitesi",
+];
+
 export function HakkimdaGovde({ dil }: { dil: Dil }) {
-  const { personName, profileImage, profileImageAlt, social, personalSiteUrl } =
+  const { profileImage, profileImageAlt, social, personalSiteUrl } =
     siteConfig;
   const t = sayfa(dil).hakkimda;
   const genel = s(dil);
@@ -39,6 +53,7 @@ export function HakkimdaGovde({ dil }: { dil: Dil }) {
             path,
             name: t.schemaAd,
             description: t.schemaAciklama,
+            dil,
           }),
           breadcrumbNode(path, [
             { name: genel.hizmetSayfa.anaSayfa, path: yol("anasayfa", dil) },
@@ -52,7 +67,8 @@ export function HakkimdaGovde({ dil }: { dil: Dil }) {
       <main id="icerik">
         <section className="border-b border-border pt-10 pb-12 sm:pt-14">
           <Container>
-            <div className="flex flex-col gap-7 sm:flex-row sm:items-center">
+            <Breadcrumb dil={dil} simdiki={genel.nav.hakkimda} />
+            <div className="mt-5 flex flex-col gap-7 sm:flex-row sm:items-center">
               {/* Hero'daki kimlik kartıyla aynı eşmerkezli turuncu halka */}
               <div className="shrink-0 self-start rounded-full p-1 ring-2 ring-accent/45 sm:self-auto">
                 <Image
@@ -66,11 +82,11 @@ export function HakkimdaGovde({ dil }: { dil: Dil }) {
                 />
               </div>
               <div>
-                <h1 className="text-[1.9rem] sm:text-[2.5rem]">
-                  {t.h1Once} {personName}
-                </h1>
-                <p className="mt-1.5 text-lg text-ink-soft">
-                  {genel.nav.unvan}
+                {/* <h1> hedef kelimeyi taşır; sıcak selam hemen altında
+                    <p> olarak kalır (denetim 1.C.3). */}
+                <h1 className="text-[1.9rem] sm:text-[2.5rem]">{t.h1}</h1>
+                <p className="mt-2 text-lg text-ink-soft">
+                  {t.h1Alt} {genel.nav.unvan}.
                 </p>
 
                 <div className="mt-4 flex flex-wrap items-center gap-2">
@@ -140,13 +156,24 @@ export function HakkimdaGovde({ dil }: { dil: Dil }) {
                   {t.yetkinlikBaslik}
                 </h2>
                 <ul className="mt-3.5 space-y-3.5">
-                  {t.yetkinlikler.map((y) => (
+                  {t.yetkinlikler.map((y, i) => (
                     <li key={y.baslik}>
-                      <p className="text-sm font-medium text-ink">{y.baslik}</p>
+                      <Link
+                        href={yol(
+                          hizmetRotaAnahtari[yetkinlikSluglari[i]],
+                          dil,
+                        )}
+                        className="text-sm font-medium text-ink hover:text-accent"
+                      >
+                        {y.baslik}
+                      </Link>
                       <p className="mt-0.5 text-sm text-ink-muted">{y.detay}</p>
                     </li>
                   ))}
                 </ul>
+                <p className="mt-4 text-xs text-ink-muted">
+                  {t.yetkinlikDipnot}
+                </p>
               </div>
 
               <div className="card card-hover card-sheen p-5">

@@ -13,6 +13,7 @@
  */
 
 import { getServices, getSameAs, siteConfig, type ServiceItem } from "@/config/site";
+import { SON_GUNCELLEME } from "@/config/guncelleme";
 import { rotalar } from "@/i18n/diller";
 
 const BASE = siteConfig.url;
@@ -212,7 +213,9 @@ export function webPageNode(opts: {
   description: string;
   /** Sayfada FAQ/breadcrumb varsa bunların @id'leri buraya bağlanır. */
   partOfIds?: string[];
+  /** Verilmezse site geneli son güncelleme tarihi kullanılır. */
   dateModified?: string;
+  dil?: "tr" | "en";
 }): Json {
   return prune({
     "@type": "WebPage",
@@ -220,11 +223,12 @@ export function webPageNode(opts: {
     url: `${BASE}${opts.path}`,
     name: opts.name,
     description: opts.description,
-    inLanguage: "tr-TR",
+    inLanguage: opts.dil === "en" ? "en" : "tr-TR",
     isPartOf: ref(SCHEMA_ID.website),
     about: ref(SCHEMA_ID.business),
     primaryImageOfPage: `${BASE}${siteConfig.profileImage}`,
-    dateModified: opts.dateModified,
+    // Tazelik sinyali — üç yerde aynı tarih (bkz. config/guncelleme.ts)
+    dateModified: opts.dateModified ?? SON_GUNCELLEME,
     hasPart: opts.partOfIds?.map(ref),
   });
 }

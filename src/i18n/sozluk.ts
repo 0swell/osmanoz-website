@@ -106,6 +106,7 @@ const tr = {
     dipnot:
       "İlk yıl alan adı ve barındırma dahildir. İkinci yıldan itibaren güncelleme ve bakım ücreti istenir. Fiyat görüşmede net olarak söylenir.",
     tumPaketler: "Tüm paketleri gör",
+    dan: "fiyatından başlıyor",
     paraBirimi: "TL",
   },
 
@@ -136,6 +137,7 @@ const tr = {
     ozet: "ve çevre illerde web sitesi, mobil uygulama ve işletme yazılımı.",
     hizmetler: "Hizmetler",
     gizlilik: "Gizlilik ve KVKK",
+    sonGuncelleme: "Son güncelleme",
   },
 
 
@@ -163,6 +165,16 @@ const tr = {
       "Fiyat baştan bellidir, sonradan kalem eklenmez",
     ],
     iletisimBilgileri: "İletişim Bilgileri",
+  },
+
+  bulunamadi: {
+    metaTitle: "Sayfa bulunamadı | Osman Öz",
+    kod: "404",
+    baslik: "Aradığınız sayfa burada değil",
+    metin:
+      "Bağlantı eski olabilir ya da adres yanlış yazılmış olabilir. Aşağıdan devam edebilir, ya da doğrudan bana yazabilirsiniz.",
+    anaSayfa: "Ana sayfaya dön",
+    nereyeGidilir: "Sık aranan sayfalar",
   },
 
   form: {
@@ -272,6 +284,7 @@ const en: Sozluk = {
     dipnot:
       "Domain and hosting are included for the first year. From the second year on there is an update and maintenance fee; the exact amount is stated during our call.",
     tumPaketler: "See all packages",
+    dan: "starting price",
     paraBirimi: "TL",
   },
 
@@ -302,6 +315,7 @@ const en: Sozluk = {
     ozet: "and nearby provinces: websites, mobile apps and business software.",
     hizmetler: "Services",
     gizlilik: "Privacy & GDPR",
+    sonGuncelleme: "Last updated",
   },
 
 
@@ -329,6 +343,16 @@ const en: Sozluk = {
       "The price is clear from the start; nothing is added later",
     ],
     iletisimBilgileri: "Contact Details",
+  },
+
+  bulunamadi: {
+    metaTitle: "Page not found | Osman Öz",
+    kod: "404",
+    baslik: "That page is not here",
+    metin:
+      "The link may be out of date, or the address may have a typo. You can carry on from the links below, or write to me directly.",
+    anaSayfa: "Back to home",
+    nereyeGidilir: "Popular pages",
   },
 
   form: {

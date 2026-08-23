@@ -1,3 +1,6 @@
+import { ArrowRight } from "lucide-react";
+import Link from "next/link";
+
 import { Section } from "@/components/atoms/Section";
 import type { Dil } from "@/i18n/diller";
 import { s } from "@/i18n/sozluk";
@@ -12,9 +15,20 @@ import { vurgula } from "@/utils/vurgu";
  * kodu gerekmez. FAQPage schema'sı bu listeden üretilir — schema'daki her
  * soru sayfada görünür olmak zorunda.
  */
-export function FaqSection({ dil }: { dil: Dil }) {
+export function FaqSection({
+  dil,
+  limit,
+  tumSorularLinki,
+}: {
+  dil: Dil;
+  /** Verilirse yalnız ilk N soru gösterilir (ana sayfa tekrarını önler). */
+  limit?: number;
+  /** Kısaltılmış listenin altına konacak "tümünü gör" bağlantısı. */
+  tumSorularLinki?: { href: string; metin: string };
+}) {
   const t = s(dil).sss;
-  const sorular = getSss(dil);
+  const hepsi = getSss(dil);
+  const sorular = limit ? hepsi.slice(0, limit) : hepsi;
 
   return (
     <Section id="sss" eyebrow={t.eyebrow} title={t.baslik} lead={t.giris}>
@@ -42,6 +56,18 @@ export function FaqSection({ dil }: { dil: Dil }) {
           </details>
         ))}
       </div>
+
+      {tumSorularLinki && (
+        <p className="mt-6 text-center text-sm">
+          <Link
+            href={tumSorularLinki.href}
+            className="inline-flex min-h-11 items-center gap-1.5 font-medium text-accent underline decoration-accent/40 underline-offset-4 hover:decoration-accent"
+          >
+            {tumSorularLinki.metin}
+            <ArrowRight className="size-4" aria-hidden />
+          </Link>
+        </p>
+      )}
     </Section>
   );
 }

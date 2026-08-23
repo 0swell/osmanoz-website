@@ -6,6 +6,7 @@ import { ButtonExternal, ButtonLink } from "@/components/atoms/Button";
 import { Container } from "@/components/atoms/Container";
 import { JsonLd } from "@/components/atoms/JsonLd";
 import { Section } from "@/components/atoms/Section";
+import { Breadcrumb } from "@/components/molecules/Breadcrumb";
 import { ScrollToTop } from "@/components/molecules/ScrollToTop";
 import { WhatsAppFab } from "@/components/molecules/WhatsAppFab";
 import { Footer } from "@/components/organisms/Footer";
@@ -17,7 +18,7 @@ import { getServices } from "@/config/site";
 import type { Dil } from "@/i18n/diller";
 import { hizmetRotaAnahtari, yol } from "@/i18n/diller";
 import { s } from "@/i18n/sozluk";
-import { getHizmetIcerigi } from "@/lib/content";
+import { formatTL, getHizmetIcerigi } from "@/lib/content";
 import { duzMetin, vurgula } from "@/utils/vurgu";
 import {
   breadcrumbNode,
@@ -57,6 +58,7 @@ export function ServicePage({ slug, dil }: { slug: string; dil: Dil }) {
             path,
             name: icerik.h1,
             description: icerik.description,
+            dil,
           }),
           breadcrumbNode(path, [
             { name: t.hizmetSayfa.anaSayfa, path: yol("anasayfa", dil) },
@@ -80,20 +82,7 @@ export function ServicePage({ slug, dil }: { slug: string; dil: Dil }) {
         {/* Başlık bloğu */}
         <section className="border-b border-border pt-10 pb-12 sm:pt-14 sm:pb-16">
           <Container>
-            <nav aria-label={t.hizmetSayfa.konum} className="text-sm text-ink-muted">
-              <ol className="flex items-center gap-1.5">
-                <li>
-                  <Link
-                    href={yol("anasayfa", dil)}
-                    className="transition-colors hover:text-accent"
-                  >
-                    {t.hizmetSayfa.anaSayfa}
-                  </Link>
-                </li>
-                <li aria-hidden>/</li>
-                <li className="text-ink-soft">{service.name}</li>
-              </ol>
-            </nav>
+            <Breadcrumb dil={dil} simdiki={service.name} />
 
             <div className="mt-4 flex flex-wrap items-center gap-3">
               <h1 className="max-w-3xl text-[1.9rem] sm:text-[2.5rem]">
@@ -121,6 +110,18 @@ export function ServicePage({ slug, dil }: { slug: string; dil: Dil }) {
                   {t.hizmetSayfa.yakindaMetin}
                 </p>
               </div>
+            )}
+
+            {/* Schema'da Service.offers.price basılıyor; "yalnızca görünen
+                bilgi schema'ya yazılır" kuralı gereği rakam sayfada da
+                görünür olmak zorunda (denetim 3.B.4a). */}
+            {service.startingPrice && (
+              <p className="mt-5 text-base text-ink-soft">
+                <strong className="font-semibold text-ink">
+                  {formatTL(service.startingPrice, dil)} {t.fiyat.paraBirimi}
+                </strong>{" "}
+                {t.fiyat.dan}
+              </p>
             )}
 
             <div className="mt-7 flex flex-col gap-3 sm:flex-row">

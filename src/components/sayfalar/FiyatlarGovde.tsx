@@ -1,11 +1,13 @@
 import { Container } from "@/components/atoms/Container";
 import { JsonLd } from "@/components/atoms/JsonLd";
 import { Section } from "@/components/atoms/Section";
+import { Breadcrumb } from "@/components/molecules/Breadcrumb";
 import { ScrollToTop } from "@/components/molecules/ScrollToTop";
 import { WhatsAppFab } from "@/components/molecules/WhatsAppFab";
 import { FaqSection } from "@/components/organisms/FaqSection";
 import { Footer } from "@/components/organisms/Footer";
 import { Navbar } from "@/components/organisms/Navbar";
+import { PaketKarsilastirma } from "@/components/organisms/PaketKarsilastirma";
 import { PricingSection } from "@/components/organisms/PricingSection";
 import { whatsappMesaj } from "@/config/nav";
 import type { Dil } from "@/i18n/diller";
@@ -29,6 +31,7 @@ export function FiyatlarGovde({ dil }: { dil: Dil }) {
             path,
             name: t.schemaAd,
             description: t.schemaAciklama,
+            dil,
           }),
           breadcrumbNode(path, [
             {
@@ -52,7 +55,8 @@ export function FiyatlarGovde({ dil }: { dil: Dil }) {
       <main id="icerik">
         <section className="border-b border-border pt-10 pb-12 sm:pt-14">
           <Container>
-            <h1 className="text-[1.9rem] sm:text-[2.5rem]">{t.h1}</h1>
+            <Breadcrumb dil={dil} simdiki={genel.nav.fiyatlar} />
+            <h1 className="mt-4 text-[1.9rem] sm:text-[2.5rem]">{t.h1}</h1>
             <p className="mt-3 max-w-2xl text-base text-ink-soft sm:text-lg">
               {t.giris}
             </p>
@@ -154,6 +158,8 @@ export function FiyatlarGovde({ dil }: { dil: Dil }) {
 
           <p className="mt-4 text-sm text-ink-muted">{t.dipnot}</p>
         </Section>
+
+        <PaketKarsilastirma dil={dil} />
 
         <FaqSection dil={dil} />
       </main>

@@ -3,6 +3,7 @@ import Link from "next/link";
 import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa6";
 
 import { Container } from "@/components/atoms/Container";
+import { SON_GUNCELLEME, guncellemeMetni } from "@/config/guncelleme";
 import { whatsappMesaj, whatsappUrl } from "@/config/nav";
 import { getServices, siteConfig } from "@/config/site";
 import type { Dil } from "@/i18n/diller";
@@ -101,7 +102,7 @@ export function Footer({ dil }: { dil: Dil }) {
                   >
                     {h.name}
                     {h.yakinda && (
-                      <span className="rounded-full border border-border-strong px-1.5 py-0.5 text-[0.65rem] text-ink-muted">
+                      <span className="rounded-full border border-border-strong px-1.5 py-0.5 text-xs text-ink-muted">
                         {t.genel.yakinda}
                       </span>
                     )}
@@ -120,7 +121,7 @@ export function Footer({ dil }: { dil: Dil }) {
           <div className="flex flex-wrap items-center gap-x-5 gap-y-2">
             <Link
               href={yol("gizlilik", dil)}
-              className="transition-colors hover:text-accent"
+              className="inline-flex min-h-11 items-center transition-colors hover:text-accent"
             >
               {t.footer.gizlilik}
             </Link>
@@ -128,11 +129,17 @@ export function Footer({ dil }: { dil: Dil }) {
               href={personalSiteUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="transition-colors hover:text-accent"
+              className="inline-flex min-h-11 items-center transition-colors hover:text-accent"
             >
               osmanoz.com
             </a>
             <span>{areaServed.join(" · ")}</span>
+            {/* Tazelik sinyali — schema dateModified ve sitemap lastmod ile
+                aynı tarihi gösterir (bkz. config/guncelleme.ts). */}
+            <span>
+              {t.footer.sonGuncelleme}:{" "}
+              <time dateTime={SON_GUNCELLEME}>{guncellemeMetni(dil)}</time>
+            </span>
           </div>
         </div>
       </Container>

@@ -40,6 +40,21 @@ const tr = {
       { kalem: "Bakım ve güncelleme", sonraki: "3.500 TL / yıl" },
     ],
     toplamSonraki: "5.000 TL / yıl",
+    karsilastirmaEyebrow: "Yan yana",
+    karsilastirmaBaslik: "Hangi paket size uygun?",
+    karsilastirmaGiris:
+      "Üç paketin farkı tek tabloda. Kararsız kalırsanız yazın, işletmenize göre birlikte bakalım.",
+    kolonPaket: "Paket",
+    kolonFiyat: "Başlangıç fiyatı",
+    kolonSure: "Yayına alma",
+    kolonKime: "Kime uygun",
+    kolonDetay: "Detay",
+    detayGor: "Sayfasına git",
+    satirlar: [
+      { sure: "1 hafta", kime: "Tanıtım, iletişim ve Google'da görünmek yeterliyse" },
+      { sure: "2-3 hafta", kime: "Randevu, stok veya QR menü takibi gerekiyorsa" },
+      { sure: "Görüşmede", kime: "Sadakat sistemi veya sürekli sipariş varsa" },
+    ],
     dipnot:
       "Bakım paketi isteğe bağlıdır; almasanız da siteniz çalışmaya devam eder. Mobil uygulamalarda ise güncelleme zorunludur — mağazalar güncellenmeyen uygulamayı bir süre sonra yayından kaldırıyor.",
   },
@@ -81,13 +96,16 @@ const tr = {
       "İşletmenizi anlatın, size özel bir taslak hazırlayayım. Beğenmezseniz bir yükümlülüğünüz olmaz.",
     ctaWaMesaj:
       "Merhaba, örnekleri gördüm. İşletmem için bir site istiyorum.",
+    ilgiliHizmet: "İlgili hizmet",
+    fiyatlariGor: "Fiyatları gör",
   },
 
   hakkimda: {
     metaTitle: "Hakkımda | Osman Öz, Bilgisayar Mühendisi",
     metaDesc:
       "Bilgisayar mühendisi Osman Öz. Burdur Mehmet Akif Ersoy Üniversitesi mezunu, yüksek lisans öğrencisi. Burdur, Isparta ve Antalya'da yazılım hizmeti.",
-    h1Once: "Merhaba, ben",
+    h1: "Burdur'da Web Sitesi ve Yazılım Yapan Bilgisayar Mühendisi",
+    h1Alt: "Merhaba, ben Osman Öz.",
     schemaAd: "Hakkımda",
     schemaAciklama:
       "Osman Öz — Bilgisayar mühendisi, Burdur'da web ve yazılım hizmeti veriyor.",
@@ -120,6 +138,7 @@ const tr = {
           "Teknik SEO, yapısal veri, sayfa hızı ve yerel arama görünürlüğü.",
       },
     ],
+    yetkinlikDipnot: "Başlıklara tıklayarak ilgili hizmet sayfasına gidebilirsiniz.",
     bolgeBaslik: "Hizmet bölgesi",
     bolgeMetin: "Gerektiğinde yerinde görüşmeye gelirim.",
     konusalimBaslik: "Konuşalım",
@@ -130,7 +149,7 @@ const tr = {
     metaTitle: "İletişim | Burdur Yazılım | Osman Öz",
     metaDesc:
       "Burdur, Isparta ve Antalya'da web sitesi ve yazılım hizmeti. WhatsApp'tan yazın veya formu doldurun, size dönüş yapayım.",
-    h1: "İletişim",
+    h1: "Burdur'da Yazılım İçin İletişim",
     giris:
       "En hızlı yol WhatsApp. Yazın, işletmenizi anlatın; ne gerektiğini konuşalım. Arayabilir veya mail de atabilirsiniz. Görüşme ücreti yoktur.",
     schemaAd: "İletişim",
@@ -203,6 +222,7 @@ const tr = {
     schemaAd: "Burdur Web Sitesi ve Yazılım",
     schemaAciklama:
       "Burdur'da web sitesi, mobil uygulama ve işletme yazılımı hizmetleri.",
+    tumSorular: "Tüm soruları fiyatlar sayfasında görün",
   },
 };
 
@@ -232,6 +252,21 @@ const en: SayfaSozlugu = {
       { kalem: "Maintenance and updates", sonraki: "3,500 TL / year" },
     ],
     toplamSonraki: "5,000 TL / year",
+    karsilastirmaEyebrow: "Side by side",
+    karsilastirmaBaslik: "Which package fits you?",
+    karsilastirmaGiris:
+      "The difference between the three packages in one table. If you are unsure, write to me and we will work it out together.",
+    kolonPaket: "Package",
+    kolonFiyat: "Starting price",
+    kolonSure: "Time to launch",
+    kolonKime: "Who it suits",
+    kolonDetay: "More",
+    detayGor: "Go to page",
+    satirlar: [
+      { sure: "1 week", kime: "If being found on Google and reachable is enough" },
+      { sure: "2-3 weeks", kime: "If you need bookings, stock or a QR menu" },
+      { sure: "On request", kime: "If there is a loyalty scheme or repeat ordering" },
+    ],
     dipnot:
       "The maintenance package is optional; your site keeps running without it. For mobile apps, however, updates are mandatory — stores eventually remove apps that are not maintained.",
   },
@@ -274,13 +309,16 @@ const en: SayfaSozlugu = {
       "Tell me about your business and I will prepare a draft for you. If you do not like it, you are under no obligation.",
     ctaWaMesaj:
       "Hello, I have seen the examples. I would like a site for my business.",
+    ilgiliHizmet: "Related service",
+    fiyatlariGor: "See pricing",
   },
 
   hakkimda: {
     metaTitle: "About | Osman Öz, Computer Engineer",
     metaDesc:
-      "Computer engineer Osman Öz. Graduate of Burdur Mehmet Akif Ersoy University, currently a master's student. Software services in Burdur, Isparta and Antalya.",
-    h1Once: "Hello, I am",
+      "Computer engineer Osman Öz — graduate of Burdur Mehmet Akif Ersoy University, now a master's student. Software services in Burdur, Isparta and Antalya.",
+    h1: "Computer Engineer Building Websites and Software in Burdur",
+    h1Alt: "Hello, I am Osman Öz.",
     schemaAd: "About",
     schemaAciklama:
       "Osman Öz — computer engineer providing web and software services in Burdur.",
@@ -313,6 +351,7 @@ const en: SayfaSozlugu = {
           "Technical SEO, structured data, page speed and local search visibility.",
       },
     ],
+    yetkinlikDipnot: "Tap a heading to open the related service page.",
     bolgeBaslik: "Service area",
     bolgeMetin: "I come in person when it helps.",
     konusalimBaslik: "Let's talk",
@@ -324,7 +363,7 @@ const en: SayfaSozlugu = {
     metaTitle: "Contact | Software in Burdur | Osman Öz",
     metaDesc:
       "Website and software services in Burdur, Isparta and Antalya. Message me on WhatsApp or fill in the form and I will get back to you.",
-    h1: "Contact",
+    h1: "Get in Touch for Software in Burdur",
     giris:
       "WhatsApp is the fastest route. Write to me, tell me about your business and we will work out what you need. You can also call or send an email. There is no charge for the call.",
     schemaAd: "Contact",
@@ -397,6 +436,7 @@ const en: SayfaSozlugu = {
     schemaAd: "Websites and Software in Burdur",
     schemaAciklama:
       "Website, mobile app and business software services in Burdur.",
+    tumSorular: "See all questions on the pricing page",
   },
 };
 

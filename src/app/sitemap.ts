@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 
+import { SON_GUNCELLEME } from "@/config/guncelleme";
 import { siteConfig } from "@/config/site";
 import { rotalar, type RotaAnahtari } from "@/i18n/diller";
 
@@ -16,7 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
    * değişen lastmod'u güvenilmez sayıp yok sayıyor. İçerik güncellendikçe
    * bu tarih elle ilerletilir.
    */
-  const guncelleme = new Date("2026-08-23");
+  const guncelleme = new Date(SON_GUNCELLEME);
 
   const oncelik: Record<RotaAnahtari, number> = {
     anasayfa: 1,

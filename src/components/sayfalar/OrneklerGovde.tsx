@@ -1,9 +1,12 @@
+import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 import { FaWhatsapp } from "react-icons/fa6";
 
 import { ButtonExternal } from "@/components/atoms/Button";
 import { Container } from "@/components/atoms/Container";
 import { JsonLd } from "@/components/atoms/JsonLd";
 import { Section } from "@/components/atoms/Section";
+import { Breadcrumb } from "@/components/molecules/Breadcrumb";
 import { MockupFrame } from "@/components/molecules/MockupFrame";
 import {
   EkranKafe,
@@ -19,16 +22,18 @@ import { Footer } from "@/components/organisms/Footer";
 import { Navbar } from "@/components/organisms/Navbar";
 import { whatsappUrl } from "@/config/nav";
 import type { Dil } from "@/i18n/diller";
-import { yol } from "@/i18n/diller";
+import { hizmetRotaAnahtari, yol } from "@/i18n/diller";
 import { sayfa } from "@/i18n/sayfalar";
 import { s } from "@/i18n/sozluk";
 import { breadcrumbNode, pageGraph, webPageNode } from "@/lib/schema";
 
 /** Ekranlar dilden bağımsız; sıra sözlükteki kart sırasıyla aynı. */
 const ekranlar = [
-  { Ekran: EkranKafe, Telefon: TelefonKafe },
-  { Ekran: EkranKuafor, Telefon: TelefonKuafor },
-  { Ekran: EkranMarket, Telefon: TelefonMarket },
+  // Slug'lar iç linkleme içindir: kafe → QR menü, kuaför → randevu,
+  // market → sipariş/stok; üçü de işletme yazılımı sayfasına düşer.
+  { Ekran: EkranKafe, Telefon: TelefonKafe, slug: "burdur-isletme-yazilimi" },
+  { Ekran: EkranKuafor, Telefon: TelefonKuafor, slug: "burdur-isletme-yazilimi" },
+  { Ekran: EkranMarket, Telefon: TelefonMarket, slug: "burdur-web-sitesi" },
 ];
 
 export function OrneklerGovde({ dil }: { dil: Dil }) {
@@ -44,6 +49,7 @@ export function OrneklerGovde({ dil }: { dil: Dil }) {
             path,
             name: t.schemaAd,
             description: t.schemaAciklama,
+            dil,
           }),
           breadcrumbNode(path, [
             { name: genel.hizmetSayfa.anaSayfa, path: yol("anasayfa", dil) },
@@ -57,7 +63,8 @@ export function OrneklerGovde({ dil }: { dil: Dil }) {
       <main id="icerik">
         <section className="border-b border-border pt-10 pb-12 sm:pt-14">
           <Container>
-            <h1 className="text-[1.9rem] sm:text-[2.5rem]">{t.h1}</h1>
+            <Breadcrumb dil={dil} simdiki={genel.nav.ornekler} />
+            <h1 className="mt-4 text-[1.9rem] sm:text-[2.5rem]">{t.h1}</h1>
             <p className="mt-3 max-w-2xl text-base text-ink-soft sm:text-lg">
               {t.giris}
             </p>
@@ -65,7 +72,7 @@ export function OrneklerGovde({ dil }: { dil: Dil }) {
         </section>
 
         {t.kartlar.map((o, i) => {
-          const { Ekran, Telefon } = ekranlar[i];
+          const { Ekran, Telefon, slug } = ekranlar[i];
           return (
             <Section
               key={o.sektor}
@@ -93,6 +100,23 @@ export function OrneklerGovde({ dil }: { dil: Dil }) {
                       </li>
                     ))}
                   </ul>
+
+                  {/* Gövde içi iç linkleme (denetim 1.B.9) */}
+                  <p className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm">
+                    <Link
+                      href={yol(hizmetRotaAnahtari[slug], dil)}
+                      className="inline-flex min-h-11 items-center gap-1.5 font-medium text-accent hover:underline"
+                    >
+                      {t.ilgiliHizmet}
+                      <ArrowRight className="size-3.5" aria-hidden />
+                    </Link>
+                    <Link
+                      href={yol("fiyatlar", dil)}
+                      className="inline-flex min-h-11 items-center text-ink-soft hover:text-accent"
+                    >
+                      {t.fiyatlariGor}
+                    </Link>
+                  </p>
                 </div>
 
                 <div className="pb-8 lg:pb-4">
