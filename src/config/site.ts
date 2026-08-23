@@ -95,6 +95,7 @@ export const siteConfig = {
 
   // ---- Görseller -----------------------------------------------------------
   profileImage: "/osman-oz.webp", // 512×512, kare kırpılmış (bkz. CLAUDE.md §5.6)
+  /** Türkçe alt metin; İngilizce karşılığı `getProfileAlt()` ile alınır. */
   profileImageAlt:
     "Osman Öz — Burdur'da web sitesi ve yazılım hizmeti veren bilgisayar mühendisi",
   ogImage: "/opengraph-image",
@@ -197,6 +198,17 @@ export function getServices(dil: "tr" | "en"): ServiceItem[] {
 
 /** Dilden bağımsız gereken yerler için (sitemap, rota eşleşmesi). */
 export const serviceSluglari = servicesHam.map((s) => s.slug);
+
+/**
+ * Profil fotoğrafının alt metni — ziyaretçinin dilinde.
+ * İngilizce sayfalarda Türkçe alt metin basılıyordu; ekran okuyucu ve
+ * görsel arama için ikisi de kendi dilinde olmalı.
+ */
+export function getProfileAlt(dil: "tr" | "en"): string {
+  return dil === "tr"
+    ? siteConfig.profileImageAlt
+    : "Osman Öz — computer engineer providing website and software services in Burdur";
+}
 
 /**
  * Eğitim bilgisi — /hakkimda ve schema `alumniOf` için. Üniversite adı resmî

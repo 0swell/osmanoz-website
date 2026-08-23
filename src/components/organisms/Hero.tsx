@@ -6,7 +6,7 @@ import { ButtonExternal, ButtonLink } from "@/components/atoms/Button";
 import { Container } from "@/components/atoms/Container";
 import { HeroIllustration } from "@/components/molecules/HeroIllustration";
 import { whatsappMesaj, whatsappUrl } from "@/config/nav";
-import { siteConfig } from "@/config/site";
+import { getProfileAlt, siteConfig } from "@/config/site";
 import type { Dil } from "@/i18n/diller";
 import { yol } from "@/i18n/diller";
 import { s } from "@/i18n/sozluk";
@@ -23,7 +23,7 @@ import { s } from "@/i18n/sozluk";
  * cam etkisinin görünmesi için arkada renk olması şart.
  */
 export function Hero({ dil }: { dil: Dil }) {
-  const { personName, profileImage, profileImageAlt, social } = siteConfig;
+  const { personName, profileImage, social } = siteConfig;
   const t = s(dil).hero;
   const genel = s(dil).genel;
 
@@ -58,7 +58,7 @@ export function Hero({ dil }: { dil: Dil }) {
               <div className="relative rounded-full p-1 ring-2 ring-accent/45">
                 <Image
                   src={profileImage}
-                  alt={profileImageAlt}
+                  alt={getProfileAlt(dil)}
                   width={176}
                   height={176}
                   priority

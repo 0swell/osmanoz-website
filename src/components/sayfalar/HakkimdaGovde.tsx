@@ -14,7 +14,7 @@ import { WhatsAppFab } from "@/components/molecules/WhatsAppFab";
 import { Footer } from "@/components/organisms/Footer";
 import { Navbar } from "@/components/organisms/Navbar";
 import { whatsappMesaj, whatsappUrl } from "@/config/nav";
-import { getEducation, siteConfig } from "@/config/site";
+import { getEducation, getProfileAlt, siteConfig } from "@/config/site";
 import type { Dil } from "@/i18n/diller";
 import { hizmetRotaAnahtari, yol } from "@/i18n/diller";
 import { sayfa } from "@/i18n/sayfalar";
@@ -39,7 +39,7 @@ const yetkinlikSluglari = [
 ];
 
 export function HakkimdaGovde({ dil }: { dil: Dil }) {
-  const { profileImage, profileImageAlt, social, personalSiteUrl } =
+  const { profileImage, social, personalSiteUrl } =
     siteConfig;
   const t = sayfa(dil).hakkimda;
   const genel = s(dil);
@@ -74,7 +74,7 @@ export function HakkimdaGovde({ dil }: { dil: Dil }) {
               <div className="shrink-0 self-start rounded-full p-1 ring-2 ring-accent/45 sm:self-auto">
                 <Image
                   src={profileImage}
-                  alt={profileImageAlt}
+                  alt={getProfileAlt(dil)}
                   width={160}
                   height={160}
                   priority
