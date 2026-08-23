@@ -42,6 +42,10 @@ const tr = {
 
   hero: {
     bolge: "Burdur · Isparta · Antalya",
+    // KARAR: <h1> "web sitesi" ile açılır (kullanıcı tercihi, 23.08.2026).
+    // Denetim 1.D.4 bunu /burdur-web-sitesi ile çakışma riski sayıyordu;
+    // riski dengeleyen düzeltmeler <title>, meta description ve SSS
+    // tarafında yapıldı — ikisi artık aynı başlığı ve açıklamayı taşımıyor.
     h1Once: "Burdur'da ",
     h1Vurgu1: "web sitesi",
     h1Orta: ", mobil uygulama ve ",
@@ -93,8 +97,9 @@ const tr = {
 
   surec: {
     eyebrow: "Nasıl ilerliyor",
-    baslik: "Dört adım, sürpriz yok",
-    giris: "Ne zaman ne olacağını baştan bilirsiniz.",
+    // Başlık gerçek bir soru: "nasıl" sorgularıyla eşleşsin (denetim 3.E.2).
+    baslik: "Web sitesi yaptırma süreci nasıl işliyor?",
+    giris: "Dört adım, sürpriz yok. Ne zaman ne olacağını baştan bilirsiniz.",
   },
 
   fiyat: {
@@ -221,9 +226,9 @@ const en: Sozluk = {
 
   hero: {
     bolge: "Burdur · Isparta · Antalya",
-    h1Once: "Websites, ",
-    h1Vurgu1: "mobile apps",
-    h1Orta: " and ",
+    h1Once: "",
+    h1Vurgu1: "Websites",
+    h1Orta: ", mobile apps and ",
     h1Vurgu2: "business software in Burdur",
     giris:
       "I build fast, modern websites and custom software for businesses in Burdur and the surrounding region. You work directly with the engineer who writes the code — no agency, no middlemen.",
@@ -271,8 +276,9 @@ const en: Sozluk = {
 
   surec: {
     eyebrow: "How it works",
-    baslik: "Four steps, no surprises",
-    giris: "You know what happens and when, from the start.",
+    baslik: "How does building a website work?",
+    giris:
+      "Four steps, no surprises. You know what happens and when, from the start.",
   },
 
   fiyat: {

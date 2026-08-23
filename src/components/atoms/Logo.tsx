@@ -7,16 +7,16 @@ import { cn } from "@/utils/cn";
  * diye ayrı bileşen yapıldı. Yerine `next/image` ile SVG konulacak,
  * çağıran taraflarda değişiklik gerekmez.
  *
- * Kömür zemin bilinçli: turuncu vurgu rengi CTA'lara ayrıldı, logo da
- * turuncu olsaydı sayfadaki eylem çağrılarıyla yarışırdı.
+ * Zemin turuncu (kullanıcı kararı 23.08.2026). Aynı turuncu favicon'da da
+ * kullanılır — sekmede ve navbar'da tek işaret görünsün.
  */
 export function Logo({ className }: { className?: string }) {
   return (
     <span
       aria-hidden
       className={cn(
-        "grid size-9 shrink-0 place-items-center rounded-[0.6rem] bg-brand",
-        "font-display text-[0.95rem] leading-none font-semibold text-on-brand",
+        "grid size-9 shrink-0 place-items-center rounded-[0.6rem] bg-accent",
+        "font-display text-[0.95rem] leading-none font-semibold text-on-accent",
         "shadow-soft transition-transform duration-300 group-hover:-rotate-3",
         className,
       )}

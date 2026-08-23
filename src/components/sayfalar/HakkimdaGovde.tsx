@@ -8,6 +8,7 @@ import { Container } from "@/components/atoms/Container";
 import { JsonLd } from "@/components/atoms/JsonLd";
 import { Section } from "@/components/atoms/Section";
 import { Breadcrumb } from "@/components/molecules/Breadcrumb";
+import { SoruBolumleri } from "@/components/molecules/SoruBolumleri";
 import { ScrollToTop } from "@/components/molecules/ScrollToTop";
 import { WhatsAppFab } from "@/components/molecules/WhatsAppFab";
 import { Footer } from "@/components/organisms/Footer";
@@ -211,6 +212,12 @@ export function HakkimdaGovde({ dil }: { dil: Dil }) {
             </aside>
           </div>
         </Section>
+
+        <SoruBolumleri
+          baslik={t.sorularBaslik}
+          sorular={t.sorular}
+          className="border-t border-border bg-surface-2/60"
+        />
       </main>
 
       <Footer dil={dil} />

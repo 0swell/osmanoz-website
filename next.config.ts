@@ -10,6 +10,8 @@ import type { NextConfig } from "next";
  * `frame-ancestors 'none'` clickjacking'i kapatır; X-Frame-Options eski
  * tarayıcılar için aynı işi yapar.
  */
+const gelistirme = process.env.NODE_ENV === "development";
+
 const csp = [
   "default-src 'self'",
   // next/script ve next-themes satır içi betik üretiyor; hash'lemek her
@@ -27,8 +29,16 @@ const csp = [
   "upgrade-insecure-requests",
 ].join("; ");
 
+/**
+ * CSP yalnızca ÜRETİMDE gönderilir.
+ *
+ * Geliştirme sunucusu eval() (React hata ayıklama) ve ws:// (HMR) kullanıyor;
+ * bunları CSP'ye eklemek üretim politikasını da gevşetme riski taşıyor.
+ * CSP zaten bir üretim önlemi — dev'de kapalı olması güvenliği etkilemiyor,
+ * `next build` çıktısında tam katı haliyle gidiyor.
+ */
 const guvenlikBasliklari = [
-  { key: "Content-Security-Policy", value: csp },
+  ...(gelistirme ? [] : [{ key: "Content-Security-Policy", value: csp }]),
   {
     // HTTPS zorunlu — Vercel zaten yönlendiriyor, bu tarayıcıyı da bağlar.
     key: "Strict-Transport-Security",

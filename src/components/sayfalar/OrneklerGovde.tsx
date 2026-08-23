@@ -1,4 +1,4 @@
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, ExternalLink } from "lucide-react";
 import Link from "next/link";
 import { FaWhatsapp } from "react-icons/fa6";
 
@@ -21,19 +21,28 @@ import { WhatsAppFab } from "@/components/molecules/WhatsAppFab";
 import { Footer } from "@/components/organisms/Footer";
 import { Navbar } from "@/components/organisms/Navbar";
 import { whatsappUrl } from "@/config/nav";
-import type { Dil } from "@/i18n/diller";
-import { hizmetRotaAnahtari, yol } from "@/i18n/diller";
+import { siteConfig } from "@/config/site";
+import type { Dil, RotaAnahtari } from "@/i18n/diller";
+import { yol } from "@/i18n/diller";
 import { sayfa } from "@/i18n/sayfalar";
 import { s } from "@/i18n/sozluk";
 import { breadcrumbNode, pageGraph, webPageNode } from "@/lib/schema";
+import { cn } from "@/utils/cn";
+import { vurgula } from "@/utils/vurgu";
 
-/** Ekranlar dilden bağımsız; sıra sözlükteki kart sırasıyla aynı. */
-const ekranlar = [
-  // Slug'lar iç linkleme içindir: kafe → QR menü, kuaför → randevu,
-  // market → sipariş/stok; üçü de işletme yazılımı sayfasına düşer.
-  { Ekran: EkranKafe, Telefon: TelefonKafe, slug: "burdur-isletme-yazilimi" },
-  { Ekran: EkranKuafor, Telefon: TelefonKuafor, slug: "burdur-isletme-yazilimi" },
-  { Ekran: EkranMarket, Telefon: TelefonMarket, slug: "burdur-web-sitesi" },
+/**
+ * Örnek bölümleri hizmet bazlı: her biri bir hizmeti anlatır ve o hizmetin
+ * sayfasına + fiyat sayfasına bağlanır. Ekranlar ve rota anahtarı dilden
+ * bağımsız olduğu için burada, metinler sözlükte durur.
+ */
+const bolumler: Array<{
+  Ekran: () => React.ReactElement;
+  Telefon: () => React.ReactElement;
+  rota: RotaAnahtari;
+}> = [
+  { Ekran: EkranKafe, Telefon: TelefonKafe, rota: "webSitesi" },
+  { Ekran: EkranKuafor, Telefon: TelefonKuafor, rota: "isletme" },
+  { Ekran: EkranMarket, Telefon: TelefonMarket, rota: "mobil" },
 ];
 
 export function OrneklerGovde({ dil }: { dil: Dil }) {
@@ -72,7 +81,7 @@ export function OrneklerGovde({ dil }: { dil: Dil }) {
         </section>
 
         {t.kartlar.map((o, i) => {
-          const { Ekran, Telefon, slug } = ekranlar[i];
+          const { Ekran, Telefon, rota } = bolumler[i];
           return (
             <Section
               key={o.sektor}
@@ -87,27 +96,43 @@ export function OrneklerGovde({ dil }: { dil: Dil }) {
                 }
               >
                 <div>
-                  <p className="eyebrow">{o.sektor}</p>
+                  <div className="flex flex-wrap items-center gap-3">
+                    <p className="eyebrow">{o.sektor}</p>
+                    {o.yakinda && (
+                      <span className="rounded-full border border-border-strong px-2.5 py-1 text-xs font-medium text-ink-muted">
+                        {genel.genel.yakinda}
+                      </span>
+                    )}
+                  </div>
                   <h2 className="mt-2.5 text-2xl">{o.baslik}</h2>
-                  <p className="mt-3 text-ink-soft">{o.aciklama}</p>
+                  <p className="mt-3 text-ink-soft">{vurgula(o.aciklama)}</p>
+
                   <ul className="mt-5 flex flex-wrap gap-2">
                     {o.ozellikler.map((oz) => (
                       <li
                         key={oz}
-                        className="rounded-full border border-border bg-surface px-3 py-1.5 text-sm text-ink-soft"
+                        className={cn(
+                          "rounded-full border px-3 py-1.5 text-sm",
+                          o.yakinda
+                            ? "border-border bg-surface-2 text-ink-muted"
+                            : "border-border bg-surface text-ink-soft",
+                        )}
                       >
                         {oz}
                       </li>
                     ))}
                   </ul>
 
-                  {/* Gövde içi iç linkleme (denetim 1.B.9) */}
-                  <p className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm">
+                  {/* İki geçiş: hizmetin kendi sayfası ve fiyat sayfası */}
+                  <p className="mt-6 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm">
                     <Link
-                      href={yol(hizmetRotaAnahtari[slug], dil)}
-                      className="inline-flex min-h-11 items-center gap-1.5 font-medium text-accent hover:underline"
+                      href={yol(rota, dil)}
+                      className={cn(
+                        "inline-flex min-h-11 items-center gap-1.5 font-medium hover:underline",
+                        o.yakinda ? "text-ink-muted" : "text-accent",
+                      )}
                     >
-                      {t.ilgiliHizmet}
+                      {t.hizmeteGit}
                       <ArrowRight className="size-3.5" aria-hidden />
                     </Link>
                     <Link
@@ -119,13 +144,45 @@ export function OrneklerGovde({ dil }: { dil: Dil }) {
                   </p>
                 </div>
 
-                <div className="pb-8 lg:pb-4">
+                {/* Sunulmayan hizmetin ekranı soluk gösterilir; metin
+                    kontrastı bozulmasın diye yalnız görsel katman soluyor. */}
+                <div
+                  className={cn(
+                    "pb-8 lg:pb-4",
+                    o.yakinda && "opacity-55 grayscale",
+                  )}
+                >
                   <MockupFrame ekran={<Ekran />} telefon={<Telefon />} />
                 </div>
               </div>
             </Section>
           );
         })}
+
+        {/* Canlı örnek — mockup değil, yayında olan gerçek site */}
+        <Section className="border-t border-border">
+          <div className="mx-auto max-w-3xl text-center">
+            <p className="eyebrow">{t.canliEyebrow}</p>
+            <h2 className="mt-2.5 text-2xl">
+              osmanoz<span className="text-accent">.com</span>
+              {t.canliBaslikSonek}
+            </h2>
+            <p className="mx-auto mt-3 max-w-xl text-ink-soft">
+              {vurgula(t.canliMetin)}
+            </p>
+            <p className="mt-6">
+              <a
+                href={siteConfig.personalSiteUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="press inline-flex min-h-11 items-center gap-2 rounded-(--radius) border border-border bg-surface px-5 text-sm font-medium text-ink transition-colors hover:border-accent hover:text-accent"
+              >
+                {t.canliButon}
+                <ExternalLink className="size-4" aria-hidden />
+              </a>
+            </p>
+          </div>
+        </Section>
 
         <Section className="border-t border-border">
           <div className="card card-sheen rounded-(--radius) border-accent/35 bg-accent-soft p-7 text-center sm:p-10">

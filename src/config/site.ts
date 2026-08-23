@@ -112,6 +112,8 @@ export function getSameAs(): string[] {
 
 export type ServiceItem = {
   slug: string;
+  /** Link metni — anahtar kelimeyi taşıyan uzun biçim. */
+  linkAdi: string;
   /** Menü/kart başlığı — kısa. */
   name: string;
   /** schema.org Service.description — tek cümle, esnafın anlayacağı dilde. */
@@ -127,8 +129,9 @@ export type ServiceItem = {
   yakinda?: boolean;
 };
 
-type ServiceHam = Omit<ServiceItem, "name" | "description"> & {
+type ServiceHam = Omit<ServiceItem, "name" | "linkAdi" | "description"> & {
   name: { tr: string; en: string };
+  linkAdi: { tr: string; en: string };
   description: { tr: string; en: string };
 };
 
@@ -140,6 +143,7 @@ const servicesHam: ServiceHam[] = [
   {
     slug: "burdur-web-sitesi",
     name: { tr: "Web Sitesi", en: "Website" },
+    linkAdi: { tr: "Burdur Web Sitesi", en: "Website Design in Burdur" },
     description: {
       tr: "İşletmenizin Google'da bulunmasını sağlayan, telefonda da hızlı açılan tanıtım sitesi.",
       en: "A brochure site that gets your business found on Google and opens fast on a phone.",
@@ -150,6 +154,7 @@ const servicesHam: ServiceHam[] = [
   {
     slug: "burdur-mobil-uygulama",
     name: { tr: "Mobil Uygulama", en: "Mobile App" },
+    linkAdi: { tr: "Burdur Mobil Uygulama", en: "Mobile Apps in Burdur" },
     description: {
       tr: "Müşterilerinizin telefonuna kurulan, sipariş ve sadakat özellikli Android/iOS uygulaması.",
       en: "An Android and iOS app on your customers' phones, with ordering and loyalty features.",
@@ -161,6 +166,10 @@ const servicesHam: ServiceHam[] = [
   {
     slug: "burdur-isletme-yazilimi",
     name: { tr: "İşletme Yazılımı", en: "Business Software" },
+    linkAdi: {
+      tr: "Burdur İşletme Yazılımı",
+      en: "Business Software in Burdur",
+    },
     description: {
       tr: "Randevu takibi, stok ve sipariş yönetimi, gelir gider raporlama — işletmenize özel otomasyon.",
       en: "Booking, stock and order management, revenue reporting — automation shaped around your business.",
@@ -175,6 +184,7 @@ export function getServices(dil: "tr" | "en"): ServiceItem[] {
   return servicesHam.map((s) => ({
     ...s,
     name: s.name[dil],
+    linkAdi: s.linkAdi[dil],
     description: s.description[dil],
   }));
 }

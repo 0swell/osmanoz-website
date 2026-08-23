@@ -70,32 +70,59 @@ const tr = {
     schemaAciklama: "Kafe, kuaför ve market için örnek site tasarımları.",
     kartlar: [
       {
-        sektor: "Kafe ve restoran",
-        baslik: "Menü, konum ve rezervasyon tek ekranda",
+        sektor: "Web sitesi örneği",
+        baslik: "Müşteriniz sizi Google'da bulsun, aradığını hemen görsün",
         aciklama:
-          "Müşteri menüyü telefonundan görür, yol tarifini alır, masa ayırtmak için tek tuşla yazar. Fiyat değiştiğinde matbaaya gitmeden panelden güncellersiniz.",
-        ozellikler: ["QR menü", "Yol tarifi", "WhatsApp rezervasyon"],
+          "Tanıtım sitesinin işi tek: ne yaptığınızı, nerede olduğunuzu ve size nasıl ulaşılacağını **saniyeler içinde** göstermek. Aşağıdaki kafe örneğinde menü, konum ve WhatsApp rezervasyon aynı ekranda duruyor. Fiyat değiştiğinde matbaaya gitmiyorsunuz, panelden yazıyorsunuz.",
+        ozellikler: ["Telefona uygun tasarım", "Google'a kayıt", "WhatsApp butonu"],
+        yakinda: false,
       },
       {
-        sektor: "Kuaför ve güzellik",
-        baslik: "Randevu telefonu meşgul etmeden alınır",
+        sektor: "İşletme yazılımı örneği",
+        baslik: "Defterle yürüyen işi ekrana taşıyın",
         aciklama:
-          "Müşteri boş saatleri görür, kendisi seçer. Randevu yaklaşınca hatırlatma gider; gelmeyen müşteri sayısı düşer, siz de günü tek ekrandan görürsünüz.",
-        ozellikler: ["Online randevu", "Hatırlatma", "Hizmet listesi"],
+          "Randevu, stok, sipariş ve gelir takibi — elle tuttuğunuz ne varsa tek sisteme giriyor. Aşağıdaki kuaför örneğinde müşteri boş saatleri kendisi görüp seçiyor, **telefonunuz boşuna çalmıyor**. Randevu yaklaşınca hatırlatma gidiyor, gelmeyen müşteri sayısı düşüyor.",
+        ozellikler: ["Online randevu", "Stok takibi", "Gelir raporu"],
+        yakinda: false,
       },
       {
-        sektor: "Market ve bakkal",
-        baslik: "Sipariş WhatsApp'a düşer, stok ekranda durur",
+        sektor: "Mobil uygulama örneği",
+        baslik: "Müşterinin telefonunda sizin uygulamanız",
         aciklama:
-          "Müşteri ürünleri görür, sepetini hazırlar, siparişi size ulaşır. Hangi ürün azaldı, hangisi çok satıyor — deftere değil ekrana bakarsınız.",
-        ozellikler: ["Ürün listesi", "Sipariş", "Stok takibi"],
+          "Sadakat sistemi olan ya da sürekli sipariş alan işletmelerde uygulama işe yarıyor. Aşağıdaki market örneğinde ürün listesi, sepet ve tek tuşla sipariş var. **Eylül 2026 itibarıyla bu hizmet aktif değil**; ileride eklenecek, o yüzden örnek soluk gösteriliyor.",
+        ozellikler: ["iOS ve Android", "Sepet ve sipariş", "Bildirim"],
+        yakinda: true,
       },
     ],
+    hizmeteGit: "Hizmete git",
+    canliEyebrow: "Canlı örnek",
+    canliBaslikSonek: " — kişisel web sitesi",
+    canliMetin:
+      "Yukarıdakiler örnek tasarım; bu ise **yayında olan gerçek bir site**. Kendi kişisel sitem: hakkımda, projelerim ve iletişim tek sayfada. Telefonda da bilgisayarda da nasıl açıldığına doğrudan bakabilirsiniz.",
+    canliButon: "Siteyi aç",
     ctaBaslik: "Sizinki nasıl olsun?",
     ctaMetin:
       "İşletmenizi anlatın, size özel bir taslak hazırlayayım. Beğenmezseniz bir yükümlülüğünüz olmaz.",
     ctaWaMesaj:
       "Merhaba, örnekleri gördüm. İşletmem için bir site istiyorum.",
+    sorularBaslik: "Bu örnekler hakkında",
+    sorular: [
+      {
+        baslik: "Bu örnekler gerçek müşteri işi mi?",
+        metin:
+          "Hayır. Yukarıdakiler **örnek tasarımlardır**, gerçek müşteri işi olarak sunulmuyor. Yeni başlayan bir işte olmayan referansı varmış gibi göstermek istemedim. Amaç, sizinkinin nasıl olabileceğini somut olarak anlatmak. İlk gerçek işler tamamlandığında, müşterinin izniyle onları da buraya ekleyeceğim.",
+      },
+      {
+        baslik: "Benim işletmem için ne yapılabilir?",
+        metin:
+          "Sektörünüz burada yoksa sorun değil; **ekranlar işletmenin çalışma şekline göre** kuruluyor. Randevuyla çalışıyorsanız takvim, ürün satıyorsanız stok ve sipariş, masada hizmet veriyorsanız QR menü öne çıkar. Hangisinin size zaman kazandıracağını önce birlikte konuşuyoruz.",
+      },
+      {
+        baslik: "Tasarımı ben seçebiliyor muyum?",
+        metin:
+          "Evet. İlk taslağı ben hazırlıyorum, sonra **beğenmediğiniz her yeri** söylüyorsunuz — renk, yazı tipi, sıralama, hangi bölüm önce gelsin. Oturana kadar değiştiriyoruz. Beğendiğiniz başka bir site varsa gösterin, oradan yola çıkalım.",
+      },
+    ],
     ilgiliHizmet: "İlgili hizmet",
     fiyatlariGor: "Fiyatları gör",
   },
@@ -143,6 +170,24 @@ const tr = {
     bolgeMetin: "Gerektiğinde yerinde görüşmeye gelirim.",
     konusalimBaslik: "Konuşalım",
     konusalimMetin: "İşletmenizi anlatın, ne gerektiğini birlikte bakalım.",
+    sorularBaslik: "Sık merak edilenler",
+    sorular: [
+      {
+        baslik: "Kimlerle çalışıyorum?",
+        metin:
+          "Burdur, Isparta ve Antalya'daki **küçük ve orta ölçekli işletmelerle**: kafe, restoran, kuaför, klinik, market, otel, emlak ofisi, oto servis. Tek kişilik bir esnaf da olabilirsiniz, on kişilik bir ekip de. Kurumsal ihalelere ve büyük ölçekli projelere girmiyorum — o işler ekip ister, ben tek kişiyim ve bunu baştan söylüyorum.",
+      },
+      {
+        baslik: "Nasıl çalışıyoruz?",
+        metin:
+          "Önce işletmenizi dinliyorum, sonra **ne gerekip ne gerekmediğini** açıkça söylüyorum. Anlaştıktan sonra ilk taslağı birkaç gün içinde görüyorsunuz; beğenmediğiniz yerleri söylüyorsunuz, birlikte oturtana kadar değiştiriyoruz. Görüşmeler telefon, WhatsApp veya görüntülü toplantıyla yürüyor; isterseniz yüz yüze de buluşuyoruz.",
+      },
+      {
+        baslik: "Teslimden sonra ne oluyor?",
+        metin:
+          "Yayına aldıktan sonra paneli nasıl kullanacağınızı adım adım gösteriyorum. Yazıları, fiyatları ve fotoğrafları **kendiniz güncelleyebiliyorsunuz**. Takıldığınız bir yer olursa arayabilirsiniz; bunun için ayrıca ücret istemiyorum. Site sizin, alan adı sizin adınıza kayıtlı — ileride başka biriyle çalışsanız da her şey sizde kalıyor.",
+      },
+    ],
   },
 
   iletisim: {
@@ -165,6 +210,24 @@ const tr = {
     saatlerBaslik: "Çalışma saatleri",
     gunler: "Pazartesi – Cumartesi",
     saatlerDipnot: "Bu saatlerin dışında yazarsanız ertesi gün dönüş yaparım.",
+    sorularBaslik: "Yazmadan önce",
+    sorular: [
+      {
+        baslik: "Ne kadar sürede dönüş yapıyorsunuz?",
+        metin:
+          "Mesai saatleri içinde genelde **aynı gün** dönüş yapıyorum, çoğu zaman birkaç saat içinde. Akşam veya hafta sonu yazarsanız ertesi iş günü dönüyorum. WhatsApp en hızlı yol; telefon açabilir veya mail de atabilirsiniz. Formu doldurursanız da aynı adrese düşüyor.",
+      },
+      {
+        baslik: "İlk görüşmede ne konuşuyoruz?",
+        metin:
+          "Ne iş yaptığınızı, müşterinizin sizi nasıl bulduğunu ve neye ihtiyaç duyduğunuzu konuşuyoruz. Sonunda size **hangi paketin uygun olduğunu ve ne kadar tutacağını** söylüyorum. Görüşme ücretsiz ve bir yükümlülük doğurmuyor; gerekmiyorsa gerekmediğini de açıkça söylerim.",
+      },
+      {
+        baslik: "Ne hazırlamam gerekiyor?",
+        metin:
+          "Hiçbir şey hazırlamadan da yazabilirsiniz. İşi hızlandırmak isterseniz **işletme adınız, hizmet listeniz, çalışma saatleriniz ve birkaç fotoğraf** yeterli. Elinizde yoksa fotoğrafları birlikte planlarız, metinleri ben yazarım; süreyi belirleyen asıl şey bu malzemenin hazır olması.",
+      },
+    ],
   },
 
   gizlilik: {
@@ -283,32 +346,59 @@ const en: SayfaSozlugu = {
       "Sample site designs for a cafe, a hairdresser and a grocery shop.",
     kartlar: [
       {
-        sektor: "Cafe and restaurant",
-        baslik: "Menu, location and booking on one screen",
+        sektor: "Website example",
+        baslik: "Be found on Google, and answer the question at once",
         aciklama:
-          "Customers see the menu on their phone, get directions and message you to reserve a table with one tap. When a price changes you update it from the panel instead of reprinting.",
-        ozellikler: ["QR menu", "Directions", "WhatsApp booking"],
+          "A brochure site has one job: showing what you do, where you are and how to reach you **within seconds**. In the cafe example below, the menu, the location and WhatsApp booking sit on one screen. When a price changes you type it into the panel instead of reprinting.",
+        ozellikler: ["Mobile-first design", "Google setup", "WhatsApp button"],
+        yakinda: false,
       },
       {
-        sektor: "Hairdresser and beauty",
-        baslik: "Appointments without tying up the phone",
+        sektor: "Business software example",
+        baslik: "Move the notebook onto a screen",
         aciklama:
-          "Customers see the free slots and pick one themselves. A reminder goes out before the appointment, no-shows drop, and you see the whole day on one screen.",
-        ozellikler: ["Online booking", "Reminders", "Service list"],
+          "Bookings, stock, orders and revenue — whatever you track by hand moves into one system. In the hairdresser example below, customers see the free slots and book themselves, so **your phone stops ringing for nothing**. Reminders go out before the appointment and no-shows drop.",
+        ozellikler: ["Online booking", "Stock tracking", "Revenue report"],
+        yakinda: false,
       },
       {
-        sektor: "Grocery and corner shop",
-        baslik: "Orders land on WhatsApp, stock stays on screen",
+        sektor: "Mobile app example",
+        baslik: "Your app on the customer's phone",
         aciklama:
-          "Customers browse products, build a basket and the order reaches you. What is running low, what sells best — you look at a screen instead of a notebook.",
-        ozellikler: ["Product list", "Ordering", "Stock tracking"],
+          "Apps pay off for businesses with a loyalty scheme or repeat ordering. The grocery example below has a product list, a basket and one-tap ordering. **As of September 2026 this service is not active yet**; it will be added later, which is why the example is shown faded.",
+        ozellikler: ["iOS and Android", "Basket and orders", "Notifications"],
+        yakinda: true,
       },
     ],
+    hizmeteGit: "Go to service",
+    canliEyebrow: "Live example",
+    canliBaslikSonek: " — personal website",
+    canliMetin:
+      "The examples above are sample designs; this one is **a real site that is live**. It is my own personal site: about me, my projects and contact details on a single page. You can see for yourself how it opens on a phone and on a desktop.",
+    canliButon: "Open the site",
     ctaBaslik: "What should yours look like?",
     ctaMetin:
       "Tell me about your business and I will prepare a draft for you. If you do not like it, you are under no obligation.",
     ctaWaMesaj:
       "Hello, I have seen the examples. I would like a site for my business.",
+    sorularBaslik: "About these examples",
+    sorular: [
+      {
+        baslik: "Is this real client work?",
+        metin:
+          "No. These are **sample designs**, not presented as real client work. Starting out, I did not want to show references I do not have. The point is to show concretely what yours could look like. Once the first real projects are done, I will add them here with the client's permission.",
+      },
+      {
+        baslik: "What could be built for my business?",
+        metin:
+          "If your sector is not shown here, that is fine — **the screens are built around how the business runs**. If you work by appointment, a calendar comes first; if you sell products, stock and orders; if you serve at tables, a QR menu. We work out together which one actually saves you time.",
+      },
+      {
+        baslik: "Can I choose the design?",
+        metin:
+          "Yes. I prepare the first draft, then you tell me **everything you do not like** — colours, typeface, ordering, which section comes first. We keep adjusting until it fits. If there is another site you like, show me and we start from there.",
+      },
+    ],
     ilgiliHizmet: "Related service",
     fiyatlariGor: "See pricing",
   },
@@ -357,6 +447,24 @@ const en: SayfaSozlugu = {
     konusalimBaslik: "Let's talk",
     konusalimMetin:
       "Tell me about your business and we will work out what you need.",
+    sorularBaslik: "Common questions",
+    sorular: [
+      {
+        baslik: "Who do I work with?",
+        metin:
+          "**Small and medium businesses** in Burdur, Isparta and Antalya: cafes, restaurants, hairdressers, clinics, grocery shops, hotels, estate agents, garages. You might be a one-person trader or a team of ten. I do not take on corporate tenders or large-scale projects — those need a team, and I work alone. I say so up front.",
+      },
+      {
+        baslik: "How do we work together?",
+        metin:
+          "First I listen to your business, then I tell you plainly **what you need and what you do not**. Once we agree, you see the first draft within a few days; you tell me what to change and we refine it together. We talk by phone, WhatsApp or video call, and meet face to face if you prefer.",
+      },
+      {
+        baslik: "What happens after launch?",
+        metin:
+          "Once the site is live I walk you through the admin panel step by step. You can **update the texts, prices and photos yourself**. If you get stuck you can call me — there is no extra charge for that. The site is yours and the domain is registered in your name, so everything stays with you.",
+      },
+    ],
   },
 
   iletisim: {
@@ -379,6 +487,24 @@ const en: SayfaSozlugu = {
     gunler: "Monday – Saturday",
     saatlerDipnot:
       "If you write outside these hours, I reply the following day.",
+    sorularBaslik: "Before you write",
+    sorular: [
+      {
+        baslik: "How quickly do you reply?",
+        metin:
+          "During working hours I usually reply **the same day**, often within a couple of hours. If you write in the evening or at the weekend, I get back to you the next working day. WhatsApp is the fastest route; you can also call or send an email. The form reaches the same inbox.",
+      },
+      {
+        baslik: "What do we cover in the first call?",
+        metin:
+          "We talk about what you do, how customers currently find you and what you actually need. By the end I tell you **which package fits and what it will cost**. The call is free and puts you under no obligation; if you do not need something, I say so plainly.",
+      },
+      {
+        baslik: "What do I need to prepare?",
+        metin:
+          "Nothing — you can write to me as you are. If you want to move faster, **your business name, service list, opening hours and a few photos** are enough. If you do not have photos we plan them together and I write the copy; what really sets the pace is having this material ready.",
+      },
+    ],
   },
 
   gizlilik: {

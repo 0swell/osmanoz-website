@@ -6,6 +6,7 @@ import { ButtonExternal, ButtonLink } from "@/components/atoms/Button";
 import { Container } from "@/components/atoms/Container";
 import { JsonLd } from "@/components/atoms/JsonLd";
 import { Section } from "@/components/atoms/Section";
+import { Akordiyon } from "@/components/molecules/Akordiyon";
 import { Breadcrumb } from "@/components/molecules/Breadcrumb";
 import { ScrollToTop } from "@/components/molecules/ScrollToTop";
 import { WhatsAppFab } from "@/components/molecules/WhatsAppFab";
@@ -19,7 +20,7 @@ import type { Dil } from "@/i18n/diller";
 import { hizmetRotaAnahtari, yol } from "@/i18n/diller";
 import { s } from "@/i18n/sozluk";
 import { formatTL, getHizmetIcerigi } from "@/lib/content";
-import { duzMetin, vurgula } from "@/utils/vurgu";
+import { duzMetin } from "@/utils/vurgu";
 import {
   breadcrumbNode,
   faqNode,
@@ -141,16 +142,10 @@ export function ServicePage({ slug, dil }: { slug: string; dil: Dil }) {
           </Container>
         </section>
 
-        {/* Anlatım bölümleri — her başlık gerçek bir soru (AEO) */}
+        {/* Anlatım bölümleri — akordiyon (CLAUDE.md §5.3).
+            Metin HTML'de duruyor, sayfa duvar gibi görünmüyor. */}
         <Section>
-          <div className="grid gap-8 md:grid-cols-2">
-            {icerik.bolumler.map((b) => (
-              <article key={b.baslik}>
-                <h2 className="text-xl">{b.baslik}</h2>
-                <p className="mt-2.5 text-ink-soft">{vurgula(b.metin)}</p>
-              </article>
-            ))}
-          </div>
+          <Akordiyon bolumler={icerik.bolumler} ad="hizmet-anlatim" />
         </Section>
 
         {/* Görsel bölüm — sayfa düz metin duvarı olmasın */}
@@ -163,30 +158,14 @@ export function ServicePage({ slug, dil }: { slug: string; dil: Dil }) {
             title={t.hizmetSayfa.sssBaslik}
             className="border-y border-border bg-surface-2/60"
           >
-            <div className="mx-auto max-w-3xl divide-y divide-border rounded-(--radius) border border-border bg-surface">
-              {sorular.map((item, i) => (
-                <details
-                  key={item.soru}
-                  name="hizmet-sss"
-                  open={i === 0}
-                  className="group px-5"
-                >
-                  <summary className="flex cursor-pointer list-none items-center justify-between gap-4 py-4 [&::-webkit-details-marker]:hidden">
-                    <h3 className="text-base font-medium">{item.soru}</h3>
-                    <span
-                      aria-hidden
-                      className="relative grid size-6 shrink-0 place-items-center text-accent"
-                    >
-                      <span className="absolute h-0.5 w-3.5 rounded bg-current" />
-                      <span className="absolute h-3.5 w-0.5 rounded bg-current transition-transform duration-200 group-open:scale-y-0" />
-                    </span>
-                  </summary>
-                  <p className="pb-5 text-sm text-ink-soft sm:text-base">
-                    {vurgula(item.cevap)}
-                  </p>
-                </details>
-              ))}
-            </div>
+            <Akordiyon
+              bolumler={sorular.map((q) => ({
+                baslik: q.soru,
+                metin: q.cevap,
+              }))}
+              ad="hizmet-sss"
+              baslikSeviyesi="h3"
+            />
           </Section>
         )}
 

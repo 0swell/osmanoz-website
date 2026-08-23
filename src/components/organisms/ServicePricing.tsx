@@ -67,13 +67,28 @@ export function ServicePricing({
           </div>
         </div>
 
-        {/* Sağ: bu hizmete ait tek paket */}
+        {/* Sağ: bu hizmete ait tek paket.
+            Görünümü /fiyatlar'daki kartla birebir aynı tutuluyor — aynı paket
+            iki yerde farklı görünürse ziyaretçi ikisini ayrı sanıyor.
+            Tek fark: burada "Teklif Alın" yok, yalnız tüm paketlere geçiş var
+            (sayfanın kendi CTA'sı zaten solda duruyor). */}
         <div
           className={cn(
             "card-glass card-sheen reveal flex flex-col p-6",
+            paket.one_cikan && "border-accent/40 shadow-deep",
             paket.yakinda && "card-yakinda",
           )}
         >
+          {paket.one_cikan && (
+            <span className="mb-3 self-start rounded-full bg-accent-soft px-2.5 py-1 text-xs font-semibold text-accent">
+              {t.fiyat.encokTercih}
+            </span>
+          )}
+          {!paket.one_cikan && paket.rozet && (
+            <span className="mb-3 self-start rounded-full border border-border-strong px-2.5 py-1 text-xs font-medium text-ink-muted">
+              {paket.rozet}
+            </span>
+          )}
           {paket.yakinda && (
             <span className="mb-3 self-start rounded-full border border-border-strong px-2.5 py-1 text-xs font-medium text-ink-muted">
               {t.genel.yakinda}
@@ -83,19 +98,25 @@ export function ServicePricing({
           <h3 className="text-lg">{paket.ad}</h3>
           <p className="mt-1 text-sm text-ink-muted">{paket.ozet}</p>
 
-          {paket.fiyat && (
-            <p className="mt-5 flex items-baseline gap-1.5">
-              <span
-                className={cn(
-                  "font-display text-3xl font-semibold",
-                  paket.yakinda ? "text-ink-muted" : "text-ink",
-                )}
-              >
-                {formatTL(paket.fiyat, dil)} {t.fiyat.paraBirimi}
+          <p className="mt-5 flex items-baseline gap-1.5">
+            {paket.fiyat ? (
+              <>
+                <span
+                  className={cn(
+                    "font-display text-3xl font-semibold",
+                    paket.yakinda ? "text-ink-muted" : "text-ink",
+                  )}
+                >
+                  {formatTL(paket.fiyat, dil)} {t.fiyat.paraBirimi}
+                </span>
+                <span className="text-xs text-ink-muted">{paket.fiyatNot}</span>
+              </>
+            ) : (
+              <span className="font-display text-2xl font-semibold text-ink-muted">
+                {paket.fiyatNot}
               </span>
-              <span className="text-xs text-ink-muted">{paket.fiyatNot}</span>
-            </p>
-          )}
+            )}
+          </p>
 
           <ul className="mt-5 flex-1 space-y-2.5">
             {paket.kapsam.map((k) => (

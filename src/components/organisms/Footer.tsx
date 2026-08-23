@@ -100,7 +100,7 @@ export function Footer({ dil }: { dil: Dil }) {
                     href={yol(hizmetRotaAnahtari[h.slug], dil)}
                     className="flex min-h-11 items-center gap-2 text-sm text-ink-soft transition-colors hover:text-accent"
                   >
-                    {h.name}
+                    {h.linkAdi}
                     {h.yakinda && (
                       <span className="rounded-full border border-border-strong px-1.5 py-0.5 text-xs text-ink-muted">
                         {t.genel.yakinda}

@@ -72,7 +72,9 @@ export function ServicesSection({ dil }: { dil: Dil }) {
                   h.yakinda ? "text-ink-muted" : "text-accent",
                 )}
               >
-                {genel.detaylar}
+                {/* Anchor text hedef kelimeyi taşır; "Detaylar" hiçbir
+                    arama sinyali vermiyordu (denetim 1.B.9). */}
+                {h.linkAdi}
                 <ArrowRight
                   className="size-4 transition-transform duration-200 group-hover:translate-x-0.5"
                   aria-hidden
