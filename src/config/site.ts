@@ -10,7 +10,7 @@
 
 export const siteConfig = {
   // ---- Kimlik --------------------------------------------------------------
-  siteName: "Osman Öz — Bilgisayar Mühendisi",
+  siteName: "Osman Öz Bilgisayar Mühendisi",
   personName: "Osman Öz",
   jobTitle: "Bilgisayar Mühendisi",
   url: "https://osmanoz.website",
@@ -22,8 +22,12 @@ export const siteConfig = {
 
   // ---- NAP (İsim · Adres · Telefon) ---------------------------------------
   nap: {
-    /** GBP'de kullanılacak işletme adıyla BİREBİR aynı olmalı. */
-    name: "Osman Öz — Bilgisayar Mühendisi",
+    /**
+     * GBP'de kullanılacak işletme adıyla BİREBİR aynı olmalı.
+     * Tire bilinçli olarak yok: kimse aramaya "—" yazmıyor ve noktalama
+     * işareti eşleşmeye katkı sağlamıyor (karar 23.08.2026).
+     */
+    name: "Osman Öz Bilgisayar Mühendisi",
     // Adres bilinçli olarak koda yazılmadı — repo public.
     // Hizmet alanı işletmesi olduğu için schema'da da yayınlanmıyor (bkz. isServiceAreaBusiness).
     // GBP başvurusunda elle girilecek.
