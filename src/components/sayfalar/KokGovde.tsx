@@ -43,6 +43,9 @@ export function KokGovde({
       suppressHydrationWarning
       className={`${bricolage.variable} ${lexend.variable} h-full`}
     >
+      {/* eslint-disable-next-line @next/next/no-head-element --
+          Kural Pages Router içindir; App Router'da kök layout kendi <head>
+          etiketini basar, next/head burada kullanılmaz. */}
       <head>
         {/* GA sunucusuyla bağlantı önceden kurulsun; betik geç yüklendiği
             için el sıkışma maliyeti kritik yoldan çıkıyor (PageSpeed

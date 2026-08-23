@@ -87,10 +87,15 @@ const tr = {
       },
       {
         sektor: "Mobil uygulama örneği",
-        baslik: "Müşterinin telefonunda sizin uygulamanız",
+        baslik: "Üyeleriniz cebinde, kasanız ekranda",
         aciklama:
-          "Sadakat sistemi olan ya da sürekli sipariş alan işletmelerde uygulama işe yarıyor. Aşağıdaki market örneğinde ürün listesi, sepet ve tek tuşla sipariş var. **Eylül 2026 itibarıyla bu hizmet aktif değil**; ileride eklenecek, o yüzden örnek soluk gösteriliyor.",
-        ozellikler: ["iOS ve Android", "Sepet ve sipariş", "Bildirim"],
+          "Spor salonu gibi **üyelikle çalışan** işletmelerde uygulama gerçekten işe yarıyor: üye giriş yapar, kalan gün sayısını ve ders programını görür. Siz de kimin üyeliği bitiyor, ay sonunda ne kazandınız, hangi ay düştü — hepsini tek ekrandan takip edersiniz. **Eylül 2026 itibarıyla bu hizmet aktif değil**; ileride eklenecek, o yüzden örnek soluk gösteriliyor.",
+        ozellikler: [
+          "iOS ve Android",
+          "Üyelik takibi",
+          "Ders programı",
+          "Gelir raporu",
+        ],
         yakinda: true,
       },
     ],
@@ -363,10 +368,15 @@ const en: SayfaSozlugu = {
       },
       {
         sektor: "Mobile app example",
-        baslik: "Your app on the customer's phone",
+        baslik: "Members in their pocket, revenue on your screen",
         aciklama:
-          "Apps pay off for businesses with a loyalty scheme or repeat ordering. The grocery example below has a product list, a basket and one-tap ordering. **As of September 2026 this service is not active yet**; it will be added later, which is why the example is shown faded.",
-        ozellikler: ["iOS and Android", "Basket and orders", "Notifications"],
+          "Apps genuinely pay off where the business runs on **memberships** — a gym, for example: members sign in, see how many days they have left and check the class schedule. You see whose membership is ending, what you earned this month and which months dropped, all on one screen. **As of September 2026 this service is not active yet**; it will be added later, which is why the example is shown faded.",
+        ozellikler: [
+          "iOS and Android",
+          "Membership tracking",
+          "Class schedule",
+          "Revenue report",
+        ],
         yakinda: true,
       },
     ],

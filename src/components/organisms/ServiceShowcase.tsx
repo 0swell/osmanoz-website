@@ -12,7 +12,7 @@ import {
   EkranKuafor,
   TelefonKafe,
   TelefonKuafor,
-  TelefonMarket,
+  TelefonSpor,
 } from "@/components/molecules/MockupScreens";
 
 /**
@@ -131,10 +131,10 @@ export function ServiceShowcase({
       >
         <div className="reveal mx-auto max-w-md">
           <TelefonCerceve>
-            <TelefonMarket />
+            <TelefonSpor />
           </TelefonCerceve>
           <p className="mt-6 text-center text-sm text-ink-muted">
-            {t.mobil.market}
+            {t.mobil.spor}
           </p>
         </div>
       </Section>

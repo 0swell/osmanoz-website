@@ -24,8 +24,8 @@ const tr = {
   mobil: {
     baslik: "Örnek ekran",
     giris:
-      "Uygulama tarafında henüz yayınlanmış bir işim yok. Aşağıdaki ekran, sipariş ve sadakat özellikli bir uygulamanın nasıl görünebileceğini anlatmak için hazırlandı.",
-    market: "Market — ürün listesi, sepet ve tek tuşla sipariş.",
+      "Uygulama tarafında henüz yayınlanmış bir işim yok. Aşağıdaki ekran, üyelik takibi olan bir spor salonu uygulamasının nasıl görünebileceğini anlatmak için hazırlandı.",
+    spor: "Spor salonu — üyelik durumu, kalan gün ve ders programı.",
   },
 };
 
@@ -49,8 +49,8 @@ const en: VitrinSozlugu = {
   mobil: {
     baslik: "Example screen",
     giris:
-      "I have no published app work yet. The screen below is here to show how an app with ordering and loyalty features could look.",
-    market: "Grocery — product list, basket and one-tap ordering.",
+      "I have no published app work yet. The screen below is here to show how a gym app with membership tracking could look.",
+    spor: "Gym — membership status, days remaining and class schedule.",
   },
 };
 

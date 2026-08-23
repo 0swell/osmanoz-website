@@ -8,7 +8,8 @@ type Tema = { bg: string; ink: string; accent: string; soft: string };
 const temalar: Record<string, Tema> = {
   kafe: { bg: "#faf6f0", ink: "#3b2a1e", accent: "#a9683a", soft: "#f0e4d6" },
   kuafor: { bg: "#f7f4fa", ink: "#2f2436", accent: "#7c4d8f", soft: "#ebe3f1" },
-  market: { bg: "#f3f8f3", ink: "#20362a", accent: "#3f7d4d", soft: "#dfeee2" },
+  // Spor salonu — koyu ve enerjik ton; kafe/kuaförden belirgin ayrılsın.
+  spor: { bg: "#f2f4f8", ink: "#1c2430", accent: "#2f5fd0", soft: "#dde5f5" },
 };
 
 /* ---------- Masaüstü ekranı ---------- */
@@ -22,9 +23,9 @@ export function EkranKuafor() {
   return <Masaustu t={t} ad="Studio Saç" slogan="Randevunuzu online alın" menu={["Hizmetler", "Randevu", "İletişim"]} kartlar={["Saç Kesim", "Boya", "Bakım"]} />;
 }
 
-export function EkranMarket() {
-  const t = temalar.market;
-  return <Masaustu t={t} ad="Öz Market" slogan="Siparişiniz kapınızda" menu={["Ürünler", "Kampanya", "İletişim"]} kartlar={["Meyve Sebze", "Şarküteri", "İçecek"]} />;
+export function EkranSpor() {
+  const t = temalar.spor;
+  return <Masaustu t={t} ad="Form Spor Salonu" slogan="Üyeliğini uygulamadan takip et" menu={["Üyelik", "Ders Programı", "İletişim"]} kartlar={["Aylık Üyelik", "Ders Programı", "Kalan Gün"]} />;
 }
 
 function Masaustu({
@@ -105,8 +106,8 @@ export function TelefonKafe() {
 export function TelefonKuafor() {
   return <Telefon t={temalar.kuafor} ad="Studio Saç" satirlar={["10:00 Müsait", "11:30 Dolu", "14:00 Müsait"]} />;
 }
-export function TelefonMarket() {
-  return <Telefon t={temalar.market} ad="Öz Market" satirlar={["Süt 1L", "Ekmek", "Yumurta 10'lu"]} />;
+export function TelefonSpor() {
+  return <Telefon t={temalar.spor} ad="Form Spor Salonu" satirlar={["Üyelik: 18 gün kaldı", "Bugün: Fonksiyonel", "Yarın: Pilates"]} />;
 }
 
 function Telefon({

@@ -11,10 +11,10 @@ import { MockupFrame } from "@/components/molecules/MockupFrame";
 import {
   EkranKafe,
   EkranKuafor,
-  EkranMarket,
+  EkranSpor,
   TelefonKafe,
   TelefonKuafor,
-  TelefonMarket,
+  TelefonSpor,
 } from "@/components/molecules/MockupScreens";
 import { ScrollToTop } from "@/components/molecules/ScrollToTop";
 import { WhatsAppFab } from "@/components/molecules/WhatsAppFab";
@@ -42,7 +42,7 @@ const bolumler: Array<{
 }> = [
   { Ekran: EkranKafe, Telefon: TelefonKafe, rota: "webSitesi" },
   { Ekran: EkranKuafor, Telefon: TelefonKuafor, rota: "isletme" },
-  { Ekran: EkranMarket, Telefon: TelefonMarket, rota: "mobil" },
+  { Ekran: EkranSpor, Telefon: TelefonSpor, rota: "mobil" },
 ];
 
 export function OrneklerGovde({ dil }: { dil: Dil }) {

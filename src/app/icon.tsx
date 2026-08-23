@@ -10,10 +10,11 @@ import { ImageResponse } from "next/og";
  * temaya göre değişemez; açık tondaki turuncu hem açık hem koyu sekme
  * çubuğunda okunuyor, koyu ton (#c23e08) koyu sekmede kayboluyordu.
  *
- * Küçük boyutta okunabilirlik için köşe yarıçapı ve harf boyutu 32px'e göre
- * ayarlandı; navbar'daki 36px kutunun oranlarıyla aynı değil.
+ * Boyut 96x96: Google arama sonuçlarında favicon göstermek için **48'in katı
+ * kare** istiyor. Önceki 32x32 tarayıcı için yeterliydi ama Google'ın
+ * şartını karşılamıyordu. Tarayıcı gerekirse kendisi küçültüyor.
  */
-export const size = { width: 32, height: 32 };
+export const size = { width: 96, height: 96 };
 export const contentType = "image/png";
 
 export default function Icon() {
@@ -27,11 +28,11 @@ export default function Icon() {
           alignItems: "center",
           justifyContent: "center",
           background: "#ff7a3d",
-          borderRadius: 7,
+          borderRadius: 21,
           color: "#ffffff",
-          fontSize: 15,
+          fontSize: 45,
           fontWeight: 700,
-          letterSpacing: -0.5,
+          letterSpacing: -1.5,
         }}
       >
         OÖ
