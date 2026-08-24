@@ -1,6 +1,7 @@
 import { Bricolage_Grotesque, Lexend } from "next/font/google";
 import { ThemeProvider } from "next-themes";
 import { Toaster } from "sonner";
+import { Analytics as VercelAnalytics } from "@vercel/analytics/next";
 
 import { Analytics } from "@/components/atoms/Analytics";
 import { JsonLd } from "@/components/atoms/JsonLd";
@@ -80,6 +81,7 @@ export function KokGovde({
         </ThemeProvider>
 
         <Analytics />
+        <VercelAnalytics />
       </body>
     </html>
   );
