@@ -87,14 +87,14 @@ const tr = {
       },
       {
         sektor: "Mobil uygulama örneği",
-        baslik: "Üyeleriniz cebinde, kasanız ekranda",
+        baslik: "Üyeler cepte, kasa ekranda",
         aciklama:
-          "Spor salonu gibi **üyelikle çalışan** işletmelerde uygulama gerçekten işe yarıyor: üye giriş yapar, kalan gün sayısını ve ders programını görür. Siz de kimin üyeliği bitiyor, ay sonunda ne kazandınız, hangi ay düştü — hepsini tek ekrandan takip edersiniz. **Eylül 2026 itibarıyla bu hizmet aktif değil**; ileride eklenecek, o yüzden örnek soluk gösteriliyor.",
+          "Spor salonu gibi **üyelikle çalışan** işletmelerde uygulama gerçekten işe yarıyor: üye giriş yapar, kalan gün sayısını görür, antrenman programını takip eder, antrenman videolarını izler. Siz de kimin üyeliği bitiyor, ay sonunda kaç üyeniz var, hangi aylar düştü — hepsini tek ekrandan takip edersiniz. **Eylül 2026 itibarıyla bu hizmet aktif değil**; ileride eklenecektir.",
         ozellikler: [
           "iOS ve Android",
           "Üyelik takibi",
-          "Ders programı",
-          "Gelir raporu",
+          "Antrenman programı",
+          "Antrenman videoları",
         ],
         yakinda: true,
       },
@@ -368,14 +368,14 @@ const en: SayfaSozlugu = {
       },
       {
         sektor: "Mobile app example",
-        baslik: "Members in their pocket, revenue on your screen",
+        baslik: "Members in their pocket, the books on your screen",
         aciklama:
-          "Apps genuinely pay off where the business runs on **memberships** — a gym, for example: members sign in, see how many days they have left and check the class schedule. You see whose membership is ending, what you earned this month and which months dropped, all on one screen. **As of September 2026 this service is not active yet**; it will be added later, which is why the example is shown faded.",
+          "Apps genuinely pay off where the business runs on **memberships** — a gym, for example: members sign in, see how many days they have left, follow their training plan and watch the exercise videos. You see whose membership is ending, how many members you have at month end and which months dropped, all on one screen. **As of September 2026 this service is not active yet**; it will be added later.",
         ozellikler: [
           "iOS and Android",
           "Membership tracking",
-          "Class schedule",
-          "Revenue report",
+          "Training plan",
+          "Exercise videos",
         ],
         yakinda: true,
       },

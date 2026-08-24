@@ -24,8 +24,8 @@ const tr = {
   mobil: {
     baslik: "Örnek ekran",
     giris:
-      "Uygulama tarafında henüz yayınlanmış bir işim yok. Aşağıdaki ekran, üyelik takibi olan bir spor salonu uygulamasının nasıl görünebileceğini anlatmak için hazırlandı.",
-    spor: "Spor salonu — üyelik durumu, kalan gün ve ders programı.",
+      "Uygulama tarafında henüz yayınlanmış bir işim yok. Aşağıdaki ekran, üyelik ve antrenman takibi olan bir spor salonu uygulamasının nasıl görünebileceğini anlatmak için hazırlandı.",
+    spor: "Spor salonu — üyelik durumu, antrenman programı ve video arşivi.",
   },
 };
 
@@ -49,8 +49,8 @@ const en: VitrinSozlugu = {
   mobil: {
     baslik: "Example screen",
     giris:
-      "I have no published app work yet. The screen below is here to show how a gym app with membership tracking could look.",
-    spor: "Gym — membership status, days remaining and class schedule.",
+      "I have no published app work yet. The screen below is here to show how a gym app with membership and training tracking could look.",
+    spor: "Gym — membership status, training plan and exercise videos.",
   },
 };
 

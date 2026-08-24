@@ -25,7 +25,7 @@ export function EkranKuafor() {
 
 export function EkranSpor() {
   const t = temalar.spor;
-  return <Masaustu t={t} ad="Form Spor Salonu" slogan="Üyeliğini uygulamadan takip et" menu={["Üyelik", "Ders Programı", "İletişim"]} kartlar={["Aylık Üyelik", "Ders Programı", "Kalan Gün"]} />;
+  return <Masaustu t={t} ad="Form Spor Salonu" slogan="Üyeliğini uygulamadan takip et" menu={["Üyelik", "Antrenman", "İletişim"]} kartlar={["Aylık Üyelik", "Antrenman Programı", "Video Arşivi"]} />;
 }
 
 function Masaustu({
@@ -107,7 +107,7 @@ export function TelefonKuafor() {
   return <Telefon t={temalar.kuafor} ad="Studio Saç" satirlar={["10:00 Müsait", "11:30 Dolu", "14:00 Müsait"]} />;
 }
 export function TelefonSpor() {
-  return <Telefon t={temalar.spor} ad="Form Spor Salonu" satirlar={["Üyelik: 18 gün kaldı", "Bugün: Fonksiyonel", "Yarın: Pilates"]} />;
+  return <Telefon t={temalar.spor} ad="Form Spor Salonu" satirlar={["Üyelik: 18 gün kaldı", "Program: Üst vücut", "Video: Şınav tekniği"]} />;
 }
 
 function Telefon({
