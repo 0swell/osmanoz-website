@@ -56,6 +56,36 @@
           "tr": "Telefona uygun tasarım, WhatsApp butonu, iletişim formu, Google'a kayıt, **ilk yıl alan adı ve barındırma ücreti**. Ayrıca kendi panelinizden yazıları ve fotoğrafları değiştirebilirsiniz.",
           "en": "Mobile-first design, a WhatsApp button, a contact form, Google setup and **domain plus hosting for the first year**. You can also change texts and photos yourself from your admin panel."
         }
+      },
+      {
+        "baslik": {
+          "tr": "Burdur'da web sitesi kaç sayfadan oluşur?",
+          "en": "How many pages does a business website need?"
+        },
+        "metin": {
+          "tr": "Çoğu işletme için **dört ile altı sayfa** yetiyor: ana sayfa, hizmetler, hakkımızda, iletişim; kafe ve restoranlarda bir de menü. Sayfa sayısını çoğaltmak siteyi güçlendirmiyor, aksine ziyaretçiyi dağıtıyor. Neye ihtiyacınız olduğunu birlikte konuşup gereksiz sayfa açmıyoruz.",
+          "en": "For most businesses **four to six pages** are enough: home, services, about, contact, plus a menu for cafes and restaurants. Adding more pages does not make a site stronger; it scatters the visitor. We decide together what you need and skip the rest."
+        }
+      },
+      {
+        "baslik": {
+          "tr": "Sitede hangi bilgiler mutlaka olmalı?",
+          "en": "What information must the site contain?"
+        },
+        "metin": {
+          "tr": "**İşletme adı, ne iş yaptığınız, nerede olduğunuz, telefon ve çalışma saatleri** — bu beşi olmadan site eksiktir. Müşteri bunları ilk ekranda bulamazsa geri tuşuna basıyor. Google da aynı bilgileri arıyor: hangi şehirde, hangi hizmet, nasıl ulaşılır. Fotoğraf ve fiyat bilgisi de güveni belirgin biçimde artırıyor.",
+          "en": "**Your business name, what you do, where you are, a phone number and opening hours** — without these five the site is incomplete. If a visitor cannot find them on the first screen, they leave. Google looks for the same things: which city, which service, how to get in touch. Photos and prices noticeably raise trust."
+        }
+      },
+      {
+        "baslik": {
+          "tr": "Mevcut sitem varsa yenilenebilir mi?",
+          "en": "Can my existing site be rebuilt?"
+        },
+        "metin": {
+          "tr": "Evet. Eski siteyi inceleyip **neyin kaldığını, neyin değişmesi gerektiğini** söylüyorum. Alan adınız sizde kalıyor, adres değişmiyor; Google'daki mevcut sıranız da korunuyor. İçeriğiniz kullanılabilir durumdaysa yeniden yazmıyoruz, taşıyoruz. Yenileme genelde sıfırdan yapmaktan daha kısa sürüyor.",
+          "en": "Yes. I review the old site and tell you **what can stay and what has to change**. Your domain stays with you, the address does not change, and the ranking you already have is preserved. If your existing content is usable we move it rather than rewrite it, which usually makes a rebuild faster than starting from scratch."
+        }
       }
     ],
     "sssIndeks": [
