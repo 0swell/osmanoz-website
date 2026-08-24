@@ -23,8 +23,8 @@
           "en": "What should a good business website do?"
         },
         "metin": {
-          "tr": "Süslü olması değil, işe yaraması önemli. Müşteriniz siteye girdiğinde **üç şeyi saniyeler içinde** bulmalı: ne iş yaptığınızı, nerede olduğunuzu ve size nasıl ulaşacağını. Bunlar ekranın ilk yarısında yoksa, ziyaretçi geri tuşuna basıyor.",
-          "en": "It has to work, not just look decorative. A visitor should find **three things within seconds**: what you do, where you are and how to reach you. If those are missing from the first half of the screen, people hit the back button."
+          "tr": "Süslü olması değil, işe yaraması önemli. Müşteriniz siteye girdiğinde **üç şeyi saniyeler içinde** bulmalı: ne iş yaptığınızı, nerede olduğunuzu ve size nasıl ulaşacağını. Bunlar ekranın ilk yarısında yoksa, ziyaretçi geri tuşuna basıyor. Bu yüzden sayfanın en üstüne işletme adı, tek cümlelik açıklama ve arama tuşu koyuyorum; altına hizmetler, fotoğraflar ve konum geliyor. Yazı boyutu zoom yapmadan okunacak kadar büyük, butonlar parmakla rahat basılacak kadar geniş oluyor. Renk ve yazı tipi seçimi de buna göre: göz yormayan, işletmenize yakışan ve **her ekranda aynı görünen** bir düzen.",
+          "en": "It has to work, not just look decorative. A visitor should find **three things within seconds**: what you do, where you are and how to reach you. If those are missing from the first half of the screen, people hit the back button. So the top of the page carries your business name, a one-line description and a call button; services, photos and location follow underneath. Text is large enough to read without zooming and buttons are wide enough to tap comfortably. Colours and typeface follow the same rule: easy on the eye, suited to your business and **consistent on every screen**."
         }
       },
       {
@@ -53,8 +53,8 @@
           "en": "What is included?"
         },
         "metin": {
-          "tr": "Telefona uygun tasarım, WhatsApp butonu, iletişim formu, Google'a kayıt, **ilk yıl alan adı ve barındırma ücreti**. Ayrıca kendi panelinizden yazıları ve fotoğrafları değiştirebilirsiniz.",
-          "en": "Mobile-first design, a WhatsApp button, a contact form, Google setup and **domain plus hosting for the first year**. You can also change texts and photos yourself from your admin panel."
+          "tr": "Telefona uygun tasarım, WhatsApp butonu, iletişim formu, Google'a kayıt ve **ilk yıl alan adı ile barındırma ücreti**. Yazıları ben yazıyorum, siz onaylıyorsunuz; fotoğraflarınızı da siteye uygun boyuta getiriyorum. Teslimde kendi panelinizi açıp nasıl kullanacağınızı adım adım gösteriyorum — yazıyı, fiyatı ve fotoğrafı sonradan **kendiniz değiştirebiliyorsunuz**. Alan adı sizin adınıza kaydediliyor, mülkiyet sizde kalıyor. Teslimden sonra takıldığınız yer olursa arayabilirsiniz; bunun için ayrıca ücret istemiyorum. Fiyat baştan bellidir, konuşmadığımız bir kalem sonradan eklenmez.",
+          "en": "Mobile-first design, a WhatsApp button, a contact form, Google setup and **domain plus hosting for the first year**. I write the copy and you approve it; your photos are resized and optimised for the site. At handover I open your admin panel and walk you through it step by step — you can **change text, prices and photos yourself** afterwards. The domain is registered in your name, so ownership stays with you. If you get stuck later you can call me; there is no extra charge for that. The price is clear from the start and nothing we did not discuss is added later."
         }
       },
       {
