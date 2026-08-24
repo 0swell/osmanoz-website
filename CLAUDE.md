@@ -37,7 +37,7 @@ Teknik derinlik sadece `/hakkimda` sayfasında, yetkinlik kanıtı olarak yer al
 - **Stil & UI:** Tailwind CSS. Renkler CSS variable (token) olarak tanımlanır; component içine hardcoded hex yazılmaz.
 - **İçerik:** MDX + JSON — `content/` klasöründe dosya bazlı. Hizmet sayfaları, blog yazıları, SSS ve site ayarları buradan beslenir.
 - **Çok dillilik:** `next-intl` ile `tr` (varsayılan, kök URL) + `en` (`/en/` prefix). Statik export'la uyumlu: her dil build-time'da ayrı sayfa olarak üretilir. Çeviri metinleri `content/` altında, dil başına ayrı dosyada.
-- **İçerik Yönetimi (`/admin`):** **Git tabanlı CMS** (Sveltia CMS). Veritabanı ve şifre sistemi yok — GitHub OAuth ile giriş. Düzenleme doğrudan repodaki dosyaya commit olur, Cloudflare Pages otomatik yeniden derler. Detay: §6.1.
+- **İçerik Yönetimi (`/admin`):** **VAZGEÇİLDİ (24.08.2026).** Sveltia CMS planlanmıştı; tek kişilik projede metin değişikliği doğrudan kodda yapılıyor, CMS aradaki fazladan katman oluyordu. `content/settings/*.json` yapısı korundu — ileride gerekirse CMS bu dosyaların üstüne kurulabilir.
 - **İkonlar:** `lucide-react` (UI ikonları); `react-icons` (marka ikonları: WhatsApp, GitHub, LinkedIn, Instagram).
 - **Animasyon:** Framer Motion — **seçici ve hafif**. Sadece giriş (fade/slide-up) ve mockup vitrini. Scroll-hijack, parallax, ağır efekt YOK (hedef kitle ve LCP nedeniyle).
 - **Form:** Server Action → **Resend** ile e-posta. (Cloudflare'e taşınırsa tek bir Pages Function'a çevrilir.) Spam koruması: honeypot alan + basit rate limit. reCAPTCHA yok (LCP ve UX bedeli).
@@ -255,30 +255,18 @@ Blog yazıları **duvar gibi metin olmayacak.** Açılır-kapanır bölümlerden
 
 ## 6. Mimari ve Geliştirme Standartları
 
-### 6.1. İçerik Yönetimi — `/admin`
+### 6.1. İçerik Yönetimi — VAZGEÇİLDİ
 
-**Sveltia CMS** (git tabanlı). Veritabanı yok, şifre sistemi yok.
+`/admin` paneli (Sveltia CMS) planlanmıştı, **24.08.2026'da vazgeçildi.**
+Tek kişilik bir projede metin değişikliği doğrudan kodda yapılıyor; panel
+aradaki fazladan katman oluyordu. `public/admin/` klasörü kaldırıldı.
 
-**Akış:** `/admin` → GitHub ile giriş → form doldur → kaydet → repoya commit → Cloudflare Pages
-otomatik yeniden derler → **1-2 dakika sonra yayında.**
+Yapıdan kalanlar korundu, ileride gerekirse üstüne CMS kurulabilir:
 
-| Panelden düzenlenebilecekler | Dosya |
-|------------------------------|-------|
-| İsim, unvan, profil fotoğrafı, sosyal linkler | `content/settings/genel.json` |
-| WhatsApp numarası, ön-doldurulmuş mesaj, telefon, e-posta, adres | `content/settings/iletisim.json` |
-| Fiyat paketleri, başlangıç rakamları, paket kapsamları | `content/settings/paketler.json` |
-| Hizmet sayfası metinleri | `content/services/*.mdx` |
-| Blog yazıları | `content/blog/*.mdx` |
-| SSS soru-cevapları | `content/settings/sss.json` |
-
-**Kurallar:**
-
-- **`src/config/site.ts` artık veri tutmaz** — `content/settings/*.json` dosyalarını okur, tiplendirir ve dışa verir. Bileşenler yine `site.ts`'ten okur; CMS'in TypeScript dosyası düzenleyemediği için veri JSON'a taşındı.
-- **Her metin alanı çift dilli.** JSON'da `{ "tr": "...", "en": "..." }` yapısı; MDX'te dosya adı soneki (`hizmet.tr.mdx` / `hizmet.en.mdx`).
-- **Giriş yetkisi yalnızca repo sahibinde.** GitHub OAuth için Cloudflare Worker (`sveltia-cms-auth`) gerekir — client secret `.env`'de, repoda değil.
-- **`/admin` indekslenmez:** `noindex` + `robots.ts` disallow + sitemap dışı.
-- **Panel şema doğrulaması yapar:** zorunlu alan boş bırakılamaz, telefon/e-posta biçimi kontrol edilir. Yanlış veri girilip build'in kırılması engellenir.
-- **Görsel yüklemesi:** panelden yüklenen görseller `public/uploads/` altına gider; **build sırasında WebP/AVIF'e çevrilir** (statik export `next/image` optimize etmediği için, bkz. §5.6).
+- `content/settings/*.json` — SSS, paketler, süreç, hizmet metinleri
+- Her metin alanı çift dilli: `{ "tr": "...", "en": "..." }`
+- `src/lib/content.ts` bu dosyaları okur, dile göre çözer, tiplendirir
+- `robots.ts`'teki `Disallow: /admin` bilinçli olarak duruyor
 
 ### 6.2. Kod Standartları
 

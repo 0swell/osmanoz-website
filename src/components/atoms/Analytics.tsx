@@ -1,8 +1,17 @@
+import { Analytics as VercelAnalytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import Script from "next/script";
 
 import { siteConfig } from "@/config/site";
 
 /**
+ * Ölçüm katmanı — Vercel Analytics + Speed Insights + Google Analytics 4.
+ *
+ * Vercel Analytics çerez kullanmıyor ve isteklerini kendi alan adımızdan
+ * (`/_vercel/insights/*`) yapıyor; CSP'de `'self'` zaten kapsıyor, ek izin
+ * gerekmiyor. Speed Insights gerçek ziyaretçilerden LCP/CLS/INP topluyor —
+ * tek seferlik Lighthouse ölçümünden daha güvenilir (CLAUDE.md §2).
+ *
  * Google Analytics 4.
  *
  * `lazyOnload`: tarayıcı boşa çıkana kadar beklenir. `afterInteractive` ile
@@ -18,20 +27,26 @@ import { siteConfig } from "@/config/site";
  */
 export function Analytics() {
   const id = siteConfig.gaMeasurementId;
-  if (!id) return null;
 
   return (
     <>
-      <Script
-        src={`https://www.googletagmanager.com/gtag/js?id=${id}`}
-        strategy="lazyOnload"
-      />
-      <Script id="ga4" strategy="lazyOnload">
-        {`window.dataLayer = window.dataLayer || [];
+      <VercelAnalytics />
+      <SpeedInsights />
+
+      {id && (
+        <>
+          <Script
+            src={`https://www.googletagmanager.com/gtag/js?id=${id}`}
+            strategy="lazyOnload"
+          />
+          <Script id="ga4" strategy="lazyOnload">
+            {`window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', '${id}');`}
-      </Script>
+          </Script>
+        </>
+      )}
     </>
   );
 }
