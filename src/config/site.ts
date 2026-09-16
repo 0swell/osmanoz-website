@@ -108,10 +108,12 @@ export const siteConfig = {
    * kaydı değildir; `share.google/...` kısaltmaları da genel arama sayfasına
    * düşebiliyor. İkisi de sameAs'e yazılmaz.
    *
-   * TODO: profil doğrulanıp yayına girince Maps'teki kayıt açılıp
-   * "Paylaş" linki buraya yazılacak.
+   * Buradaki adres, Maps kaydının `data=` parametresindeki CID'sinden
+   * üretildi (`!1s0x...:0xfa627724da7a5d8f` -> 18042114057367608719).
+   * CID biçimi tercih edildi: oturuma özel `entry`, `g_ep`, `ved` gibi
+   * parametre taşımıyor ve işletme yeniden adlandırılsa bile kırılmıyor.
    */
-  googleBusinessProfile: "",
+  googleBusinessProfile: "https://maps.google.com/?cid=18042114057367608719",
 
   // ---- Görseller -----------------------------------------------------------
   profileImage: "/osman-oz.webp", // 512×512, kare kırpılmış (bkz. CLAUDE.md §5.6)
