@@ -168,6 +168,7 @@ const tr = {
     hizmetler: "Hizmetler",
     gizlilik: "Gizlilik ve KVKK",
     sonGuncelleme: "Son güncelleme",
+    gbp: "Google İşletme Profili",
   },
 
 
@@ -372,6 +373,7 @@ const en: Sozluk = {
     hizmetler: "Services",
     gizlilik: "Privacy & GDPR",
     sonGuncelleme: "Last updated",
+    gbp: "Google Business Profile",
   },
 
 

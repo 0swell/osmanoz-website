@@ -1,6 +1,6 @@
 import { Mail, Phone } from "lucide-react";
 import Link from "next/link";
-import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa6";
+import { FaGithub, FaGoogle, FaLinkedin, FaWhatsapp } from "react-icons/fa6";
 
 import { Container } from "@/components/atoms/Container";
 import { SON_GUNCELLEME, guncellemeMetni } from "@/config/guncelleme";
@@ -18,7 +18,8 @@ import { s } from "@/i18n/sozluk";
  * hizmet linkleri iç linkleme için (CLAUDE.md §4.3) burada kaldı.
  */
 export function Footer({ dil }: { dil: Dil }) {
-  const { nap, social, personName, personalSiteUrl, areaServed } = siteConfig;
+  const { nap, social, personName, personalSiteUrl, areaServed, googleBusinessProfile } =
+    siteConfig;
   const t = s(dil);
   const yil = new Date().getFullYear();
 
@@ -76,6 +77,23 @@ export function Footer({ dil }: { dil: Dil }) {
               >
                 <FaLinkedin className="size-[18px]" aria-hidden />
               </a>
+              {/* Google İşletme Profili.
+                  Schema'da `sameAs` ile zaten bağlıydı ama sitede hiçbir yerde
+                  görünmüyordu; "schema'ya yalnızca görünen bilgi yazılır"
+                  kuralı (CLAUDE.md §4.3) bu bağlantıyla karşılanıyor.
+                  Etiket nötr tutuldu: footer'ı gören herkes müşteri değil,
+                  buradan yorum istenmez. */}
+              {googleBusinessProfile && (
+                <a
+                  href={googleBusinessProfile}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={t.footer.gbp}
+                  className="press grid size-11 place-items-center rounded-(--radius) text-ink-muted hover:bg-surface hover:text-accent"
+                >
+                  <FaGoogle className="size-[18px]" aria-hidden />
+                </a>
+              )}
               <a
                 href={social.github}
                 target="_blank"

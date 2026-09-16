@@ -99,10 +99,19 @@ export const siteConfig = {
   gaMeasurementId: "G-S2ZF8C61RQ",
 
   /**
-   * Google İşletme Profili paylaşım linki. `sameAs` üzerinden schema'ya girer:
-   * Google site ile işletme profilini aynı varlık sayar (CLAUDE.md §4.3, §4.4).
+   * Google İşletme Profili — `sameAs` ve footer ikonu buradan beslenir.
+   * Boşsa ikisi de hiç basılmaz (bilinçli: çalışmayan bağlantı, hiç
+   * bağlantı olmamasından kötüdür).
+   *
+   * DOĞRU LİNK NASIL ANLAŞILIR: adres çözüldüğünde `google.com/maps/place/...`
+   * içermeli. `maps/search/...` ise yalnızca koordinat iğnesidir, işletme
+   * kaydı değildir; `share.google/...` kısaltmaları da genel arama sayfasına
+   * düşebiliyor. İkisi de sameAs'e yazılmaz.
+   *
+   * TODO: profil doğrulanıp yayına girince Maps'teki kayıt açılıp
+   * "Paylaş" linki buraya yazılacak.
    */
-  googleBusinessProfile: "https://share.google/XGE7D53JDCccsPFNE",
+  googleBusinessProfile: "",
 
   // ---- Görseller -----------------------------------------------------------
   profileImage: "/osman-oz.webp", // 512×512, kare kırpılmış (bkz. CLAUDE.md §5.6)
