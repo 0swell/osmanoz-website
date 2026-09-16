@@ -51,10 +51,18 @@ export const siteConfig = {
 
   /**
    * Gerçek çalışma konumu (Burdur merkez, Zafer Mahallesi).
-   * Yalnızca koordinat yayınlanır; açık adres bilinçli olarak koda yazılmaz
-   * (repo public — bkz. nap.street ve isServiceAreaBusiness).
+   * Açık adres koda yazılmaz (repo public — bkz. nap.street), koordinat
+   * yayınlanır.
+   *
+   * KARAR (16.09.2026): tam hassasiyet bilinçli. Yuvarlama (ör. 37.713,
+   * 30.282 ≈ 100 m) önerildi, kullanıcı tam konumu verdi. Gizlilik
+   * gerekçesiyle geri alınmak istenirse tek yer burası.
+   *
+   * NOT: Google İşletme Profilindeki pin bu noktadan ~45 km batıda
+   * duruyordu; GBP tarafı düzeltilince iki konum aynı yeri göstermeli
+   * (mesafe, yerel sıralamanın üç faktöründen biri).
    */
-  geo: { latitude: 37.713111, longitude: 30.282155 },
+  geo: { latitude: 37.713132, longitude: 30.282113 },
 
   /** Hizmet verilen bölgeler. Ayrı sayfa açılmaz (bkz. CLAUDE.md §4.2). */
   areaServed: ["Burdur", "Isparta", "Antalya"],
