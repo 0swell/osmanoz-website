@@ -1,11 +1,94 @@
 [
   {
     "slug": {
+      "tr": "e-ticaret-sitesi-mi-gerekli",
+      "en": "do-i-need-an-online-shop"
+    },
+    "tarih": "2026-09-16",
+    "etiket": {
+      "tr": "Karar",
+      "en": "Deciding"
+    },
+    "ilgiliHizmet": "burdur-isletme-yazilimi",
+    "title": {
+      "tr": "E-Ticaret Sitesi mi Gerekli, Tanıtım Sitesi mi? | Osman Öz",
+      "en": "Do You Need an Online Shop, or Just a Website? | Osman Öz"
+    },
+    "description": {
+      "tr": "E-ticaret sitesi ne zaman gerçekten gerekir, ne zaman tanıtım sitesi ve WhatsApp yeter? Sipariş eşiği, gizli maliyetler ve platform seçimi.",
+      "en": "When do you genuinely need an online shop, and when is a brochure site plus WhatsApp enough? Order volume, hidden costs and platform choice."
+    },
+    "baslik": {
+      "tr": "İşletmem için e-ticaret sitesi mi gerekli, tanıtım sitesi mi yeter?",
+      "en": "Does my business need an online shop, or is a website enough?"
+    },
+    "ozet": {
+      "tr": "E-ticaret sitesi üç şart aynı anda varsa gerekir: kargoyla gönderilebilen bir ürününüz, günde birkaç siparişi karşılayacak stoğunuz ve iade ile kargoyu yürütecek zamanınız. Üçü birden yoksa ürünleri fotoğraflı listeleyen bir tanıtım sitesi ve WhatsApp butonu aynı işi çok daha ucuza görür.",
+      "en": "You need an online shop when three things are true at once: you have a product that can be shipped, enough stock for several orders a day, and time to handle returns and delivery. Without all three, a brochure site listing products with photos plus a WhatsApp button does the same job for far less."
+    },
+    "bolumler": [
+      {
+        "baslik": {
+          "tr": "E-ticaret sitesi ne zaman gerçekten gerekir?",
+          "en": "When do you genuinely need one?"
+        },
+        "metin": {
+          "tr": "Üç şart **aynı anda** sağlanıyorsa gerekir: kargoyla gönderilebilen bir ürününüz var, günde birkaç siparişi karşılayacak stoğunuz var ve iade, kargo, fatura süreçlerini yürütecek zamanınız var. Bu üçü yoksa e-ticaret sitesi açmak boş bir dükkân kiralamaya benzer — aylık gider döner, kapıdan kimse girmez. Hizmet satan işletmelerde (kuaför, klinik, oto servis, danışmanlık) kargolanacak bir ürün olmadığı için e-ticaret zaten gündeme gelmez; onların ihtiyacı randevu ve tanıtımdır.",
+          "en": "You need one when three things are true **at the same time**: you have a product that can be shipped, enough stock to handle several orders a day, and the time to run returns, delivery and invoicing. Without all three, opening a shop is like renting an empty store — the costs recur and nobody walks in. Service businesses rarely need one at all, because there is nothing to ship."
+        }
+      },
+      {
+        "baslik": {
+          "tr": "Günde kaç sipariş alıyorsunuz?",
+          "en": "How many orders a day do you take?"
+        },
+        "metin": {
+          "tr": "Karar bu tek soruda düğümleniyor. **Günde beşin altında sipariş alıyorsanız** sepet, ödeme altyapısı ve kargo entegrasyonu size zaman kazandırmaz, aksine yeni bir iş yükü açar. Onlu sayılara çıktığınızda ise elle sipariş almak sürdürülemez hâle gelir; orada e-ticaret gerçekten kazandırır. Arada kaldıysanız bir ay boyunca gelen siparişleri sayın — tahminle değil, sayıyla karar verin. Bu sayı aynı zamanda hangi platformun yeteceğini de belirler.",
+          "en": "The decision hinges on this one question. **Below five orders a day**, a cart, a payment provider and shipping integrations do not save you time; they add a new job. Once you reach the dozens, handling orders by hand stops being sustainable and a shop genuinely pays off. If you are unsure, count your orders for a month and decide on the number, not a feeling."
+        }
+      },
+      {
+        "baslik": {
+          "tr": "Tanıtım sitesi ve WhatsApp neden çoğu zaman yeter?",
+          "en": "Why is a brochure site plus WhatsApp usually enough?"
+        },
+        "metin": {
+          "tr": "Ürünleri fotoğraflı listeleyen bir sayfa ve altında WhatsApp butonu, düşük hacimde e-ticaretle **aynı sonucu** verir: müşteri ürünü görür, yazar, siz fiyatı ve kargoyu konuşursunuz. Üstelik bir avantajı var — müşteriyle konuşmuş olursunuz. Sepette sessizce vazgeçen müşteriyi kaybedersiniz, yazan müşteriye ikinci ürünü de satabilirsiniz. Kurulum bir haftada biter, aylık platform ücreti ve ödeme komisyonu ödemezsiniz. Sipariş sayınız arttığında aynı siteyi e-ticarete taşımak zaten mümkündür.",
+          "en": "A page listing products with photos and a WhatsApp button underneath produces **the same outcome** at low volume: the customer sees the item, writes, and you agree price and delivery. It has one advantage too — you actually talk to them. A silent checkout loses the hesitant customer; a conversation can sell them a second item. Setup takes about a week, with no monthly platform fee and no payment commission."
+        }
+      },
+      {
+        "baslik": {
+          "tr": "E-ticarette asıl maliyet nerede?",
+          "en": "Where does the real cost sit?"
+        },
+        "metin": {
+          "tr": "Site iki üç haftada kurulur; asıl yük ondan sonra başlar. **Kargo anlaşması, iade süreci, mesafeli satış sözleşmesi, ödeme altyapısı komisyonu, stok doğruluğu ve ürün fotoğrafları** — hepsi her gün emek ister. Bir de görünürlük var: mağazayı açmak müşteri getirmiyor, reklam bütçesi veya uzun soluklu içerik çalışması gerekiyor. İnsanların e-ticarette hayal kırıklığına uğramasının sebebi genelde site değil, bu kalemlerin baştan konuşulmamış olması.",
+          "en": "The site takes a couple of weeks; the real load starts afterwards. **A courier agreement, returns, distance-selling terms, payment commission, stock accuracy and product photography** all demand daily effort. Then there is visibility: opening a shop brings no customers by itself, so you need an ad budget or a long content effort. Disappointment usually comes from these being left uncosted, not from the site."
+        }
+      },
+      {
+        "baslik": {
+          "tr": "Hazır platform mu, özel yazılım mı?",
+          "en": "Ready-made platform or custom build?"
+        },
+        "metin": {
+          "tr": "Küçük ve orta ölçekte **hazır platform neredeyse her zaman daha doğru.** Aylık ücret ödersiniz; ödeme ve kargo entegrasyonları hazır gelir, güvenlik güncellemeleri sizin işiniz olmaz. Özel yazılım yalnızca hazır platformun karşılayamadığı bir işleyişiniz varsa anlamlıdır ve maliyeti birkaç katına çıkar. Karar vermeden önce ürün sayınızı, sipariş hacminizi ve kargo şeklinizi netleştirin — bu üçü bilinmeden verilen platform kararı sonradan taşınma masrafı olarak geri döner.",
+          "en": "At small and mid scale a **ready-made platform is almost always the right answer.** You pay monthly, payment and shipping integrations arrive working, and security updates are not your problem. A custom build only makes sense when your workflow genuinely cannot fit a platform, and it costs several times more. Settle your product count, order volume and delivery method first — a platform chosen without those tends to come back as migration cost."
+        }
+      }
+    ]
+  },
+  {
+    "slug": {
       "tr": "web-sitesi-satin-alirken-nelere-dikkat-edilir",
       "en": "what-to-check-before-buying-a-website"
     },
     "tarih": "2026-09-16",
-    "etiket": { "tr": "Satın alma", "en": "Buying" },
+    "etiket": {
+      "tr": "Satın alma",
+      "en": "Buying"
+    },
     "ilgiliHizmet": "burdur-web-sitesi",
     "title": {
       "tr": "Web Sitesi Satın Alırken Nelere Dikkat Etmeli? | Osman Öz",
@@ -92,7 +175,10 @@
       "en": "how-to-set-up-a-google-business-profile"
     },
     "tarih": "2026-09-16",
-    "etiket": { "tr": "Google", "en": "Google" },
+    "etiket": {
+      "tr": "Google",
+      "en": "Google"
+    },
     "ilgiliHizmet": "burdur-web-sitesi",
     "title": {
       "tr": "Google İşletme Profili Nasıl Açılır? | Osman Öz",
@@ -189,7 +275,10 @@
       "en": "website-or-instagram-for-my-business"
     },
     "tarih": "2026-09-16",
-    "etiket": { "tr": "Karar", "en": "Deciding" },
+    "etiket": {
+      "tr": "Karar",
+      "en": "Deciding"
+    },
     "ilgiliHizmet": "burdur-web-sitesi",
     "title": {
       "tr": "Web Sitesi mi Gerekli, Instagram Yeter mi? | Osman Öz",
@@ -266,7 +355,10 @@
       "en": "what-are-domains-and-hosting"
     },
     "tarih": "2026-09-16",
-    "etiket": { "tr": "Temel bilgi", "en": "Basics" },
+    "etiket": {
+      "tr": "Temel bilgi",
+      "en": "Basics"
+    },
     "ilgiliHizmet": "burdur-web-sitesi",
     "title": {
       "tr": "Alan Adı ve Hosting Nedir, Yıllık Ne Kadar Tutar? | Osman Öz",
@@ -286,7 +378,10 @@
     },
     "bolumler": [
       {
-        "baslik": { "tr": "Alan adı nedir?", "en": "What is a domain name?" },
+        "baslik": {
+          "tr": "Alan adı nedir?",
+          "en": "What is a domain name?"
+        },
         "metin": {
           "tr": "Alan adı, insanların tarayıcıya yazdığı **adrestir**: ornekkafe.com, burdurotoservis.com gibi. Dükkânınızın sokak adresi gibi düşünün — tabelada, kartvizitte ve faturada yazan şey odur. Alan adı satın alınmaz, **yıllık kiralanır** ve her yıl yenilenir. Kısa, okunduğu gibi yazılan ve işletme adınızı taşıyan bir ad seçin. Tire, rakam ve Türkçe karakter kullanmaktan kaçının: telefonda tarif etmesi zorlaşır ve müşteri yanlış yazıp başka bir siteye düşer.",
           "en": "The domain is the **address** people type into a browser: ornekkafe.com, burdurotoservis.com. Think of it as your street address — the thing printed on signage, cards and invoices. It is not bought outright but **rented yearly** and renewed every year. Choose something short, spelled the way it sounds, carrying your business name, and avoid hyphens, digits and accented characters."
@@ -350,7 +445,10 @@
       "en": "what-is-a-qr-menu"
     },
     "tarih": "2026-09-16",
-    "etiket": { "tr": "İşletme yazılımı", "en": "Business software" },
+    "etiket": {
+      "tr": "İşletme yazılımı",
+      "en": "Business software"
+    },
     "ilgiliHizmet": "burdur-isletme-yazilimi",
     "title": {
       "tr": "QR Menü Nedir, Kafeye Ne Kazandırır? | Osman Öz",
@@ -370,7 +468,10 @@
     },
     "bolumler": [
       {
-        "baslik": { "tr": "QR menü nasıl çalışır?", "en": "How does it work?" },
+        "baslik": {
+          "tr": "QR menü nasıl çalışır?",
+          "en": "How does it work?"
+        },
         "metin": {
           "tr": "Her masaya küçük bir kare kod konur. Müşteri telefonunun kamerasını koda tutar, ekranda bir bağlantı belirir, dokunur ve menünüz açılır. **Arada hiçbir uygulama yoktur**; menü doğrudan tarayıcıda açılan bir web sayfasıdır. Fotoğraflı ürünler, kategoriler, fiyatlar ve varsa alerjen bilgisi burada durur. Siz panelden bir fiyatı değiştirdiğinizde, sonraki müşteri kodu okuttuğu anda yeni fiyatı görür — masadaki kâğıdı değiştirmeniz gerekmez.",
           "en": "A small code sits on each table. The customer points their camera at it, a link appears, they tap it and your menu opens. **There is no app in between** — the menu is a web page opening straight in the browser, with photos, categories, prices and allergen information. When you change a price in the panel, the next customer to scan sees the new one."

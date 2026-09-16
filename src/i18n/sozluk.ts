@@ -80,7 +80,7 @@ const tr = {
     ornekleriGor: "Örnekleri Gör",
     guven: [
       { k: "10.000 TL", v: "başlayan paket fiyatları" },
-      { k: "1-2 hafta", v: "yayına alma" },
+      { k: "1 haftadan", v: "itibaren yayına alma" },
       { k: "Burdur ve çevresi", v: "hizmet bölgesi" },
     ],
     linkedinEtiket: "LinkedIn profili",
@@ -286,7 +286,7 @@ const en: Sozluk = {
     ornekleriGor: "See Examples",
     guven: [
       { k: "From 10,000 TL", v: "package pricing" },
-      { k: "1-2 weeks", v: "time to launch" },
+      { k: "From 1 week", v: "time to launch" },
       { k: "Burdur & region", v: "service area" },
     ],
     linkedinEtiket: "LinkedIn profile",

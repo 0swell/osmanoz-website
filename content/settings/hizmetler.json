@@ -23,8 +23,8 @@
           "en": "What should a good business website do?"
         },
         "metin": {
-          "tr": "Süslü olması değil, işe yaraması önemli. Müşteriniz siteye girdiğinde **üç şeyi saniyeler içinde** bulmalı: ne iş yaptığınızı, nerede olduğunuzu ve size nasıl ulaşacağını. Bunlar ekranın ilk yarısında yoksa, ziyaretçi geri tuşuna basıyor. Bu yüzden sayfanın en üstüne işletme adı, tek cümlelik açıklama ve arama tuşu koyuyorum; altına hizmetler, fotoğraflar ve konum geliyor. Yazı boyutu zoom yapmadan okunacak kadar büyük, butonlar parmakla rahat basılacak kadar geniş oluyor. Renk ve yazı tipi seçimi de buna göre: göz yormayan, işletmenize yakışan ve **her ekranda aynı görünen** bir düzen.",
-          "en": "It has to work, not just look decorative. A visitor should find **three things within seconds**: what you do, where you are and how to reach you. If those are missing from the first half of the screen, people hit the back button. So the top of the page carries your business name, a one-line description and a call button; services, photos and location follow underneath. Text is large enough to read without zooming and buttons are wide enough to tap comfortably. Colours and typeface follow the same rule: easy on the eye, suited to your business and **consistent on every screen**."
+          "tr": "Süslü olması değil, işe yaraması önemli. Müşteriniz siteye girdiğinde **üç şeyi saniyeler içinde** bulmalı: ne iş yaptığınızı, nerede olduğunuzu ve size nasıl ulaşacağını. Bunlar ekranın ilk yarısında yoksa, ziyaretçi geri tuşuna basıyor. Bu yüzden sayfanın en üstüne işletme adı, tek cümlelik açıklama ve arama tuşu koyuyorum; altına hizmetler, fotoğraflar ve konum geliyor. Yazı boyutu zoom yapmadan okunacak kadar büyük, butonlar parmakla rahat basılacak kadar geniş oluyor. Renk ve yazı tipi seçimi de buna göre: göz yormayan, işletmenize yakışan ve **her ekranda aynı görünen** bir düzen. Kurumsal bir web sitesi için gereken de bundan fazlası değil — abartılı efektler değil, düzenin kendisi ciddiyet hissi veriyor.",
+          "en": "It has to work, not just look decorative. A visitor should find **three things within seconds**: what you do, where you are and how to reach you. If those are missing from the first half of the screen, people hit the back button. So the top of the page carries your business name, a one-line description and a call button; services, photos and location follow underneath. Text is large enough to read without zooming and buttons are wide enough to tap comfortably. Colours and typeface follow the same rule: easy on the eye, suited to your business and **consistent on every screen**. A corporate site needs nothing more than that — it is the order on the page, not the effects, that reads as serious."
         }
       },
       {
@@ -43,8 +43,8 @@
           "en": "What is done to rank on Google?"
         },
         "metin": {
-          "tr": "Site kurulurken hangi şehirde, hangi işi yaptığınız Google'ın anlayacağı biçimde işleniyor. Sayfa hızı, başlıklar, açıklamalar ve adres bilgisi buna dahil. Ayrıca **ücretsiz olan Google İşletme Profilinizi** açmanız gerekir — haritada çıkan o kutu, arama sonuçlarının üstünde durur.",
-          "en": "While the site is built, your city and your line of work are written in a form Google understands: page speed, titles, descriptions and location data. You also need to open your **free Google Business Profile** — the map box it feeds sits above the organic results."
+          "tr": "Site kurulurken hangi şehirde, hangi işi yaptığınız Google'ın anlayacağı biçimde işleniyor. Sayfa hızı, başlıklar, açıklamalar ve adres bilgisi buna dahil — **arama motoru optimizasyonu (SEO)** dediğimiz iş budur ve her sitede, ayrı ücret istemeden yapılıyor. Ayrıca **ücretsiz olan Google İşletme Profilinizi** açmanız gerekir — haritada çıkan o kutu, arama sonuçlarının üstünde durur.",
+          "en": "While the site is built, your city and your line of work are written in a form Google understands: page speed, titles, descriptions and location data. That work — **search engine optimisation (SEO)** — is part of every site I build, at no extra charge. You also need to open your **free Google Business Profile**; the map box it feeds sits above the organic results."
         }
       },
       {
@@ -185,8 +185,8 @@
       "en": "Booking, stock and order management, revenue reporting and QR menus — software built around how your business actually works."
     },
     "giris": {
-      "tr": "Defterle, WhatsApp mesajlarıyla ve akılda tutarak yürüyen işler bir yere kadar gider. Randevu takibi, stok kontrolü, sipariş yönetimi ve gelir gider raporlaması — hepsini işletmenizin çalışma şekline göre tek bir sisteme taşıyorum.",
-      "en": "Running a business on notebooks, WhatsApp messages and memory only goes so far. Bookings, stock control, orders and revenue reporting — I bring all of it into one system shaped around how you already work."
+      "tr": "Defterle, WhatsApp mesajlarıyla ve akılda tutarak yürüyen işler bir yere kadar gider. Randevu takibi, stok kontrolü, sipariş yönetimi ve gelir gider raporlaması — hepsini işletmenizin çalışma şekline göre tek bir sisteme taşıyorum. Hazır paket değil, işletmenize özel yazılım.",
+      "en": "Running a business on notebooks, WhatsApp messages and memory only goes so far. Bookings, stock control, orders and revenue reporting — I bring all of it into one system shaped around how you already work. Not an off-the-shelf package, but custom software built for your business."
     },
     "bolumler": [
       {
@@ -247,6 +247,16 @@
         "metin": {
           "tr": "Evet. Masadaki kareyi okutan müşteri menünüzü telefonunda görür. **Fiyat değiştiğinde matbaaya gitmezsiniz**, panelden yazarsınız, o an değişir. Tükenen ürünü tek tuşla gizlersiniz.",
           "en": "Yes. Customers scan the code on the table and see your menu on their phone. **A price change no longer means a trip to the printer** — you type it in the panel and it updates instantly. Sold-out items are hidden with one tap."
+        }
+      },
+      {
+        "baslik": {
+          "tr": "E-ticaret, yani internetten satış da yapıyor musunuz?",
+          "en": "Do you also do e-commerce, meaning online selling?"
+        },
+        "metin": {
+          "tr": "**Eylül 2026 itibarıyla sepetli ve ödemeli tam bir e-ticaret kurulumu sunmuyorum.** Ama şunu da söyleyeyim: Burdur'da e-ticaret soran işletmelerin çoğunun buna henüz ihtiyacı olmuyor. Günde birkaç sipariş alan bir yerde **ürünleri fotoğraflı listeleyen bir sayfa ve altında WhatsApp butonu** aynı işi görüyor — müşteri ürünü görüyor, yazıyor, siz kargoyu ve fiyatı konuşuyorsunuz. Üstelik müşteriyle konuşmuş oluyorsunuz. Stok ve sipariş takibini de buradaki sistem zaten yapıyor; eksik olan tek şey ödemenin siteden geçmesi. Sipariş sayınız gerçekten artarsa doğru yönü tarif ederim, gerekmiyorsa gerekmediğini söylerim.",
+          "en": "**As of September 2026 I do not offer a full e-commerce setup with a cart and online payments.** I will also say this plainly: most businesses asking about it do not need one yet. Where a handful of orders come in each day, **a page listing products with photos and a WhatsApp button underneath** does the same job — the customer sees the item, writes to you, and you agree price and delivery, which also means you get to talk to them. Stock and order tracking is already covered by the system described here; the only missing piece is payment going through the site. If your order volume genuinely grows, I will point you the right way — and if you do not need it, I will say so."
         }
       },
       {
