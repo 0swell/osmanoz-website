@@ -49,8 +49,12 @@ export const siteConfig = {
    */
   isServiceAreaBusiness: true,
 
-  /** Burdur merkez — TODO: gerçek çalışma konumuyla güncelle. */
-  geo: { latitude: 37.7203, longitude: 30.2908 },
+  /**
+   * Gerçek çalışma konumu (Burdur merkez, Zafer Mahallesi).
+   * Yalnızca koordinat yayınlanır; açık adres bilinçli olarak koda yazılmaz
+   * (repo public — bkz. nap.street ve isServiceAreaBusiness).
+   */
+  geo: { latitude: 37.713111, longitude: 30.282155 },
 
   /** Hizmet verilen bölgeler. Ayrı sayfa açılmaz (bkz. CLAUDE.md §4.2). */
   areaServed: ["Burdur", "Isparta", "Antalya"],
@@ -94,8 +98,11 @@ export const siteConfig = {
    */
   gaMeasurementId: "G-S2ZF8C61RQ",
 
-  /** GBP yayına girince buraya işletme profilinin paylaşım linki yazılacak. */
-  googleBusinessProfile: "", // TODO
+  /**
+   * Google İşletme Profili paylaşım linki. `sameAs` üzerinden schema'ya girer:
+   * Google site ile işletme profilini aynı varlık sayar (CLAUDE.md §4.3, §4.4).
+   */
+  googleBusinessProfile: "https://share.google/XGE7D53JDCccsPFNE",
 
   // ---- Görseller -----------------------------------------------------------
   profileImage: "/osman-oz.webp", // 512×512, kare kırpılmış (bkz. CLAUDE.md §5.6)
