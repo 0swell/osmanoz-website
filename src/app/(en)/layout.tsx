@@ -4,6 +4,7 @@ import { KokGovde } from "@/components/sayfalar/KokGovde";
 import { siteConfig } from "@/config/site";
 import { rotalar } from "@/i18n/diller";
 import { sayfa } from "@/i18n/sayfalar";
+import { metaOlustur } from "@/lib/meta";
 
 import "../globals.css";
 
@@ -13,30 +14,19 @@ import "../globals.css";
  */
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
+  ...metaOlustur({
+    dil: "en",
+    title: sayfa("en").anasayfa.metaTitle,
+    description: sayfa("en").anasayfa.metaDesc,
+    yollar: rotalar.anasayfa,
+  }),
   title: {
     default: sayfa("en").anasayfa.metaTitle,
     template: "%s",
   },
-  description: sayfa("en").anasayfa.metaDesc,
   applicationName: siteConfig.siteName,
   authors: [{ name: siteConfig.personName, url: siteConfig.personalSiteUrl }],
   creator: siteConfig.personName,
-  alternates: {
-    canonical: rotalar.anasayfa.en,
-    languages: {
-      tr: rotalar.anasayfa.tr,
-      en: rotalar.anasayfa.en,
-      "x-default": rotalar.anasayfa.tr,
-    },
-  },
-  openGraph: {
-    type: "website",
-    locale: "en_US",
-    url: `${siteConfig.url}${rotalar.anasayfa.en}`,
-    siteName: siteConfig.siteName,
-    title: sayfa("en").anasayfa.metaTitle,
-    description: sayfa("en").anasayfa.metaDesc,
-  },
   robots: {
     index: true,
     follow: true,

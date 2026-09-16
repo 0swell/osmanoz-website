@@ -24,12 +24,19 @@ import { s } from "@/i18n/sozluk";
 export function DilDegistirici({
   dil,
   rota,
+  yollar,
 }: {
   dil: Dil;
   rota: RotaAnahtari;
+  /**
+   * Blog yazıları `rotalar` tablosunda yok (slug'ları içerikten geliyor).
+   * Verilirse dil tuşu bu çifti kullanır; verilmezse rota tablosuna düşer.
+   * Bu olmadan yazı sayfasında dil tuşu blog listesine atıyordu.
+   */
+  yollar?: { tr: string; en: string };
 }) {
   const hedefDil: Dil = dil === "tr" ? "en" : "tr";
-  const hedefYol = rotalar[rota][hedefDil];
+  const hedefYol = yollar ? yollar[hedefDil] : rotalar[rota][hedefDil];
 
   useEffect(() => {
     try {

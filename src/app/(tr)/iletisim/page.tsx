@@ -1,21 +1,12 @@
 import type { Metadata } from "next";
 
 import { IletisimGovde } from "@/components/sayfalar/IletisimGovde";
-import { alternatifler } from "@/i18n/diller";
 import { sayfa } from "@/i18n/sayfalar";
+import { sayfaMeta } from "@/lib/meta";
 
 const t = sayfa("tr").iletisim;
 
-export const metadata: Metadata = {
-  title: t.metaTitle,
-  description: t.metaDesc,
-  alternates: alternatifler("iletisim", "tr"),
-  openGraph: {
-    title: t.metaTitle,
-    description: t.metaDesc,
-    url: alternatifler("iletisim", "tr").canonical,
-  },
-};
+export const metadata: Metadata = sayfaMeta("iletisim", "tr", t.metaTitle, t.metaDesc);
 
 export default function Sayfa() {
   return <IletisimGovde dil="tr" />;

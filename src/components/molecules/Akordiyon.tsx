@@ -14,18 +14,35 @@ export function Akordiyon({
   bolumler,
   ad,
   baslikSeviyesi = "h2",
+  idOnEki,
+  genis = false,
 }: {
   bolumler: readonly { baslik: string; metin: string }[];
   /** Aynı sayfadaki başka bir akordiyonla çakışmasın diye benzersiz ad. */
   ad: string;
   baslikSeviyesi?: "h2" | "h3";
+  /**
+   * Verilirse her bölüm `${idOnEki}-${i}` kimliğini alır. İçindekiler
+   * bağlantıları bu kimliğe tutunur (blog yazılarında kullanılıyor).
+   */
+  idOnEki?: string;
+  /** Blog yazısında iki kolonlu düzen var; ortalama yapılmaz. */
+  genis?: boolean;
 }) {
   const Baslik = baslikSeviyesi;
 
   return (
-    <div className="mx-auto max-w-3xl divide-y divide-border overflow-hidden rounded-(--radius) border border-border bg-surface shadow-card">
+    <div
+      className={`${genis ? "" : "mx-auto max-w-3xl "}divide-y divide-border overflow-hidden rounded-(--radius) border border-border bg-surface shadow-card`}
+    >
       {bolumler.map((b, i) => (
-        <details key={b.baslik} name={ad} open={i === 0} className="group px-5">
+        <details
+          key={b.baslik}
+          id={idOnEki ? `${idOnEki}-${i}` : undefined}
+          name={ad}
+          open={i === 0}
+          className="group scroll-mt-24 px-5"
+        >
           <summary className="flex cursor-pointer list-none items-center justify-between gap-4 py-4 [&::-webkit-details-marker]:hidden">
             <Baslik className="text-base font-medium text-ink sm:text-lg">
               {b.baslik}

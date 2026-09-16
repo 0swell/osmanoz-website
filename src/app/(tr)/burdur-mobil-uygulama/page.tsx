@@ -1,22 +1,13 @@
 import type { Metadata } from "next";
 
 import { ServicePage } from "@/components/organisms/ServicePage";
-import { alternatifler } from "@/i18n/diller";
 import { getHizmetMeta } from "@/lib/content";
+import { sayfaMeta } from "@/lib/meta";
 
 const SLUG = "burdur-mobil-uygulama";
 const meta = getHizmetMeta(SLUG, "tr");
 
-export const metadata: Metadata = {
-  title: meta.title,
-  description: meta.description,
-  alternates: alternatifler("mobil", "tr"),
-  openGraph: {
-    title: meta.title,
-    description: meta.description,
-    url: alternatifler("mobil", "tr").canonical,
-  },
-};
+export const metadata: Metadata = sayfaMeta("mobil", "tr", meta.title, meta.description);
 
 export default function Sayfa() {
   return <ServicePage slug={SLUG} dil="tr" />;

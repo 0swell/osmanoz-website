@@ -3,6 +3,7 @@ import type { MetadataRoute } from "next";
 import { SON_GUNCELLEME } from "@/config/guncelleme";
 import { siteConfig } from "@/config/site";
 import { rotalar, type RotaAnahtari } from "@/i18n/diller";
+import { tumYaziKayitlari } from "@/lib/blog";
 
 /**
  * Sitemap — Google Search Console'a gönderilecek.
@@ -27,13 +28,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     fiyatlar: 0.8,
     ornekler: 0.7,
     iletisim: 0.7,
+    blog: 0.7,
     hakkimda: 0.6,
     gizlilik: 0.2,
   };
 
   const anahtarlar = Object.keys(rotalar) as RotaAnahtari[];
 
-  return anahtarlar.flatMap((k) => {
+  const sabitSayfalar = anahtarlar.flatMap((k) => {
     const languages = {
       tr: `${base}${rotalar[k].tr}`,
       en: `${base}${rotalar[k].en}`,
@@ -49,4 +51,26 @@ export default function sitemap(): MetadataRoute.Sitemap {
       alternates: { languages },
     }));
   });
+
+  /**
+   * Blog yazıları. Sabit sayfalardan ayrı üretiliyor çünkü `lastmod` yazının
+   * kendi tarihinden gelir — site geneli güncelleme tarihinden değil.
+   */
+  const yazilar = tumYaziKayitlari().flatMap((y) => {
+    const languages = {
+      tr: `${base}${y.yollar.tr}`,
+      en: `${base}${y.yollar.en}`,
+      "x-default": `${base}${y.yollar.tr}`,
+    };
+
+    return (["tr", "en"] as const).map((dil) => ({
+      url: `${base}${y.yollar[dil]}`,
+      lastModified: new Date(y.guncelleme),
+      changeFrequency: "yearly" as const,
+      priority: dil === "tr" ? 0.6 : 0.3,
+      alternates: { languages },
+    }));
+  });
+
+  return [...sabitSayfalar, ...yazilar];
 }

@@ -1,0 +1,421 @@
+[
+  {
+    "slug": {
+      "tr": "web-sitesi-satin-alirken-nelere-dikkat-edilir",
+      "en": "what-to-check-before-buying-a-website"
+    },
+    "tarih": "2026-09-16",
+    "etiket": { "tr": "Satın alma", "en": "Buying" },
+    "ilgiliHizmet": "burdur-web-sitesi",
+    "title": {
+      "tr": "Web Sitesi Satın Alırken Nelere Dikkat Etmeli? | Osman Öz",
+      "en": "What to Check Before Buying a Website | Osman Öz"
+    },
+    "description": {
+      "tr": "Web sitesi satın almadan önce sorulacak altı soru: alan adı kimin adına, site kimde kalıyor, ikinci yıl ne ödenir, hız, Google ve bakım.",
+      "en": "Six questions to ask before you buy a website: domain ownership, handover, second-year costs, speed, search visibility and maintenance."
+    },
+    "baslik": {
+      "tr": "Web sitesi satın alırken nelere dikkat edilir?",
+      "en": "What should you check before buying a website?"
+    },
+    "ozet": {
+      "tr": "Web sitesi satın alırken altı şeyi baştan sorun: alan adı kimin adına kaydediliyor, site teslimden sonra sizde mi kalıyor, ikinci yıl ne ödeyeceksiniz, telefonda kaç saniyede açılıyor, Google'da çıkması için ne yapılıyor ve güncellemeyi kim yapacak. Bu altı cevabı yazılı alırsanız sonradan sürpriz çıkmaz.",
+      "en": "Ask six questions before you buy: whose name the domain is registered in, whether the site stays yours after handover, what you pay in the second year, how fast it opens on a phone, what is done to make it visible on Google, and who updates it later. Get those six answers in writing and there are no surprises."
+    },
+    "bolumler": [
+      {
+        "baslik": {
+          "tr": "Alan adı kimin üstüne kaydediliyor?",
+          "en": "Whose name is the domain registered in?"
+        },
+        "metin": {
+          "tr": "**Alan adı sizin adınıza kaydedilmeli.** Alan adı, sitenizin internetteki adresidir — ornekkafe.com gibi. Bu işi yapan kişi kendi adına kaydederse, yollarınız ayrıldığında adresi de yanında götürür. O adrese basılmış kartvizitleriniz, tabelanız ve Google'da yıllarca biriktirdiğiniz sıranız bir anda boşa düşer. Sözleşmeden önce tek cümleyle sorun: “Alan adı benim adıma mı kaydedilecek?” Cevap “evet” değilse başka yere bakın. Kayıt tamamlandığında alan adı panelinin kullanıcı adı ve şifresi de size verilmeli.",
+          "en": "**The domain must be registered in your name.** It is your address on the internet, and whoever owns it controls where your customers land. If the person who builds the site registers it under their own name, they take the address with them when you part ways — along with your printed cards, your signage and the ranking you spent years building. Ask one question before you sign: “Will the domain be registered in my name?” If the answer is not yes, look elsewhere."
+        }
+      },
+      {
+        "baslik": {
+          "tr": "Site teslimden sonra gerçekten sizin mi oluyor?",
+          "en": "Does the site really become yours after handover?"
+        },
+        "metin": {
+          "tr": "Bazı yerler web sitesini satmaz, **kiralar.** Aylık ücret ödediğiniz sürece site açık kalır; ödemeyi kestiğiniz gün site kapanır ve elinizde hiçbir şey kalmaz. Bu modeli baştan söylemeyen az yer değil. Sorulacak soru şu: “Anlaşmayı bitirirsem site ve içerikler bende kalıyor mu?” Ben satılan her siteyi müşterinin kendi alan adı ve kendi barındırma hesabı üzerinden yayına alıyorum; yarın başka biriyle çalışmak isterseniz dosyaları devralır ve yolunuza devam edersiniz.",
+          "en": "Some providers do not sell a website — they **rent** it. The site stays online while you pay a monthly fee and disappears the day you stop. Ask directly: “If I end the arrangement, do the site and its content stay with me?” Every site I deliver runs on the client's own domain and hosting account, so you can hand it to someone else and carry on."
+        }
+      },
+      {
+        "baslik": {
+          "tr": "İkinci yıl ne ödeyeceksiniz?",
+          "en": "What will you pay in the second year?"
+        },
+        "metin": {
+          "tr": "İlk yıl fiyatı çoğu yerde nettir, asıl sürpriz ikinci yılda çıkar. Alan adı yenilemesi, barındırma ve bakım kalemleri ayrı ayrı faturalanır ve toplam beklediğinizin iki katı olabilir. **Rakamı baştan yazılı isteyin.** Benim tarafımda ilk yıl alan adı ve barındırma paket fiyatına dahildir; ikinci yıldan itibaren alan adı ve barındırma için 1.500 TL, bakım ve güncelleme için 3.500 TL olmak üzere yıllık toplam 5.000 TL ödersiniz. Başka kalem yoktur.",
+          "en": "The first-year price is usually clear; the surprise arrives in year two, when domain renewal, hosting and maintenance are billed separately. **Ask for the figure in writing up front.** On my side the first year of domain and hosting is included in the package price. From the second year you pay 1,500 TL for domain and hosting plus 3,500 TL for maintenance — 5,000 TL a year in total, with nothing else added."
+        }
+      },
+      {
+        "baslik": {
+          "tr": "Site telefonda kaç saniyede açılıyor?",
+          "en": "How fast does it open on a phone?"
+        },
+        "metin": {
+          "tr": "Ziyaretçilerin çoğu siteye telefondan giriyor ve **sayfa iki üç saniyede açılmazsa geri tuşuna basıyor.** Satın almadan önce karşınızdaki kişiden daha önce yaptığı bir siteyi isteyin, kendi telefonunuzdan açın ve bekleyin. Yavaş açılan bir site sadece ziyaretçi kaçırmaz; Google da yavaş sayfaları aşağı sıralara indiriyor. İyi bir web tasarım işinde yazılar zoom yapmadan okunur, butonlar parmakla rahat basılır ve sayfa kaydırırken takılmaz. Bunlar süs değil, doğrudan müşteri kaybıyla ilgili konulardır.",
+          "en": "Most visitors arrive from a phone, and **if a page does not open within two or three seconds they hit back.** Before you buy, ask for a site the provider built previously, open it on your own phone and count. A slow site does not only lose visitors — Google pushes slow pages down the results as well. Text should be readable without zooming and buttons wide enough to tap comfortably."
+        }
+      },
+      {
+        "baslik": {
+          "tr": "Google'da çıkması için ne yapılıyor?",
+          "en": "What is being done to make it visible on Google?"
+        },
+        "metin": {
+          "tr": "Site yapmak ayrı, sitenin Google'da çıkması ayrı iştir. Güzel görünen ama arama sonuçlarında hiç görünmeyen çok internet sitesi var. Somut olarak şunları sorun: her sayfanın kendine ait bir başlığı ve açıklaması var mı, işletmenin adı ve şehri sayfalara işlenmiş mi, site Google Search Console'a tanıtılıyor mu, Google İşletme Profili açılıyor mu? **Yerel aramalarda haritada çıkmanın yolu İşletme Profilinden geçer**; site tek başına yeterli olmaz. Bu ikisi birlikte kurulmazsa aylarca bekleyip sonuç alamazsınız.",
+          "en": "Building a site and getting it found are two different jobs. Ask concretely: does every page have its own title and description, is the business name and city written into the pages, is the site submitted to Google Search Console, and is a Google Business Profile being set up? **Local map results come from the Business Profile**, not from the site alone — the two have to be set up together."
+        }
+      },
+      {
+        "baslik": {
+          "tr": "Güncellemeyi kim yapacak?",
+          "en": "Who will handle updates?"
+        },
+        "metin": {
+          "tr": "Fiyat değişir, çalışma saati değişir, yeni hizmet eklenir. Bunları kimin, ne kadar sürede ve ne karşılığında yapacağı baştan belli olmalı. Bazı yerler her küçük değişiklik için ayrı ücret çıkarıyor, bazıları da haftalarca dönüş yapmıyor. Ben yıllık bakım kapsamında metin, fotoğraf, fiyat ve çalışma saati güncellemelerini ek ücret almadan yapıyorum. **Yeni sayfa eklenmesi gibi kapsamı büyüten işler ayrıdır** ve fiyatı öncesinde söylenir — iş bittikten sonra fatura sürpriziyle karşılaşmazsınız.",
+          "en": "Prices change, opening hours change, new services appear. Who makes those edits, how quickly and at what cost should be clear from day one. Some providers charge for every small change; others simply stop replying. My annual maintenance covers text, photo, price and opening-hour updates at no extra cost. **Work that expands the scope, such as adding new pages, is quoted separately and priced before it starts.**"
+        }
+      }
+    ]
+  },
+  {
+    "slug": {
+      "tr": "google-isletme-profili-nasil-acilir",
+      "en": "how-to-set-up-a-google-business-profile"
+    },
+    "tarih": "2026-09-16",
+    "etiket": { "tr": "Google", "en": "Google" },
+    "ilgiliHizmet": "burdur-web-sitesi",
+    "title": {
+      "tr": "Google İşletme Profili Nasıl Açılır? | Osman Öz",
+      "en": "How to Set Up a Google Business Profile | Osman Öz"
+    },
+    "description": {
+      "tr": "Google haritada çıkmak için İşletme Profili nasıl açılır, adım adım. Doğrulama, işletme adı kuralı, hizmet bölgesi ve yorum toplama.",
+      "en": "A step-by-step guide to setting up a Google Business Profile: verification, naming rules, service areas and collecting reviews."
+    },
+    "baslik": {
+      "tr": "Google haritada çıkmak için İşletme Profili nasıl açılır?",
+      "en": "How do you set up a Google Business Profile?"
+    },
+    "ozet": {
+      "tr": "Google İşletme Profili ücretsizdir ve haritada çıkmanın tek yoludur. business.google.com adresinden işletme adınızı, kategorinizi ve hizmet bölgenizi girersiniz; Google telefonla veya posta kartıyla doğrulama yapar. Doğrulamadan sonra fotoğraf, çalışma saati ve hizmet listesi eklenir. Profil genelde birkaç gün içinde haritada görünmeye başlar.",
+      "en": "A Google Business Profile is free and it is the only way to appear on the map. At business.google.com you enter your business name, category and service area; Google then verifies you by phone or postcard. After verification you add photos, opening hours and a service list. The profile usually starts showing on the map within a few days."
+    },
+    "bolumler": [
+      {
+        "baslik": {
+          "tr": "Google İşletme Profili nedir?",
+          "en": "What is a Google Business Profile?"
+        },
+        "metin": {
+          "tr": "Google'a “Burdur kuaför” yazdığınızda arama sonuçlarının en üstünde bir harita ve üç işletme çıkar. **O üç kutu organik sonuçların hepsinden önce gelir** ve tıklamaların büyük kısmını alır. Oraya girmenin yolu web sitesi değil, Google İşletme Profilidir. Profil ücretsizdir, Google'ın kendi sistemidir ve işletme adınızı, telefonunuzu, çalışma saatinizi, fotoğraflarınızı ve müşteri yorumlarınızı taşır. Dükkânı olmayan, müşterisine giden işletmeler de profil açabilir.",
+          "en": "When someone searches “hairdresser Burdur”, a map with three businesses appears above every organic result. **That block outranks the whole organic list** and takes most of the clicks. You get in there through a Google Business Profile, not through your website. The profile is free, it is Google's own system, and it carries your name, phone number, opening hours, photos and customer reviews."
+        }
+      },
+      {
+        "baslik": {
+          "tr": "Nasıl açılır, adım adım?",
+          "en": "How do you set it up, step by step?"
+        },
+        "metin": {
+          "tr": "Google hesabınızla business.google.com adresine girin ve “İşletmenizi Google'a ekleyin” deyin. Sırasıyla işletme adı, kategori, adres veya hizmet bölgesi, telefon ve web sitesi adresi istenir. **Kategori seçimi en kritik adımdır** — Google sizi hangi aramalarda göstereceğine büyük ölçüde buradan karar verir; işinizi en dar anlatan kategoriyi seçin, sonra ikincil kategoriler ekleyin. Son adımda doğrulama gelir: telefonla arama, kısa mesaj, video ya da adresinize gönderilen posta kartı. Doğrulama tamamlanmadan profil haritada görünmez.",
+          "en": "Sign in at business.google.com and choose “Add your business to Google”. You are asked for the business name, category, address or service area, phone number and website. **The category is the most important step** — it largely decides which searches you appear in, so pick the narrowest one that describes your work and add secondary categories afterwards. The last step is verification by phone, text, video or a postcard sent to your address. The profile does not appear on the map until verification is complete."
+        }
+      },
+      {
+        "baslik": {
+          "tr": "İşletme adını nasıl yazmalısınız?",
+          "en": "How should you write the business name?"
+        },
+        "metin": {
+          "tr": "İşletme adını **tabelanızda yazdığı gibi** yazın. İçine anahtar kelime doldurmak (“Ahmet Kuaför Burdur En İyi Ucuz Saç Kesimi” gibi) Google'ın kurallarına aykırıdır; rakipleriniz şikâyet edebilir ve profiliniz askıya alınabilir. Bir diğer kritik nokta tutarlılıktır: işletme adı, adres ve telefon üçlüsü sitenizde, İşletme Profilinde ve girdiğiniz bütün rehberlerde **harfi harfine aynı** yazılmalı. “Cad.” ile “Caddesi” farkı bile Google'ın iki kaydı aynı işletme saymasını zorlaştırır.",
+          "en": "Write the name **exactly as it appears on your sign**. Stuffing keywords into it breaks Google's rules and can get the profile suspended after a competitor complaint. Consistency matters just as much: your name, address and phone number must be written **character for character the same** on your website, on the profile and in every directory you appear in."
+        }
+      },
+      {
+        "baslik": {
+          "tr": "Dükkânım yok, müşteriye ben gidiyorum. Ne olacak?",
+          "en": "I have no shop and travel to customers. What then?"
+        },
+        "metin": {
+          "tr": "Bu durumda profili **hizmet alanı işletmesi** olarak açarsınız. Kurulumda “Müşterilerime onların adresinde hizmet veriyorum” seçeneğini işaretlersiniz; ev veya ofis adresiniz haritada gizli kalır, bunun yerine hizmet verdiğiniz şehir ve ilçeler listelenir. Tesisatçı, elektrikçi, nakliyeci, fotoğrafçı ve benim gibi yazılım işi yapanlar bu şekilde açar. Doğrulama için adres yine istenir ama yayınlanmaz. **Hizmet bölgesini gerçekte gittiğiniz yerlerle sınırlayın** — bütün Türkiye'yi işaretlemek sıralamanızı yükseltmez, aksine yerel eşleşmenizi zayıflatır.",
+          "en": "Set the profile up as a **service-area business**. During setup you tick “I deliver goods and services to my customers”, which hides your home or office address and lists the towns you serve instead. Plumbers, electricians, photographers and software people all use this option. Google still asks for an address to verify you, but does not publish it. **Keep the service area to places you genuinely travel to** — covering the whole country weakens your local match rather than improving it."
+        }
+      },
+      {
+        "baslik": {
+          "tr": "Müşteriler sizi hangi kelimelerle arıyor?",
+          "en": "What words do customers actually search for?"
+        },
+        "metin": {
+          "tr": "Profili ve siteyi doldururken tahmin yürütmeyin; insanların gerçekte yazdığı ifadeleri kullanın. Burdur'da bir işletme sahibi site arayacağı zaman Google'a çoğunlukla “burdur web sitesi” yazıyor; bazen “burdur website”, bazen “burdur web tasarım”, bazen de doğrudan “burdur yazılım” yazıyor. Hepsi aynı ihtiyacı anlatır ama farklı kelimelerdir. **Hizmetlerinizi profilde ve sitede müşterinizin kullandığı günlük dille yazın** — sektör terimiyle değil. Kendi müşterilerinizin telefonda ne dediğini dinleyin ve o cümleleri kullanın.",
+          "en": "Do not guess the words — use the ones people actually type. Someone in Burdur looking for a site might search “burdur web sitesi”, “burdur website”, “burdur web tasarım” or simply “burdur yazılım”. These mean the same thing but are different phrases. **Describe your services in the everyday words your customers use**, not in industry terms."
+        }
+      },
+      {
+        "baslik": {
+          "tr": "Yorum toplamak neden bu kadar önemli?",
+          "en": "Why do reviews matter so much?"
+        },
+        "metin": {
+          "tr": "Yorumlar hem sıralamayı hem de tıklanma oranını etkiler. İki işletme yan yana çıktığında insanlar puanı yüksek ve yorumu çok olana tıklıyor. İşi biten memnun müşteriye **profilinizin yorum bağlantısını doğrudan gönderin** — “Google'a yazabilir misiniz” demek çoğu zaman sonuç vermez, bağlantıyı göndermek verir. Gelen her yoruma kısa da olsa cevap yazın. Sahte yorum satın almayın: Google bunları temizliyor ve yakalanan profiller sıralamadan düşüyor, bazen tamamen kapanıyor.",
+          "en": "Reviews affect both ranking and click-through. When two businesses sit side by side, people click the one with more reviews and a higher score. **Send satisfied customers the direct review link** rather than asking them to look you up, and reply to every review, even briefly. Never buy fake reviews: Google removes them and suspended profiles lose their ranking entirely."
+        }
+      },
+      {
+        "baslik": {
+          "tr": "Profil açtım ama haritada çıkmıyorum, neden?",
+          "en": "My profile is live but I do not appear. Why?"
+        },
+        "metin": {
+          "tr": "En sık üç sebep var. Birincisi doğrulama tamamlanmamıştır — panelde kırmızı bir uyarı görürsünüz. İkincisi profil eksiktir: kategori, çalışma saati, fotoğraf ve hizmet listesi doldurulmamış profiller geride kalır. Üçüncüsü rekabet ve mesafedir; Google arayan kişiye **yakın** olanı önce gösterir, bu yüzden şehrin diğer ucundan yapılan aramada çıkmayabilirsiniz. Yeni profillerin oturması genelde birkaç hafta sürer. Bu süreçte düzenli gönderi paylaşmak, fotoğraf eklemek ve yorum toplamak en hızlı ilerleten üç iştir.",
+          "en": "Usually one of three things. Verification is not finished — the dashboard shows a red warning. The profile is incomplete: category, hours, photos and service list all need filling in. Or it is distance and competition, because Google shows the searcher whoever is **nearest** first. New profiles typically take a few weeks to settle; posting regularly, adding photos and collecting reviews are the three fastest ways to move things along."
+        }
+      }
+    ]
+  },
+  {
+    "slug": {
+      "tr": "web-sitesi-mi-instagram-mi",
+      "en": "website-or-instagram-for-my-business"
+    },
+    "tarih": "2026-09-16",
+    "etiket": { "tr": "Karar", "en": "Deciding" },
+    "ilgiliHizmet": "burdur-web-sitesi",
+    "title": {
+      "tr": "Web Sitesi mi Gerekli, Instagram Yeter mi? | Osman Öz",
+      "en": "Website or Instagram: What Does a Small Business Need? | Osman Öz"
+    },
+    "description": {
+      "tr": "Instagram sizi tanıtır, web sitesi sizi bulunur kılar. İkisinin farkı, hangi işletmeye hangisi gerekir ve bütçe kısıtlıysa hangisi önce gelir.",
+      "en": "Instagram introduces you; a website makes you findable. The difference, which businesses need which, and what to do first on a tight budget."
+    },
+    "baslik": {
+      "tr": "İşletmem için web sitesi mi gerekli, Instagram yeter mi?",
+      "en": "Does my business need a website, or is Instagram enough?"
+    },
+    "ozet": {
+      "tr": "İkisi farklı iş yapar. Instagram sizi tanıtır, web sitesi sizi bulunur kılar. Google'a “Burdur kuaför” yazan kişiye Instagram gönderisi çıkmaz, site çıkar. Ayrıca sosyal medya hesabı kapanabilir ve kuralları değişir; kendi internet siteniz kapanmaz. Doğru cevap çoğu işletme için ikisi birden: site sabit adresiniz, Instagram vitriniz olur.",
+      "en": "They do different jobs. Instagram introduces you; a website makes you findable. Someone searching “hairdresser Burdur” on Google sees websites, not Instagram posts. A social account can also be closed or have its rules changed overnight, while your own site cannot. For most businesses the answer is both: the site is your fixed address, Instagram is your shop window."
+    },
+    "bolumler": [
+      {
+        "baslik": {
+          "tr": "Instagram tek başına neden yetmiyor?",
+          "en": "Why is Instagram not enough on its own?"
+        },
+        "metin": {
+          "tr": "Instagram'da bulunabilmeniz için insanların sizi **zaten tanıyor** olması gerekir; hesabınızı arayacaklar ya da bir tanıdıkları etiketleyecek. Oysa yeni müşteri çoğunlukla sizi tanımadan arar: “Burdur oto servis”, “Burdur diş kliniği” yazar. Bu aramalarda Instagram gönderileri çıkmaz. İkinci sorun kontroldür: hesap kapanabilir, kurallar değişebilir, gönderiniz takipçilerinizin yarısına bile görünmeyebilir. Üçüncüsü ciddiyet — fiyat listesi, çalışma saati ve iletişim bilgisi bir profil biyografisine sığmaz.",
+          "en": "To be found on Instagram, people already have to **know you exist** — they search your handle or see a tag. New customers usually search without knowing you: “car service Burdur”, “dental clinic Burdur”. Instagram posts do not appear in those results. There is also the control problem: an account can be closed, rules change, and a post may not reach even half of your followers."
+        }
+      },
+      {
+        "baslik": {
+          "tr": "Web sitesi ne işe yarıyor?",
+          "en": "What does a website do?"
+        },
+        "metin": {
+          "tr": "Web sitesi, sizi **tanımayan** kişinin sizi bulduğu yerdir. Google'da arama yapan biri sonuç listesinde sizi görür, tıklar ve ne iş yaptığınızı, nerede olduğunuzu, size nasıl ulaşacağını saniyeler içinde öğrenir. Site aynı zamanda sabit adresinizdir: kartvizite, tabelaya, faturaya ve araç giydirmesine yazarsınız, yıllarca değişmez. Kapanma, kural değişikliği ya da algoritma sürprizi olmaz. Google İşletme Profilinizle birleştiğinde haritada ve organik sonuçlarda aynı anda görünürsünüz.",
+          "en": "A website is where someone who does **not** know you finds you. They search, see you in the results, click, and learn within seconds what you do, where you are and how to reach you. It is also your fixed address — printed on cards, signage, invoices and vehicles, unchanged for years, with no account closures or rule changes. Paired with a Google Business Profile, you appear on the map and in the organic results at the same time."
+        }
+      },
+      {
+        "baslik": {
+          "tr": "Hangi işletmenin sitesi olmalı?",
+          "en": "Which businesses need a site?"
+        },
+        "metin": {
+          "tr": "Müşterisi sizi **aramayla** bulan her işletmenin sitesi olmalı: klinik, oto servis, emlak, avukat, mimar, tesisatçı, otel, kuaför, veteriner, muhasebeci. Bunlarda insanlar ihtiyaç doğduğu anda Google'a yazar. Buna karşılık işi tamamen görselle yürüyen ve müşterisi mahalleden gelen küçük işletmelerde (el yapımı takı, ev pastacılığı, küçük butik) Instagram uzun süre yetebilir. **Ölçüt basit:** son bir ayda gelen müşterilerinize “bizi nereden buldunuz” diye sorun. Cevaplarda Google geçiyorsa siteniz olmalı.",
+          "en": "Any business whose customers find it **through search** needs one: clinics, car services, estate agents, lawyers, architects, plumbers, hotels, hairdressers, vets, accountants. Where the work is purely visual and customers come from the neighbourhood — handmade jewellery, home baking, small boutiques — Instagram can carry you for a while. **The test is simple:** ask this month's customers how they found you. If Google comes up, you need a site."
+        }
+      },
+      {
+        "baslik": {
+          "tr": "İkisini birlikte nasıl kullanırsınız?",
+          "en": "How do you use both together?"
+        },
+        "metin": {
+          "tr": "İşbölümü şöyle kurulur: **site kalıcı bilgiyi**, Instagram **güncel olanı** taşır. Hizmet listesi, fiyat aralığı, çalışma saati, konum, iletişim ve sık sorulan sorular sitede durur. Günlük paylaşım, kampanya duyurusu ve yeni iş fotoğrafları Instagram'da yayınlanır. Instagram biyografisine site adresinizi koyarsınız, siteye de Instagram bağlantısını. Böylece sosyal medyadan gelen ziyaretçi ayrıntıya ulaşır, aramadan gelen ziyaretçi ise işlerinizi canlı görür. İkisi birbirini besler ve aynı işi iki kere yapmazsınız.",
+          "en": "Split the work: the **site holds what stays the same**, Instagram carries **what changes**. Services, price ranges, opening hours, location, contact details and frequently asked questions live on the site. Daily posts, promotions and photos of recent work go on Instagram. Put the site address in your Instagram bio and the Instagram link on the site, so visitors from either direction find what they came for."
+        }
+      },
+      {
+        "baslik": {
+          "tr": "Bütçem kısıtlı, önce hangisi?",
+          "en": "My budget is tight — which comes first?"
+        },
+        "metin": {
+          "tr": "Bütçe darsa sıralama şöyle: önce **Google İşletme Profili** — ücretsizdir ve haritada çıkmanızı sağlar. Sonra **tanıtım sitesi** — 10.000 TL'den başlıyor, ilk yıl alan adı ve barındırma dahil, ortalama bir haftada yayına giriyor. Instagram zaten ücretsiz olduğu için sıraya girmez, paralel yürür. Bu üçlüyü kurduktan sonra reklama para harcamayı düşünebilirsiniz; tersini yapıp önce reklam vermek, gidilecek düzgün bir adresiniz yoksa parayı boşa harcamaktır.",
+          "en": "With a tight budget the order is: the **Google Business Profile** first, because it is free and puts you on the map. Then a **brochure site**, which starts at 10,000 TL with the first year of domain and hosting included and typically goes live within a week. Instagram is free, so it runs alongside rather than in the queue. Only after those three is paid advertising worth considering — sending paid traffic to no proper address wastes the money."
+        }
+      }
+    ]
+  },
+  {
+    "slug": {
+      "tr": "alan-adi-ve-hosting-nedir",
+      "en": "what-are-domains-and-hosting"
+    },
+    "tarih": "2026-09-16",
+    "etiket": { "tr": "Temel bilgi", "en": "Basics" },
+    "ilgiliHizmet": "burdur-web-sitesi",
+    "title": {
+      "tr": "Alan Adı ve Hosting Nedir, Yıllık Ne Kadar Tutar? | Osman Öz",
+      "en": "What Are Domains and Hosting, and What Do They Cost? | Osman Öz"
+    },
+    "description": {
+      "tr": "Alan adı sitenizin adresi, hosting dosyalarının durduğu yer. İkisinin farkı, yıllık maliyeti, .com mu .com.tr mi ve kimin adına kaydedilmeli.",
+      "en": "The domain is your address, hosting is where the files live. What each costs per year, .com versus .com.tr, and whose name they belong in."
+    },
+    "baslik": {
+      "tr": "Alan adı ve hosting nedir, yıllık ne kadar tutar?",
+      "en": "What are domains and hosting, and what do they cost a year?"
+    },
+    "ozet": {
+      "tr": "Alan adı sitenizin internetteki adresidir, ornekkafe.com gibi. Hosting ise sitenin dosyalarının durduğu, gece gündüz açık kalan bilgisayardır. İkisi de satın alınmaz, yıllık kiralanır. Küçük bir işletme sitesi için ikisi birlikte yılda 1.500 TL civarında tutar. Alan adı mutlaka işletme sahibinin kendi adına kaydedilmelidir.",
+      "en": "The domain is your address on the internet, such as ornekkafe.com. Hosting is the always-on computer where the site's files sit. Both are rented yearly rather than bought outright. For a small business site the two together cost around 1,500 TL a year. The domain must always be registered in the owner's own name."
+    },
+    "bolumler": [
+      {
+        "baslik": { "tr": "Alan adı nedir?", "en": "What is a domain name?" },
+        "metin": {
+          "tr": "Alan adı, insanların tarayıcıya yazdığı **adrestir**: ornekkafe.com, burdurotoservis.com gibi. Dükkânınızın sokak adresi gibi düşünün — tabelada, kartvizitte ve faturada yazan şey odur. Alan adı satın alınmaz, **yıllık kiralanır** ve her yıl yenilenir. Kısa, okunduğu gibi yazılan ve işletme adınızı taşıyan bir ad seçin. Tire, rakam ve Türkçe karakter kullanmaktan kaçının: telefonda tarif etmesi zorlaşır ve müşteri yanlış yazıp başka bir siteye düşer.",
+          "en": "The domain is the **address** people type into a browser: ornekkafe.com, burdurotoservis.com. Think of it as your street address — the thing printed on signage, cards and invoices. It is not bought outright but **rented yearly** and renewed every year. Choose something short, spelled the way it sounds, carrying your business name, and avoid hyphens, digits and accented characters."
+        }
+      },
+      {
+        "baslik": {
+          "tr": "Hosting (barındırma) nedir?",
+          "en": "What is hosting?"
+        },
+        "metin": {
+          "tr": "Hosting, sitenizin dosyalarının durduğu ve **gece gündüz açık kalan bir bilgisayardır.** Biri alan adınızı yazdığında o bilgisayar sayfayı gönderir. Alan adı adres, hosting ise dükkânın kendisidir; ikisi olmadan site yayında olmaz. Bu iş için ofisinize bir makine kurmanız gerekmez, hazır hizmet kiralanır. Küçük bir tanıtım sitesi için güçlü bir sunucuya da ihtiyaç yoktur — önemli olan sitenin hızlı açılması ve kesintisiz ayakta kalmasıdır.",
+          "en": "Hosting is the **always-on computer** where your site's files sit. When someone types your domain, that machine sends back the page. The domain is the address; hosting is the shop itself, and a site cannot be live without both. You do not need a machine in your office — the service is rented ready-made, and a brochure site does not need a powerful server."
+        }
+      },
+      {
+        "baslik": {
+          "tr": "Yıllık ne kadar tutuyor?",
+          "en": "What does it cost per year?"
+        },
+        "metin": {
+          "tr": "Küçük bir işletme sitesi için alan adı ve barındırma birlikte **yılda 1.500 TL** civarında tutuyor. Bu rakam sitenin büyüklüğüne ve ziyaretçi sayısına göre değişir ama tanıtım sitelerinde nadiren aşılır. Benim paketlerimde **ilk yıl bu gider fiyata dahildir**; ikinci yıldan itibaren alan adı ve barındırma için 1.500 TL, bakım ve güncelleme için 3.500 TL ödersiniz, toplam yıllık 5.000 TL. Karşınızdaki kişi bu rakamı net söyleyemiyorsa sözleşmeden önce yazılı isteyin.",
+          "en": "For a small business site, domain and hosting together come to around **1,500 TL a year**. The figure moves with the size of the site and its traffic, but a brochure site rarely goes beyond it. In my packages the **first year is included in the price**; from the second year you pay 1,500 TL for domain and hosting plus 3,500 TL for maintenance — 5,000 TL in total. If a provider cannot state this figure clearly, ask for it in writing."
+        }
+      },
+      {
+        "baslik": {
+          "tr": ".com mu, .com.tr mi almalıyım?",
+          "en": "Should I take .com or .com.tr?"
+        },
+        "metin": {
+          "tr": "Müşterilerinizin tamamı Türkiye'deyse ikisi de çalışır; pratikte **.com daha kolay akılda kalıyor** ve insanlar refleksle onu yazıyor. `.com.tr` uzantısı için vergi levhası veya marka belgesi gibi bir evrak istenir, bu da kurulumu uzatır. Google her iki uzantıyı da yerel aramalarda eşit değerlendirir — sıralamayı belirleyen uzantı değil, sitenin içeriği ve İşletme Profilinizdir. Bütçeniz elverirse ikisini birden alıp birini diğerine yönlendirebilirsiniz; adınızı başkası almasın diye.",
+          "en": "If all your customers are in Turkey, either works — in practice **.com is easier to remember** and people type it by reflex. A `.com.tr` address requires a document such as a tax certificate, which slows setup down. Google treats both equally in local search; what decides ranking is your content and your Business Profile, not the extension."
+        }
+      },
+      {
+        "baslik": {
+          "tr": "Ödemeyi unutursam ne olur?",
+          "en": "What happens if I miss a renewal?"
+        },
+        "metin": {
+          "tr": "Alan adı yenilenmezse site **kapanır** ve bir süre sonra ad serbest kalır, başkası alabilir. Bu, yıllarca biriktirdiğiniz Google sıranızın ve o adrese basılmış tüm kartvizitlerin boşa gitmesi demektir. Bu yüzden yenileme tarihini takviminize koyun ve mümkünse otomatik yenilemeyi açın. Alan adı paneline giriş bilgilerinin sizde durması da bu yüzden önemlidir: yenileme zamanı geldiğinde başkasına bağımlı kalmazsınız. Ben bakım kapsamındaki müşterilerime yenileme tarihi yaklaşınca hatırlatma yapıyorum.",
+          "en": "If the domain is not renewed the site **goes offline** and the name eventually becomes available for anyone to take — losing years of accumulated ranking and every card printed with that address. Put the renewal date in your calendar and turn on auto-renewal. This is also why you should hold the registrar login yourself. For clients on maintenance I send a reminder before the date."
+        }
+      },
+      {
+        "baslik": {
+          "tr": "Alan adı kimin adına kayıtlı olmalı?",
+          "en": "Whose name should the domain be in?"
+        },
+        "metin": {
+          "tr": "**İşletme sahibinin kendi adına.** Bu konuda esneklik yok. Alan adı siteyi yapan kişinin adına kayıtlıysa, yollarınız ayrıldığında adresiniz onda kalır ve pazarlık gücü tamamen karşı tarafa geçer. Kayıt sırasında kimlik veya vergi bilgisi sizden istenmeli, panel şifresi size teslim edilmeli. Teslim toplantısında alan adı panelini birlikte açıp kayıt sahibi alanında kendi adınızı görün. Ben yaptığım işlerde alan adını müşterinin adına kaydediyor ve giriş bilgilerini yazılı olarak teslim ediyorum.",
+          "en": "**In the owner's own name** — there is no flexibility here. If the domain sits in the builder's name, the address stays with them when you part ways and all the leverage moves to their side. Your own ID or tax details should be requested at registration and the panel password handed to you. Open the registrar panel together at handover and see your own name in the registrant field."
+        }
+      }
+    ]
+  },
+  {
+    "slug": {
+      "tr": "qr-menu-nedir-kafeye-ne-kazandirir",
+      "en": "what-is-a-qr-menu"
+    },
+    "tarih": "2026-09-16",
+    "etiket": { "tr": "İşletme yazılımı", "en": "Business software" },
+    "ilgiliHizmet": "burdur-isletme-yazilimi",
+    "title": {
+      "tr": "QR Menü Nedir, Kafeye Ne Kazandırır? | Osman Öz",
+      "en": "What Is a QR Menu and What Does It Gain a Café? | Osman Öz"
+    },
+    "description": {
+      "tr": "QR menü nasıl çalışır, basılı menüye göre ne kazandırır, müşteri uygulama indirmek zorunda mı ve sipariş de alabilir mi? Kısa cevaplar.",
+      "en": "How a QR menu works, what it gains over a printed one, whether customers need an app, and whether it can take orders."
+    },
+    "baslik": {
+      "tr": "QR menü nedir, kafeye ne kazandırır?",
+      "en": "What is a QR menu and what does it gain a café?"
+    },
+    "ozet": {
+      "tr": "QR menü, masadaki kareyi telefonuyla okutan müşterinin menünüzü ekranda görmesidir. En büyük kazancı fiyat güncellemesinde çıkar: matbaaya gitmeden, aynı gün içinde fiyat değiştirir, ürün ekler veya mevsimi geçen bir ürünü listeden kaldırırsınız. Müşterinin uygulama indirmesi gerekmez, telefonun kendi kamerası yeter. Kurulum genelde bir günde biter.",
+      "en": "A QR menu lets a customer scan the code on the table and read your menu on their phone. The biggest gain is in updates: you change a price, add a dish or remove one the same day without going to a printer. Customers need no app — the phone camera is enough. Setup usually takes a day."
+    },
+    "bolumler": [
+      {
+        "baslik": { "tr": "QR menü nasıl çalışır?", "en": "How does it work?" },
+        "metin": {
+          "tr": "Her masaya küçük bir kare kod konur. Müşteri telefonunun kamerasını koda tutar, ekranda bir bağlantı belirir, dokunur ve menünüz açılır. **Arada hiçbir uygulama yoktur**; menü doğrudan tarayıcıda açılan bir web sayfasıdır. Fotoğraflı ürünler, kategoriler, fiyatlar ve varsa alerjen bilgisi burada durur. Siz panelden bir fiyatı değiştirdiğinizde, sonraki müşteri kodu okuttuğu anda yeni fiyatı görür — masadaki kâğıdı değiştirmeniz gerekmez.",
+          "en": "A small code sits on each table. The customer points their camera at it, a link appears, they tap it and your menu opens. **There is no app in between** — the menu is a web page opening straight in the browser, with photos, categories, prices and allergen information. When you change a price in the panel, the next customer to scan sees the new one."
+        }
+      },
+      {
+        "baslik": {
+          "tr": "Basılı menüye göre ne kazandırıyor?",
+          "en": "What does it gain over a printed menu?"
+        },
+        "metin": {
+          "tr": "En somut kazanç **fiyat güncellemesidir.** Basılı menüde tek bir fiyat değişikliği yeniden tasarım, matbaa ve bekleme demektir; bu arada ya eski fiyattan satarsınız ya da üstüne etiket yapıştırırsınız. QR menüde değişiklik aynı gün, dakikalar içinde olur. İkincisi görsel: fotoğraflı menüde müşteri ne alacağını daha rahat seçer. Üçüncüsü yıpranma — yırtılan, lekelenen, eksilen menü sorunu ortadan kalkar. Dördüncüsü mevsimlik ürünleri **tek dokunuşla gizleyip geri açabilmenizdir.**",
+          "en": "The clearest gain is **price updates.** On a printed menu one change means redesign, printing and waiting, so you either sell at the old price or stick a label over it. On a QR menu the change takes minutes. Then there are photos, which help people choose; no more torn or stained menus; and seasonal items you can **hide and bring back with one tap.**"
+        }
+      },
+      {
+        "baslik": {
+          "tr": "Müşteri uygulama indirmek zorunda mı?",
+          "en": "Does the customer need an app?"
+        },
+        "metin": {
+          "tr": "Hayır. **Hiçbir uygulama indirilmez.** Son on yılın telefonlarının hemen hepsinde kamera uygulaması kare kodu kendiliğinden tanır; müşteri kamerayı koda tutar ve çıkan bağlantıya dokunur. Yaşlı müşterileriniz için masada birkaç basılı menü bulundurmanızı öneriyorum — QR menü basılı menüyü yasaklamak değil, ondan kurtulmak zorunda kalmadan esneklik kazanmaktır. Pratikte masaların çoğu kodu kullanır, birkaç basılı menü de ihtiyaç anında kenarda durur.",
+          "en": "No. **Nothing is downloaded.** Virtually every phone from the last decade recognises the code in its own camera app; the customer points and taps the link. For older customers I recommend keeping a few printed menus on hand — a QR menu is about gaining flexibility, not banning paper. In practice most tables use the code and a few printed copies stay nearby."
+        }
+      },
+      {
+        "baslik": {
+          "tr": "İnternet çekmezse ne olur?",
+          "en": "What if there is no signal?"
+        },
+        "metin": {
+          "tr": "Menü internetten açıldığı için müşterinin bağlantısı olması gerekir. Bu yüzden **işletmede ücretsiz kablosuz ağ bulundurmanızı** öneriyorum; hem menü sorunsuz açılır hem müşteri memnun olur. Menü sayfasını olabildiğince hafif tutuyorum, zayıf bağlantıda da birkaç saniyede açılıyor. Yine de her ihtimale karşı birkaç basılı menü kenarda dursun. Kırsal bir noktadaysanız ve şebeke düzensizse, kurulumdan önce bunu konuşup menünün çevrimdışı çalışan bir sürümünü değerlendirebiliriz.",
+          "en": "The menu loads over the internet, so the customer needs a connection. I recommend offering **free wi-fi on the premises** — the menu opens smoothly and customers appreciate it. I keep the menu page as light as possible so it loads in seconds even on a weak signal, and a few printed copies are worth keeping as a fallback."
+        }
+      },
+      {
+        "baslik": {
+          "tr": "Sipariş de alabilir mi?",
+          "en": "Can it take orders too?"
+        },
+        "metin": {
+          "tr": "Evet, ama bu ayrı bir adımdır. Temel QR menü sadece **gösterir.** Üstüne sipariş katmanı eklendiğinde müşteri masadan seçimini yapar, sipariş mutfağa veya kasadaki ekrana düşer. Bu, garson sayısının yetmediği yoğun saatlerde işe yarar; sakin bir kafede ise gereksiz karmaşa olabilir. **Gerekmiyorsa gerekmediğini söylüyorum** — önce menüyü kurup birkaç ay çalıştırmak, sonra ihtiyacı görerek sipariş katmanını eklemek çoğu işletme için daha doğru sıralamadır.",
+          "en": "Yes, but that is a separate step. A basic QR menu only **displays.** Add an ordering layer and the customer chooses from the table while the order lands in the kitchen or at the till. That helps during busy hours when staff are stretched; in a quiet café it can be unnecessary complication. **If you do not need it, I will say so** — running the menu for a few months first and adding ordering once the need is visible is usually the right order."
+        }
+      }
+    ]
+  }
+]

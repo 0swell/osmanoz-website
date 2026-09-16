@@ -4,6 +4,7 @@ import { KokGovde } from "@/components/sayfalar/KokGovde";
 import { siteConfig } from "@/config/site";
 import { rotalar } from "@/i18n/diller";
 import { sayfa } from "@/i18n/sayfalar";
+import { metaOlustur } from "@/lib/meta";
 
 import "../globals.css";
 
@@ -12,33 +13,27 @@ import "../globals.css";
  * `src/app/layout.tsx` yoktur, `(tr)` ve `(en)` grupları kendi <html>
  * etiketini basar. Tek layout'la `lang` özniteliği dile göre değişemezdi.
  */
+/**
+ * Varsayılan metadata. Sayfalar kendi başlığını `sayfaMeta()` ile üretir
+ * (bkz. src/lib/meta.ts); buradaki blok layout'a doğrudan bağlı sayfalar
+ * (404) ve eksik alanlar için taban görevi görür.
+ */
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
+  ...metaOlustur({
+    dil: "tr",
+    title: sayfa("tr").anasayfa.metaTitle,
+    description: siteConfig.description,
+    yollar: rotalar.anasayfa,
+  }),
   title: {
     default: sayfa("tr").anasayfa.metaTitle,
     // Sayfa başlıkları markayı kendisi taşır; şablon yalnızca eksikse ekler.
     template: "%s",
   },
-  description: siteConfig.description,
   applicationName: siteConfig.siteName,
   authors: [{ name: siteConfig.personName, url: siteConfig.personalSiteUrl }],
   creator: siteConfig.personName,
-  alternates: {
-    canonical: rotalar.anasayfa.tr,
-    languages: {
-      tr: rotalar.anasayfa.tr,
-      en: rotalar.anasayfa.en,
-      "x-default": rotalar.anasayfa.tr,
-    },
-  },
-  openGraph: {
-    type: "website",
-    locale: "tr_TR",
-    url: siteConfig.url,
-    siteName: siteConfig.siteName,
-    title: sayfa("tr").anasayfa.metaTitle,
-    description: siteConfig.description,
-  },
   robots: {
     index: true,
     follow: true,

@@ -35,9 +35,34 @@ const tr = {
     hizmetler: "Hizmetler",
     ornekler: "Örnekler",
     fiyatlar: "Fiyatlar",
+    blog: "Blog",
     hakkimda: "Hakkımda",
     iletisim: "İletişim",
     unvan: "Bilgisayar Mühendisi",
+  },
+
+  blog: {
+    metaTitle: "Blog | Burdur Web Sitesi ve Yazılım Rehberi | Osman Öz",
+    metaDesc:
+      "Web sitesi satın alma, alan adı, Google İşletme Profili ve QR menü hakkında sade rehberler. İşletme sahibinin diliyle yazıldı.",
+    h1: "İşletme sahibi için sade rehberler",
+    giris:
+      "Görüşmelerde en çok sorulan konuları burada tek tek yazıyorum. Teknik terim yok; kararı verecek olan kişinin anlayacağı dille yazıldı.",
+    schemaAd: "Osman Öz Blog",
+    schemaAciklama:
+      "Burdur'da web sitesi, alan adı, Google görünürlüğü ve işletme yazılımı üzerine rehberler.",
+    tumYazilar: "Tüm yazılar",
+    yaziOku: "Yazıyı oku",
+    icindekiler: "İçindekiler",
+    kisaCevap: "Kısa cevap",
+    yayinTarihi: "Yayın tarihi",
+    guncellemeTarihi: "Güncellenme",
+    yazan: "Yazan",
+    ilgiliHizmetBaslik: "Bu konuda hizmet alıyor musunuz?",
+    ilgiliHizmetMetin:
+      "Yazıda anlatılanların işletmenizde nasıl karşılık bulacağını konuşalım. Görüşme ücretsiz, bir yükümlülüğü de yok.",
+    digerYazilar: "Diğer yazılar",
+    bloguGor: "Bloga dön",
   },
 
   hero: {
@@ -90,7 +115,7 @@ const tr = {
     eyebrow: "Hizmetler",
     baslik: "Ne yaptırabilirsiniz?",
     giris:
-      "Üç paketi de tek elden yapıyorum. İhtiyacınız olan çözümlere karar verelim, en kısa sürede müşterilerinize ulaşmanızı sağlayayım.",
+      "Üç paketi de tek elden yapıyorum — web tasarımdan internet sitesi kurulumuna, oradan işletme yazılımına kadar. İhtiyacınız olan çözümlere birlikte karar verelim, en kısa sürede müşterilerinize ulaşmanızı sağlayayım.",
     yakindaNot:
       "Gösterilecek örnek çalışma hazırlanıyor. Yine de konuşabiliriz.",
   },
@@ -219,9 +244,34 @@ const en: Sozluk = {
     hizmetler: "Services",
     ornekler: "Examples",
     fiyatlar: "Pricing",
+    blog: "Blog",
     hakkimda: "About",
     iletisim: "Contact",
     unvan: "Computer Engineer",
+  },
+
+  blog: {
+    metaTitle: "Blog | Websites and Software in Burdur | Osman Öz",
+    metaDesc:
+      "Plain-language guides on buying a website, domains and hosting, Google visibility and QR menus, written for business owners.",
+    h1: "Plain guides for business owners",
+    giris:
+      "The questions that come up most often in client calls, written out one by one. No jargon — written for the person who has to make the decision.",
+    schemaAd: "Osman Öz Blog",
+    schemaAciklama:
+      "Guides on websites, domains, Google visibility and business software in Burdur.",
+    tumYazilar: "All posts",
+    yaziOku: "Read the post",
+    icindekiler: "Contents",
+    kisaCevap: "Short answer",
+    yayinTarihi: "Published",
+    guncellemeTarihi: "Updated",
+    yazan: "Written by",
+    ilgiliHizmetBaslik: "Thinking about this for your business?",
+    ilgiliHizmetMetin:
+      "Let's talk about how this would work in your business. The call is free and puts you under no obligation.",
+    digerYazilar: "Other posts",
+    bloguGor: "Back to the blog",
   },
 
   hero: {
@@ -270,7 +320,7 @@ const en: Sozluk = {
     eyebrow: "Services",
     baslik: "What can I build for you?",
     giris:
-      "All three packages are handled by one person. We decide together what your business actually needs, and get you in front of customers quickly.",
+      "All three packages are handled by one person — from web design and site build through to business software. We decide together what your business actually needs, and get you in front of customers quickly.",
     yakindaNot: "A sample project is in preparation. We can still talk about it.",
   },
 

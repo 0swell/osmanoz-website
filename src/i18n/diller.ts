@@ -30,10 +30,22 @@ export const rotalar = {
   fiyatlar: { tr: "/fiyatlar", en: "/en/pricing" },
   hakkimda: { tr: "/hakkimda", en: "/en/about" },
   iletisim: { tr: "/iletisim", en: "/en/contact" },
+  blog: { tr: "/blog", en: "/en/blog" },
   gizlilik: { tr: "/gizlilik", en: "/en/privacy" },
 } as const;
 
 export type RotaAnahtari = keyof typeof rotalar;
+
+/**
+ * Blog yazısının yolu. Slug iki dilde farklıdır (§4.3) — bu yüzden yazının
+ * kendi slug çiftinden üretilir, tek bir slug'a çevrilemez.
+ */
+export function yaziYollari(slug: { tr: string; en: string }) {
+  return {
+    tr: `${rotalar.blog.tr}/${slug.tr}`,
+    en: `${rotalar.blog.en}/${slug.en}`,
+  };
+}
 
 /** Sayfa anahtarından o dildeki yolu verir. */
 export function yol(anahtar: RotaAnahtari, dil: Dil): string {

@@ -311,16 +311,18 @@ osmanoz-website/
 │   │   └── site.ts                       # NAP, WhatsApp, sosyal, hizmet & paket verisi
 │   ├── lib/
 │   │   ├── schema.ts                     # JSON-LD üreticileri
-│   │   └── mdx.ts
+│   │   ├── meta.ts                       # sayfa metadata üreticisi (§12)
+│   │   ├── og.tsx                        # paylaşım kartı görseli (§12)
+│   │   ├── blog.ts                       # content/blog okuyucu
+│   │   └── content.ts
 │   ├── actions/
 │   │   └── contact.ts                    # Server Action → Resend
 │   ├── hooks/
 │   ├── types/
 │   └── utils/
 ├── content/
-│   ├── settings/*.json                   # CMS'in yazdığı veri (genel · iletisim · paketler · sss)
-│   ├── services/*.{tr,en}.mdx
-│   └── blog/*.{tr,en}.mdx
+│   ├── settings/*.json                   # SSS · paketler · süreç · hizmet sayfaları
+│   └── blog/yazilar.json                 # blog yazıları, çift dilli (bkz. §12)
 ├── public/
 │   ├── osman-oz.webp                     # 512×512, kare kırpılmış profil (< 60 KB)
 │   ├── llms.txt                          # YZ motorları için düz metin özet (GEO)
@@ -440,3 +442,9 @@ Geliştirme sırasında alınan, yukarıdaki bölümlerden türetilemeyen kararl
 | **Hizmet bölgesi bölümü kaldırılmaz** | Isparta/Antalya kelimelerinin siteye girdiği tek yer orası ve schema'daki `areaServed` "yalnızca görünen bilgi" kuralına oradan dayanıyor (§4.2, §4.3). |
 | **SSS cevap uzunluğu** | Metin her değiştiğinde **40-60 kelime** aralığı yeniden ölçülür (§4.5). Kısa cevap AEO'da snippet şansını düşürür. |
 | **Tarih içeren ifadeler** | "Eylül 2026 itibarıyla mobil uygulama hizmeti aktif değil" gibi cümleler net tarih taşır (GEO 3); hizmet açıldığında bu cümleler taranıp güncellenir. |
+| **Sayfa metadata'sı tek üreticiden** | `src/lib/meta.ts` → `sayfaMeta()` / `metaOlustur()`. Next.js metadata'yı **sığ** birleştirir: sayfa kendi `openGraph` bloğunu yazınca layout'tan gelen `og:image` ve `twitter` alanları sessizce düşüyordu (16.09.2026'da 18 sayfanın 16'sında paylaşım görseli yoktu). Sayfalarda elle `openGraph` yazılmaz. |
+| **OG görseli `opengraph-image.tsx` değil** | Proje "multiple root layouts" deseni kullanıyor; `src/app/opengraph-image.tsx` hiçbir sayfaya bağlanmıyordu. Görsel artık sabit adresli route handler: `app/(tr)/og.png` ve `app/(en)/en/og.png`, üretici `src/lib/og.tsx`. `twitter:card` = `summary_large_image`. |
+| **Blog içeriği MDX değil JSON** | `content/blog/yazilar.json`. §5.3'teki akordiyon düzeni gövdeyi zaten "bölüm listesi" olmaya zorluyor; serbest markdown bu yapıyı taşımıyor ve iki dili tek dosyada hizalamayı zorlaştırıyordu. Okuyucu: `src/lib/blog.ts`. |
+| **Blog slug'ları dile göre farklı** | `/blog/alan-adi-ve-hosting-nedir` ↔ `/en/blog/what-are-domains-and-hosting`. `rotalar` tablosunda tutulamadığı için `yaziYollari()` üretir; `Navbar`/`DilDegistirici` `yollar` prop'u ile bu çifti alır, yoksa dil tuşu blog listesine düşüyordu. |
+| **Navbar 6 öğe** | Blog menüye alındı. Yalnız footer'dan bağlansaydı yazılar hem ziyaretçi hem tarayıcı için derinde kalırdı. 6 üstü mobilde okunmuyor — sınır burası. |
+| **İçindekiler istemci bileşeni** | `<details name=...>` aynı anda tek bölüm açık tutuyor; düz `#bağlantı` kapalı bölüme gidince hiçbir şey açılmıyordu. `Icindekiler.tsx` hedefi açıp kaydırır, bağlantılar yine gerçek `<a href="#...">` olduğu için JS'siz de gezinilebilir. |

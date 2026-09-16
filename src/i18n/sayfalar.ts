@@ -18,10 +18,10 @@ const tr = {
   fiyatlar: {
     metaTitle: "Burdur Web Sitesi Fiyatları | Osman Öz",
     metaDesc:
-      "Burdur'da web sitesi fiyatları ve paket kapsamları. Rakam baştan bellidir, görüşmeden fiyat öğrenebilirsiniz. Bilgisayar mühendisi Osman Öz.",
+      "Burdur'da web sitesi fiyatları ve paket kapsamları. Satın almadan önce ne ödeyeceğinizi baştan görün; görüşme gerekmiyor. Osman Öz.",
     h1: "Burdur'da web sitesi fiyatları",
     giris:
-      "Fiyatı öğrenmek için görüşme ayarlamanız gerekmiyor. Rakamlar aşağıda; işin kapsamı değişirse birlikte konuşuruz.",
+      "Fiyatı öğrenmek için görüşme ayarlamanız gerekmiyor. Rakamlar aşağıda: web sitesi satın almadan önce ilk yıl ve sonraki yıllar ne ödeyeceğinizi görürsünüz. İşin kapsamı değişirse birlikte konuşuruz.",
     schemaAd: "Burdur Web Sitesi Fiyatları",
     schemaAciklama:
       "Web sitesi, mobil uygulama ve işletme yazılımı paket fiyatları.",
@@ -301,7 +301,7 @@ const en: SayfaSozlugu = {
       "Website packages and prices for businesses in Burdur. The figures are published up front — you do not need a call to learn the price.",
     h1: "Website pricing",
     giris:
-      "You do not need to book a call to find out the price. The figures are below; if the scope changes, we discuss it together.",
+      "You do not need to book a call to find out the price. The figures are below: before you buy, you see what the first year and the following years cost. If the scope changes, we discuss it together.",
     schemaAd: "Website Pricing",
     schemaAciklama:
       "Package pricing for websites, mobile apps and business software.",

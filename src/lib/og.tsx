@@ -3,20 +3,41 @@ import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 
 import { siteConfig } from "@/config/site";
+import type { Dil } from "@/i18n/diller";
 
-export const alt =
-  "Osman Öz — Burdur'da web sitesi, mobil uygulama ve işletme yazılımı";
-export const size = { width: 1200, height: 630 };
-export const contentType = "image/png";
+const ogBoyut = { width: 1200, height: 630 };
+
+/**
+ * Paylaşım kartı metinleri. Türkçe kart yerel esnafa, İngilizce kart yabancı
+ * ziyaretçiye hitap eder — birebir çeviri değil (CLAUDE.md §1).
+ * Kartın `alt` metni src/lib/meta.ts içinde (metadata ile aynı yerde dursun).
+ */
+const ogMetin = {
+  tr: {
+    bolge: "Burdur · Isparta · Antalya",
+    baslik: "Web sitesi, mobil uygulama ve işletme yazılımı",
+    altBaslik: "Aracı yok — doğrudan bilgisayar mühendisiyle çalışırsınız.",
+  },
+  en: {
+    bolge: "Burdur · Isparta · Antalya",
+    baslik: "Websites, mobile apps and business software",
+    altBaslik: "No agency, no middlemen — you work with the engineer directly.",
+  },
+} as const;
 
 /**
  * WhatsApp/LinkedIn paylaşımlarında çıkan kart görseli.
  * Build-time'da üretilir; ayrı bir tasarım dosyası tutulmaz.
  *
  * Fotoğraf PNG olarak okunur: `next/og` (Satori) WebP çözemiyor,
- * WebP verilince derleme "not iterable" hatasıyla düşüyor.
+ * WebP verilince derleme "not iterable" hatasıyla düşüyor (CLAUDE.md §12).
+ *
+ * Çağrı yeri: app/(tr)/og.png ve app/(en)/en/og.png route handler'ları.
+ * `opengraph-image.tsx` dosya kuralı kullanılamıyor — gerekçesi o
+ * dosyaların başında yazılı.
  */
-export default async function Image() {
+export async function ogGorseli(dil: Dil) {
+  const t = ogMetin[dil];
   const foto = await readFile(join(process.cwd(), "public", "og-foto.png"));
   const fotoSrc = `data:image/png;base64,${foto.toString("base64")}`;
 
@@ -45,7 +66,7 @@ export default async function Image() {
             fontWeight: 600,
           }}
         >
-          Burdur · Isparta · Antalya
+          {t.bolge}
         </div>
 
         {/* Orta: vaat */}
@@ -61,10 +82,10 @@ export default async function Image() {
               maxWidth: 900,
             }}
           >
-            Web sitesi, mobil uygulama ve işletme yazılımı
+            {t.baslik}
           </div>
           <div style={{ display: "flex", fontSize: 30, color: "#4d535e" }}>
-            Aracı yok — doğrudan bilgisayar mühendisiyle çalışırsınız.
+            {t.altBaslik}
           </div>
         </div>
 
@@ -88,13 +109,11 @@ export default async function Image() {
               style={{ borderRadius: 999, objectFit: "cover" }}
             />
             <div style={{ display: "flex", flexDirection: "column" }}>
-              <div
-                style={{ fontSize: 34, fontWeight: 700, color: "#12141a" }}
-              >
+              <div style={{ fontSize: 34, fontWeight: 700, color: "#12141a" }}>
                 {siteConfig.personName}
               </div>
               <div style={{ fontSize: 24, color: "#6b7280" }}>
-                {siteConfig.jobTitle}
+                {dil === "tr" ? siteConfig.jobTitle : "Computer Engineer"}
               </div>
             </div>
           </div>
@@ -104,6 +123,6 @@ export default async function Image() {
         </div>
       </div>
     ),
-    size,
+    ogBoyut,
   );
 }

@@ -13,7 +13,7 @@
       "en": "Fast, search-friendly websites for businesses in Burdur, Isparta and Antalya. Work directly with computer engineer Osman Öz."
     },
     "giris": {
-      "tr": "Burdur'da web sitesi arayan bir işletme sahibiyseniz, muhtemelen tek bir şey istiyorsunuz: müşteriniz sizi Google'da bulsun. Tanıtım sitenizi bu amaçla kuruyorum — telefonda hızlı açılan, aramalarda görünen, size müşteri getiren bir site.",
+      "tr": "Burdur'da web sitesi arayan bir işletme sahibiyseniz, muhtemelen tek bir şey istiyorsunuz: müşteriniz sizi Google'da bulsun. İster web sitesi deyin, ister internet sitesi, ister website ya da web tasarım — anlatılan ihtiyaç aynı. Tanıtım sitenizi bu amaçla kuruyorum: telefonda hızlı açılan, aramalarda görünen, size müşteri getiren bir site.",
       "en": "If you are looking for a website in Burdur, you probably want one thing: customers finding you on Google. That is what I build for — a site that loads fast on a phone, shows up in search results and brings you enquiries."
     },
     "bolumler": [
@@ -59,11 +59,21 @@
       },
       {
         "baslik": {
+          "tr": "Web sitesi satın alırken neyi sormalısınız?",
+          "en": "What should you ask before buying?"
+        },
+        "metin": {
+          "tr": "Site satın almak tek seferlik bir harcama değil, **yıllara yayılan bir ilişkidir.** Bu yüzden karar vermeden önce dört şeyi yazılı isteyin: alan adı kimin adına kaydediliyor, site teslimden sonra tamamen sizde mi kalıyor, ikinci yıldan itibaren ne ödeyeceksiniz ve metin ile fotoğraf güncellemelerini kim yapacak. Bu dördünün cevabı netse geri kalanı konuşulur. Bende alan adı sizin adınıza kaydedilir, site kiralanmaz — **satın aldığınız şey gerçekten sizin olur.** Ayrıntılı kontrol listesini blog yazısında madde madde yazdım.",
+          "en": "Buying a site is not a one-off purchase but a **relationship spread over years.** Before you decide, ask for four things in writing: whose name the domain is registered in, whether the site is entirely yours after handover, what you pay from the second year, and who updates the text and photos. If those four are clear, the rest is negotiable. With me the domain is registered in your name and the site is never rented — **what you buy is genuinely yours.**"
+        }
+      },
+      {
+        "baslik": {
           "tr": "Burdur'da web sitesi kaç sayfadan oluşur?",
           "en": "How many pages does a business website need?"
         },
         "metin": {
-          "tr": "Çoğu işletme için **dört ile altı sayfa** yetiyor: ana sayfa, hizmetler, hakkımızda, iletişim; kafe ve restoranlarda bir de menü. Sayfa sayısını çoğaltmak siteyi güçlendirmiyor, aksine ziyaretçiyi dağıtıyor. Neye ihtiyacınız olduğunu birlikte konuşup gereksiz sayfa açmıyoruz.",
+          "tr": "Çoğu işletme için **dört ile altı sayfa** yetiyor: ana sayfa, hizmetler, hakkımızda, iletişim; kafe ve restoranlarda bir de menü. Sayfa sayısını çoğaltmak internet sitesini güçlendirmiyor, aksine ziyaretçiyi dağıtıyor. Neye ihtiyacınız olduğunu birlikte konuşup gereksiz sayfa açmıyoruz.",
           "en": "For most businesses **four to six pages** are enough: home, services, about, contact, plus a menu for cafes and restaurants. Adding more pages does not make a site stronger; it scatters the visitor. We decide together what you need and skip the rest."
         }
       },

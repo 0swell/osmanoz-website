@@ -27,7 +27,8 @@ export const SCHEMA_ID = {
   breadcrumb: (path: string) => `${BASE}${path}#breadcrumb`,
   faq: (path: string) => `${BASE}${path}#faq`,
   service: (slug: string) => `${BASE}/${slug}#service`,
-  article: (slug: string) => `${BASE}/blog/${slug}#article`,
+  article: (path: string) => `${BASE}${path}#article`,
+  blog: (path: string) => `${BASE}${path}#blog`,
 } as const;
 
 type Json = Record<string, unknown>;
@@ -298,28 +299,60 @@ export function serviceNode(service: ServiceItem): Json {
   });
 }
 
-/** Blog yazıları için. */
+/**
+ * Blog yazıları için.
+ *
+ * `author` → Person düğümüne bağlanır: yazının arkasında gerçek bir kişi
+ * olduğunu makineye söyleyen tek alan bu (E-E-A-T, CLAUDE.md §4.5).
+ * `@id` yola göre üretilir — Türkçe ve İngilizce sürümün slug'ı farklı.
+ */
 export function articleNode(opts: {
-  slug: string;
+  /** Yazının o dildeki tam yolu: "/blog/..." veya "/en/blog/..." */
+  path: string;
   title: string;
   description: string;
   datePublished: string;
   dateModified?: string;
+  dil?: "tr" | "en";
+  /** Yazının ait olduğu Blog düğümünün @id'si. */
+  blogId?: string;
   image?: string;
 }): Json {
   return prune({
     "@type": "BlogPosting",
-    "@id": SCHEMA_ID.article(opts.slug),
+    "@id": SCHEMA_ID.article(opts.path),
     headline: opts.title,
     description: opts.description,
-    url: `${BASE}/blog/${opts.slug}`,
+    url: `${BASE}${opts.path}`,
     datePublished: opts.datePublished,
     dateModified: opts.dateModified ?? opts.datePublished,
-    inLanguage: "tr-TR",
+    inLanguage: opts.dil === "en" ? "en" : "tr-TR",
     author: ref(SCHEMA_ID.person),
     publisher: ref(SCHEMA_ID.business),
     image: opts.image ? `${BASE}${opts.image}` : undefined,
+    isPartOf: opts.blogId ? ref(opts.blogId) : ref(SCHEMA_ID.website),
+  });
+}
+
+/** Blog liste sayfası — yazıları tek bir yayın altında toplar. */
+export function blogNode(opts: {
+  path: string;
+  name: string;
+  description: string;
+  dil?: "tr" | "en";
+  yaziIdleri?: string[];
+}): Json {
+  return prune({
+    "@type": "Blog",
+    "@id": SCHEMA_ID.blog(opts.path),
+    url: `${BASE}${opts.path}`,
+    name: opts.name,
+    description: opts.description,
+    inLanguage: opts.dil === "en" ? "en" : "tr-TR",
+    author: ref(SCHEMA_ID.person),
+    publisher: ref(SCHEMA_ID.business),
     isPartOf: ref(SCHEMA_ID.website),
+    blogPost: opts.yaziIdleri?.map(ref),
   });
 }
 

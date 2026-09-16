@@ -25,7 +25,21 @@ Aracı veya ajans değil — işi yapan kişiyle doğrudan iletişim kurulur.
 - [Örnekler](https://osmanoz.website/ornekler): örnek tasarımlar ve canlı bir örnek
 - [Hakkımda](https://osmanoz.website/hakkimda): eğitim, yetkinlikler, çalışma biçimi
 - [İletişim](https://osmanoz.website/iletisim): form, telefon, çalışma saatleri
+- [Blog](https://osmanoz.website/blog): işletme sahipleri için sade rehberler
 - [Gizlilik ve KVKK](https://osmanoz.website/gizlilik): veri işleme aydınlatma metni
+
+## Blog yazıları
+
+- [Web sitesi satın alırken nelere dikkat edilir?](https://osmanoz.website/blog/web-sitesi-satin-alirken-nelere-dikkat-edilir):
+  alan adı mülkiyeti, teslim sonrası sahiplik, ikinci yıl gideri, hız, Google görünürlüğü ve bakım.
+- [Google haritada çıkmak için İşletme Profili nasıl açılır?](https://osmanoz.website/blog/google-isletme-profili-nasil-acilir):
+  kurulum adımları, doğrulama, işletme adı kuralı, hizmet alanı işletmesi ve yorum toplama.
+- [İşletmem için web sitesi mi gerekli, Instagram yeter mi?](https://osmanoz.website/blog/web-sitesi-mi-instagram-mi):
+  ikisinin farkı, hangi işletmeye hangisi gerekir, kısıtlı bütçede sıralama.
+- [Alan adı ve hosting nedir, yıllık ne kadar tutar?](https://osmanoz.website/blog/alan-adi-ve-hosting-nedir):
+  tanımlar, yıllık 1.500 TL civarı maliyet, .com / .com.tr seçimi, kayıt sahipliği.
+- [QR menü nedir, kafeye ne kazandırır?](https://osmanoz.website/blog/qr-menu-nedir-kafeye-ne-kazandirir):
+  çalışma biçimi, basılı menüye göre kazanç, uygulama gerekmemesi, sipariş katmanı.
 
 ## Kim
 
@@ -66,3 +80,4 @@ An English version of every page is available under `/en`.
 - [Examples](https://osmanoz.website/en/examples)
 - [About](https://osmanoz.website/en/about)
 - [Contact](https://osmanoz.website/en/contact)
+- [Blog](https://osmanoz.website/en/blog)

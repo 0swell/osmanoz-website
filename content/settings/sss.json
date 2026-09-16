@@ -78,5 +78,15 @@
       "tr": "**Çoğu küçük işletmenin yok.** Uygulama ancak sadakat sistemi, sürekli sipariş veren müşteri kitlesi veya saha ekibi varsa işe yarar. Mahalle kuaförü için kimse mağazadan uygulama indirmez, gereksiz bir yatırım olur. Durumunuza uygun paketleri öneririm. Zaten Eylül 2026 itibarıyla mobil uygulama hizmeti aktif değil, ileride eklenecektir.",
       "en": "**Most small businesses do not.** An app pays off when there is a loyalty scheme, customers who order repeatedly, or a field team. Nobody downloads an app for a neighbourhood hairdresser, so it becomes a wasted investment. I recommend the package that fits your situation. As of September 2026 the mobile app service is not active yet; it will be added later."
     }
+  },
+  {
+    "soru": {
+      "tr": "Web sitesi satın alırken nelere dikkat etmeliyim?",
+      "en": "What should I check before buying a website?"
+    },
+    "cevap": {
+      "tr": "Dört şeyi baştan sorun: alan adı sizin adınıza mı kaydediliyor, site teslimden sonra sizde mi kalıyor, ikinci yıl ne ödeyeceksiniz ve güncellemeyi kim yapacak. Benim tarafımda alan adı sizin adınıza kaydedilir, site tamamen sizindir ve ikinci yıldan itibaren yıllık gider 5.000 TL'dir.",
+      "en": "Ask four things up front: is the domain registered in your name, does the site stay yours after handover, what do you pay in the second year, and who handles updates. On my side the domain is registered in your name, the site is entirely yours, and the yearly cost from year two is 5,000 TL."
+    }
   }
 ]

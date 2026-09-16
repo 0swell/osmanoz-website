@@ -19,7 +19,16 @@ import { cn } from "@/utils/cn";
  * Sağ blok sırası (kullanıcı kararı): iletişim → turuncu ayraç →
  * dil tuşu → tema tuşu → WhatsApp.
  */
-export function Navbar({ dil, rota }: { dil: Dil; rota: RotaAnahtari }) {
+export function Navbar({
+  dil,
+  rota,
+  yollar,
+}: {
+  dil: Dil;
+  rota: RotaAnahtari;
+  /** Blog yazısı gibi rota tablosunda olmayan sayfalarda dil tuşu için. */
+  yollar?: { tr: string; en: string };
+}) {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const t = s(dil);
@@ -131,7 +140,7 @@ export function Navbar({ dil, rota }: { dil: Dil; rota: RotaAnahtari }) {
             className="mr-1 hidden h-5 w-px bg-accent md:block"
           />
 
-          <DilDegistirici dil={dil} rota={rota} />
+          <DilDegistirici dil={dil} rota={rota} yollar={yollar} />
           <ThemeToggle dil={dil} />
 
           <a

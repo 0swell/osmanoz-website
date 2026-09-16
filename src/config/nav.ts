@@ -5,13 +5,20 @@ import { siteConfig } from "@/config/site";
 
 export type NavItem = { label: string; href: string };
 
-/** Ana navigasyon — 5 öğeyi geçmez (UX: aşırı yüklü menü). */
+/**
+ * Ana navigasyon.
+ *
+ * Blog bilinçli olarak menüye alındı: yazılar yalnızca footer'dan
+ * bağlanırsa hem ziyaretçi hem tarayıcı için derinde kalıyordu. Menü
+ * 6 öğeyi geçmemeli — bunun üstü mobilde okunmaz hâle geliyor.
+ */
 export function navItems(dil: Dil): NavItem[] {
   const t = s(dil).nav;
   return [
     { label: t.hizmetler, href: `${yol("anasayfa", dil)}#hizmetler` },
     { label: t.ornekler, href: yol("ornekler", dil) },
     { label: t.fiyatlar, href: yol("fiyatlar", dil) },
+    { label: t.blog, href: yol("blog", dil) },
     { label: t.hakkimda, href: yol("hakkimda", dil) },
     { label: t.iletisim, href: yol("iletisim", dil) },
   ];
